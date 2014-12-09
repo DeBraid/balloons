@@ -20,9 +20,6 @@ var filters = {
     inp.val('');
     inp.trigger('keyup');
   },
-  setBackground: function () {
-    document.body.className = "noBackgroundImage"
-  }, 
   showScrollToTopButton: function () {
     $('#scrollToTop').show();
   }, 
