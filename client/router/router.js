@@ -19,7 +19,12 @@ var filters = {
     var inp = $('.reactive-table-input');
     inp.val('');
     inp.trigger('keyup');
+    this.next();
   },
+  setBackground: function () {
+    document.body.className = "noBackgroundImage";
+    this.next();
+  }, 
   showScrollToTopButton: function () {
     $('#scrollToTop').show();
   }, 
