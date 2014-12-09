@@ -1,0 +1,77 @@
+<template name="promoflags">
+  
+  <div class="container">
+    
+    <div class="row">
+      {{> promoflagscontent}}
+      
+    </div>
+
+    <div class="row">
+      {{> econflags}}
+    </div>
+
+  </div>
+
+</template>
+
+
+<template name="promoflagscontent">
+    {{> promoheader }}
+
+    <h3>Promotional Bow Flags </h3>
+
+    <div class="row">
+      {{> yield region='filterdropdown' }}
+    </div>
+
+    <div class="row">
+      {{> reactiveTable collection=promoflags settings=settings }}
+    </div>
+
+    <div class="row">
+      {{> promoflagInfoSS }}
+    </div>
+</template>
+
+<template name="promoheader">
+  <div class="row">
+    <h1>Promotional Flags</h1>
+  </div>
+
+  <div class="row">
+    <div id="primary-image" class="col-lg-3 col-md-3 col-sm-12">
+      <img class="img-responsive" src="promo-flags.png" alt="">
+    </div>
+    <div class="col-lg-7 col-md-6 col-sm-12">
+      <h4>Prices below include flags with same design one-side digital imprint with mirror image on second side</h4>
+    </div>
+    
+  </div>
+
+</template> 
+
+<template name="econflags">
+  <h1>Economy Flags</h1> 
+  
+  
+  <div class="row">
+    {{> reactiveTable collection=econflags settings=settings }}
+    <p><strong>*</strong> same design one-side digital imprint with mirror image on second side</p>
+
+    <p><strong>**</strong> Price includes flags with same design digital imprint on 2 side</p>
+  </div>
+   <div class="row">
+    {{> econflagInfoSS }}
+  </div>
+  
+
+</template>
+
+<template name="promoflagInfoSS">
+  <img class="img-responsive"  src="promoflag-info-ss.png" alt="">
+</template>
+
+<template name="econflagInfoSS">
+  <img class="img-responsive"  src="econflag-info-ss.png" alt="">
+</template>

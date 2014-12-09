@@ -1,0 +1,62 @@
+<template name="largequantmicrofoil">  
+  <div class="container">
+    
+    <div class="row">
+      {{> largequantheader }}
+      
+    </div>
+
+    <div class="row">
+      {{> yield region='filterdropdown' }}
+    </div>
+    <div class="row">
+      <h4>18" and 20" Valved Balloons Flexographic Printing</h4> 
+      {{> reactiveTable collection=largequantmicrofoil settings=settings}}
+    </div>
+
+    <div id="charges" class="row">
+      {{> largequantfooter }}
+   </div>
+    
+    <div class="row">
+      {{> microspecialshapes}}
+    </div>
+
+
+  </div>
+</template>
+
+<template name="largequantheader">
+    
+  <div class="row">
+    <h1>Large Quantity Microfoil<sup>®</sup>  Balloons</h1>
+  </div>
+
+  <div class="row">
+    <div id="primary-image" class="col-lg-3 col-md-3 col-sm-12">
+      <img class="img-responsive" src="large-microfoil.png" alt="">
+    </div>
+    <div class="col-lg-7 col-md-6 col-sm-12">
+      <h4><strong>Screen Printing:</strong> Prices include valved balloons with one-side screen imprint; additional charges may apply.  Silver/Silver.</h4>
+    </div>
+
+    <div class="col-lg-2 col-md-3 col-sm-12 pull-right">
+      {{> qualatexLogo}}
+    </div>
+
+  </div>
+</template> 
+
+<template name="largequantfooter">
+ <ul>
+    <li>1/c is for a single colour print on silver</li>
+    <li>2/c can be 2 spot colours on silver, or 1 spot colour on solid colour balloon</li>
+    <li>All charges for process printing included in pricing</li>
+    <li>18”, 20”and 36”– No additional charge for 2nd side, 2nd side doesn’t have to be same print as front side</li>
+    <li><strong>Ink blend $90.00(A)</strong>  per colour, per run **Exact PMS colour matches cannot be guaranteed**</li>
+    <li><strong>Art Charge $50.00(A)</strong> per hour</li>
+    <li><strong>Overruns/Underruns:</strong> All orders subject to +/- 10%</li>
+    <li>Reruns as low as 1,500 pieces.</li>
+    <li>Contact Customer Service for rerun pricing</li>
+  </ul>
+</template>

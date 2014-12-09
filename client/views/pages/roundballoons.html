@@ -1,0 +1,45 @@
+<template name="roundballoons">
+  <div class="container">
+    
+    <div class="row">
+      {{> roundheader}}  
+    </div>
+    <div class="row">
+      {{> yield region='filterdropdown' }}
+    </div>
+    <div class="row">
+      {{> reactiveTable collection=roundballoons settings=settings}}
+      {{> yield region='charges'}}
+    </div>
+    <div class="row">
+      {{> colourassortment}}
+    </div>
+    
+    {{> rush}}
+  </div>
+
+</template>
+
+
+<template name="roundheader">
+  <div class="row">
+    <h1>Latex One-Colour Print Balloons</h1>
+    <h1>Ballon à impression une couleur</h1>
+  </div>
+
+  <div class="row">
+    <div id="primary-image" class="col-lg-3 col-md-3 col-sm-12">
+      <img class="img-responsive" src="one-colour-print.png" alt="">
+    </div>
+    <div class="col-lg-7 col-md-6 col-sm-12">
+      <h4>The prices below include balloons with a one-colour/one-side same Impress II® print; add additional charges</h4>
+      <h4>Impression — 1 couleur–1 côté Prix par ballon</h4>
+    </div>
+    <div class="col-lg-2 col-md-3 col-sm-12 pull-right">
+      {{> biodeg }}
+      {{> qualatexLogo }}
+    </div>
+    
+  </div>
+
+</template> 

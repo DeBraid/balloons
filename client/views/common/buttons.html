@@ -1,0 +1,46 @@
+<template name="homepageBtnGroup">
+
+  <a class="btn btn-success btn-lg btn-block" href="{{ pathFor 'categories' }}">
+    Show All Products
+  </a>
+  <a class="btn btn-warning btn-lg btn-block" href="pioneerline2014catalogue.pdf">
+    View PDF Catalogue
+  </a>
+
+</template>
+
+<template name="pdfdownload">
+  <div class="col-lg-12">
+    <a class="btn btn-warning btn-block" href="pioneerline2014catalogue.pdf">
+      View PDF Catalogue
+    </a>
+  </div>
+</template>
+
+<template name="flagpdfdownload">
+  <div id="flag-template-btn" class="col-sm-12">
+    <a class="btn btn-success btn-lg" href="flag-templates.pdf">
+      Download Artwork Template
+    </a>
+  </div>
+</template>   
+
+<template name="quickFindDropdown">
+
+  <div class="filter-button-container">
+
+      <div class="btn-lg btn-block">
+          <button type="button" id="main-select-button" class="btn btn-lg btn-success btn-block dropdown-toggle" data-toggle="dropdown">
+              Quick Find <span id="quick-find-caret"  class="caret"></span>
+          </button>
+          <ul class="dropdown-menu" role="menu">
+              {{#each topFive}}
+                <li><a id="{{ name }}" class="btn btn-lg btn-success btn-block topLinks" href="{{ path }}">{{ name }}</a></li>
+              {{/each }} 
+          
+          </ul>
+      </div>
+
+  </div>
+
+</template>

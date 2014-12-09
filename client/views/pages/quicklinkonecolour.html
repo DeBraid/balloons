@@ -1,0 +1,43 @@
+<template name="quicklinkonecolour">
+
+  <div class="row">
+    {{> quicklinkheader}}  
+  </div>
+  <div class="row">
+    {{> yield region="filterdropdown" }}
+  </div>
+  <div class="row">
+    {{> reactiveTable collection=quicklinkonecolour settings=settings}}
+  </div>
+  
+
+  <div class="row">
+    {{> qlroundfooter}}
+    {{> yield region='charges'}}
+  </div>
+</template>
+
+<template name="quicklinkheader">
+  <div class="row">
+    <h1>QuickLink<sup>TM</sup> One-Colour Print Balloons</h1>
+  </div>
+
+  <div class="row">
+    <div id="primary-image" class="col-lg-3 col-md-3 col-sm-12">
+      <img class="img-responsive" src="quicklink-one-colour.png" alt="">
+    </div>
+    <div class="col-lg-7 col-md-6 col-sm-12">
+      <h4>Round Balloons One-Colour/Two-Side Same IMPRESS II® Print</h4>
+    </div>  
+    <div class="col-lg-2 col-md-3 col-sm-4 pull-right">
+      <img class="img-responsive small-homepage-logos" src="quicklink-logo.png" alt="logo">
+    </div>
+  </div>
+
+</template> 
+
+<template name="qlroundfooter">
+  <p>The prices above include balloons with a one-colour/two-side same Impress II® print; add additional charges</p>
+</template> 
+
+

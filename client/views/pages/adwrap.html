@@ -1,0 +1,69 @@
+<template name="adwrap">
+  
+  <div class="container">
+   
+    <div class="row">
+      {{> adwrapheader }}
+    </div>
+    
+    <div class="row">
+      {{> yield region='filterdropdown' }}
+    </div>    
+    <div class="row">
+      {{> reactiveTable collection=adwrap settings=settings}}
+    </div>
+    
+    <div id="charges" class="row">
+      {{> adwrapcharges}}
+    </div>
+
+    <div class="row">
+      {{> adwrapfooter}}
+    </div>
+
+
+  </div>
+  
+  
+</template>
+
+<template name="adwrapheader">
+  <div class="row">
+    <h1> AdWrap<sup>®</sup> Balloons</h1>
+  </div>
+
+  <div class="row">
+    <div id="primary-image" class="col-lg-3 col-md-3 col-sm-12">
+      <img class="img-responsive" src="adwrap.png" alt="">
+    </div>
+    <div class="col-lg-7 col-md-6 col-sm-12">
+          <h4>One-Colour/Wrap around IMPRESS II® Print</h4>
+          <h4>AdWrap balloons increase your message visibility and are ideal for a wide range of promotions.  Your logo or message, surrounded by one of the stock designs, appears four times on the balloon to create a custom image.</h4>
+
+    </div>
+    <div class="col-lg-2 col-md-3 col-sm-12 pull-right">
+      {{> biodeg}}
+      {{> qualatexLogo }}
+    </div>
+    
+  </div>
+
+</template> 
+
+<template name="adwrapfooter">
+    
+    <h3>Custom AdWrap Balloons</h3> 
+    <p>Using symbols unique to your client’s product or business, a Custom AdWrap design can be created especially for them. Custom AdWrap balloons are available with an initial minimum order of 2,500 balloons.</p>
+    
+    <p><strong>Additional Information</strong>Black or White ink is recommended, although other standard Qualatex® ink colours are available. Because of the random nature of the Wrap Around IMPRESS II® printing process, printing will overlap and some smearing may occur.</p>
+</template>
+
+<template name="adwrapcharges">
+  <h4>The prices below include balloons with one-colour Impress II® print; add additional charges.</h4>
+  <ul>
+    <li><strong>Cut Charge:</strong>  $50.00(A) per logo, one time only.</li>
+    <li><strong>Machine Set up charge:</strong>  $22.00(A) per order</li>
+    <li><strong>Custom Ink Blend:</strong>  $20.00(A) per ink colour; custom blends are not inventoried. *Exact PMS colour matches cannot be guaranteed* </li>
+    <li><strong>Art Charge:</strong>  $50.00(A) per hour.</li>
+  </ul>
+</template>

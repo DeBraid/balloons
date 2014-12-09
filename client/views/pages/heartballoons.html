@@ -1,0 +1,74 @@
+<template name="heartballoons">
+  
+  <div class="container">
+    <div class="row">
+
+      {{> heartheader}}  
+
+    </div>
+
+    <div class="row">
+      {{> yield region="filterdropdown" }}
+    </div>    
+    <div class="row">
+      {{> reactiveTable collection=heartballoons settings=settings}}
+      {{> yield region='charges'}}
+    </div>
+    
+    <div class="row">
+      {{> heartcolours }}      
+    </div>
+    {{> rush }}
+    
+    <div class="row">
+      
+    </div>
+  </div>  
+
+</template>
+
+
+<template name="heartheader">
+  <div class="row">
+    <h1>Heart Balloons</h1>
+    <h1>Ballons coeurs</h1>
+  </div>
+
+  <div class="row">
+    <div id="primary-image" class="col-lg-3 col-md-3 col-sm-12">
+      <img class="img-responsive" src="heart.png" alt="">
+    </div>
+    <div class="col-lg-7 col-md-6 col-sm-12">
+      <h4>One Colour-One Side IMPRESS II® Print</h4>
+      <h4>Impression — 1 couleur–1côté Prix par ballon</h4>
+
+      <p>The prices below include balloons with a one-colour/two-side same Impress II® print; add additional charges</p>
+    </div>
+    <div class="col-lg-2 col-md-3 col-sm-12 pull-right">
+      {{> biodeg}}
+      {{> qualatexLogo }}
+    </div>
+    
+  </div>
+
+</template> 
+
+
+<template name="heartcolours">
+  <h4>Heart balloons are only available in selected colours:</h4>
+  <h4>Les ballons coeurs sont disponibles seulement en certaines couleurs:</h4>
+  <ul>
+    <li>Standard Colours: Red (L23), White (L28), and Pink (L26)</li>
+    <li>Couleurs Standards: rouge (L23), blanc (L28), et rose pâle (L26)</li>
+    <li>Jewel Colours: Ruby Red (L53) and Diamond Clear (L58)</li>
+    <li>Couleurs pierres précieuses: rouge rubis (L53) et diamant clair (L58)</li>
+    <li>Fashion Colours: Rose (L36)</li>
+    <li>Couleurs de mode: rose foncé (L36)</li>
+  </ul>
+</template>
+
+
+
+
+
+

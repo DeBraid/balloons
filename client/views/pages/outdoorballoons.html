@@ -1,0 +1,52 @@
+<template name="outdoorballoons">
+  <div class="container">
+    <div class="row">
+      {{> outdoorheader }}
+    </div>
+
+  <div class="row">
+    {{> yield region='filterdropdown' }}
+  </div>
+  <div class="row">
+    {{> reactiveTable collection=outdoorballoons settings=settings}}
+  </div>
+
+  <div id="charges"  class="row">
+    {{> outdoorcharges }}
+  </div>
+  
+  </div>
+  
+</template>
+
+<template name="outdoorheader">
+  <div class="row">
+    <h1>17” Outdoor Display Balloons</h1>
+  </div>
+
+  <div class="row">
+    <div id="primary-image" class="col-lg-3 col-md-3 col-sm-12">
+      <img class="img-responsive" src="outdoor.png" alt="">
+    </div>
+    <div class="col-lg-7 col-md-6 col-sm-12">
+      <h4>17” Outdoor Display Balloons are manufactured to professional standards and engineered for outdoor use. The thick-wall design provides a flying time of 35-50 hours depending on atmospheric conditions.</h4>
+    </div>
+    
+  </div>
+
+</template> 
+
+
+<template name="outdoorcharges">
+  <h4>Charges</h4>
+
+  <ul>
+    <li><strong>Cut Charge:</strong> $50.00(A) per logo, one time only</li>
+    <li><strong>Machine Set up charge:</strong> $22.00(A) per order</li>
+    <li><strong>Second-Side Same Imprint:</strong> $0.024(A)  per balloon</li>
+    <li><strong>Second-Side Different Imprint:</strong> $0.048(A) per balloon  </li>
+    <li><strong>Custom Ink Blend:</strong> $20.00(A) per ink colour; custom blends are not inventoried.</li>
+    <li><strong>Art Charge:</strong> $50.00(A)  per hour.</li>
+  </ul>
+  
+</template>

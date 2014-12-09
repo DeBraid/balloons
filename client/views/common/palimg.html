@@ -1,0 +1,27 @@
+<template name="palimg">
+  <div id="palimg">
+  {{#if hasPalDropdown }}
+    <div class="btn-group pull-left   ">
+      <button type="button" id="main-select-button" class="btn btn-success btn-lg dropdown-toggle pull-right" data-toggle="dropdown">
+          Select Colour Palette <span class="caret"></span>
+      </button>
+      <ul id="colour-palette" class="dropdown-menu" role="menu"> 
+         {{#each pals }}
+            <li id="{{ desc }}">
+
+              <h4>{{ desc }}</h4>
+              <img class="srcs thumbnails" src="{{ src }}" alt="{{ desc }}">
+
+            </li>
+          {{/each }} 
+      
+        <li class="divider"></li>
+        <li class="pull-right"><a id="close" href="#">Close</a>
+        </li>
+      </ul>
+    </div>
+
+    {{/if }}
+
+  </div>
+</template>

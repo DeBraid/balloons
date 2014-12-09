@@ -1,0 +1,60 @@
+<template name="adpunchballs">
+    <div class="container">
+        <div class="row">
+            {{> adpunchheader }}
+        </div>
+
+        <div class="row">
+            {{> reactiveTable collection=adpunchballs settings=settings }}
+        </div>
+        
+        <div id="charges" class="row">
+          {{> adpunchcharges }}
+        </div>
+        <ul>
+            <li><strong>Ball Colours:</strong> White (101), Red (102), Blue (149), Orange (107), Kiwi Lime (158) Yellow (105), Pink (106) and Lilac (121). Choose up to four single colours per 100 AdPunch balls.</li>
+            <li><strong>Ink Colours:</strong> Black, White, Red, Yellow, Royal Blue, Green, Brown, Orange, Pink, Purple, Burgundy, Teal, Gold, and Silver. When choosing AdPunch ball and ink colour combinations, consider the effect of the ball colour when combined with the ink colour.</li>
+            <li><strong>Print Direction:</strong> Each AdPunch ball is printed to be read with the inflation neck down unless otherwise specified.</li>
+            <li><strong>Standard Packaging:</strong> 50 AdPunch balls.</li>
+
+        </ul>
+
+        <h4>Plain AdPunch Balls: Minimum 100 balls: $.86(A) per ball</h4>
+
+    </div>
+
+</template>
+
+<template name="adpunchheader">
+  <div class="row">
+    <h1>AdPunch™ Balls</h1> 
+    
+  </div>
+
+  <div class="row">
+    <div id="primary-image" class="col-lg-3 col-md-3 col-sm-12">
+      <img class="img-responsive" src="punchballs.png" alt="">
+    </div>
+    <div class="col-lg-7 col-md-6 col-sm-12">
+      <h4>Made from 100% natural, biodegradable latex.  The prices below include AdPunch balls with one-colour/one-side print; add additional charges.</h4>
+    </div>
+    <div class="col-lg-2 col-md-3 col-sm-12 pull-right">
+      {{> biodeg}}
+    </div>
+    
+  </div>
+
+</template> 
+
+
+<template name="adpunchcharges">
+  <h4>Charges</h4>
+  <ul>
+    <li><strong>Cut Charge:</strong> $50.00(A) per logo, one time only. </li>
+    <li><strong>Machine Set-Up Charge</strong> $22.00(A) per order </li>
+    <li><strong>Second-Side Same-Imprint</strong> $.024(A) per balloon </li>
+    <li><strong>Second-Side Different Imprint:</strong> $.048(A) per balloon </li>
+    <li><strong>Custom Ink Blend:</strong> $20.00(A) per ink colour; custom blends are not inventoried. </li>
+    <li><strong>Art Charge:</strong> $50.00(A) per hour.</li>
+  </ul>
+</template>

@@ -1,0 +1,111 @@
+<template name="admaxminisportballs">
+  
+  <div class="container">
+   
+    <div class="row">
+      {{> admaxminiballsheader }}
+    </div>
+    
+    <div class="row">
+      {{> yield region='filterdropdown' }}
+    </div>
+
+    <div class="row">
+      {{> reactiveTable collection=admaxminisportballs settings=settings}}
+    </div>
+
+    <div id="charges" class="row">
+      {{> admaxminiballscharges}}
+    </div>
+
+    <div class="row">
+      {{> admaxminiballsfooter}}
+    </div>
+
+    <div class="row">
+      {{> admaxinfo }}
+    </div>
+
+
+  </div>
+  
+  
+</template>
+
+<template name="admaxminiballsheader">
+  <div class="row">
+    <h1>AdMax™ Mini Sport Balls and Play Balls</h1>
+  </div>
+
+  <div class="row">
+    <div id="primary-image" class="col-lg-3 col-md-3 col-sm-12">
+      <img class="img-responsive" src="admaxsport.png" alt="">
+    </div>
+    <div class="col-lg-7 col-md-6 col-sm-12">
+      <h4>AdMax Mini Sport Balls are made of high-quality, soft, textured, and embossed vinyl.</h4>
+
+      <p>The prices below include AdMax Mini Sports Balls with one-colour/one-side imprint; add any additional charges.</p>
+    </div>
+  </div>
+</template>
+
+<template name="admaxminiballsfooter">
+
+  <div class="col-lg-12">
+    <h4>Colour Options</h4>
+    <ul>
+      <li>Football Colours:  White, Brown, Yellow, Orange, Red, Green, Blue, Purple, Pink, and Black</li>
+      <li>Basketball Colours:  White, Yellow, Orange, Red, Green, and Blue</li>
+    </ul>
+  </div>
+
+  <div class="col-lg-12">
+    <ul>
+      <li>*As with any inflated product, size will vary; stated measurements are approximate. Balls may become deflated over time but can be refreshed through the reinflatable athletic valve.</li>
+      <li>**Minimum 100 balls per style. Minimum 50 balls per colours, No mixing shapes**</li>
+      <li>Note:  Imprint on Football and Basketball will be imprinted on smooth, non-pebbled area of ball.</li>  
+      <li><strong>Plain Mini Sports Balls: Minimum 50 balls per colour/per style: $1.64(A) per ball</strong></li>
+    </ul>
+  </div>
+  
+</template>
+
+<template name="admaxminiballscharges">
+  <ul>
+    <li><strong>Plate Charge:</strong>  $50.00(A) per colour. One time only</li>
+    <li><strong>Additional Colour Charge:</strong>  $.44(A) per colour, per imprint.  2-colour maximum on all Mini Sport Balls.  Minimum 250 balls for additional colour.</li>
+    <li><strong>Second Side Same</strong> Imprint:  $.44(A) per ball.  (Available on Football only.)</li>
+    <li><strong>Second Side Different</strong> Imprint:  $.48(A) per ball (Available on Football only.)</li>
+    <li><strong>Custom Ink Blend</strong>:  $50.00(A) per ink colour.  **Exact PMS colour matches cannot be guaranteed**.</li>
+    <li><strong>Art Charge:</strong> $50.00(A) per hour.</li>
+  </ul>
+</template>
+
+<template name="admaxinfo">
+  <div class="container">
+    <div class="row">
+      <h3>Minimum Order</h3> 
+      <p>Minimum 100 balls per style. No mixing shapes. Minimum 50 balls per colour.</p>
+      <p>Plain Mini Balls – Minis ballons sans impression</p>
+      <p>Minimum 50 balls per colour: $1.64(A) per ball. </p>
+
+      <h3>Ink Colours</h3>
+      <p>White, Maroon, Green, Blue, Purple, Black, Red, Yellow, Orange, Gold, and Silver. </p>
+      When choosing AdMax ball and ink colour combinations, consider the effect of the ball colour when combined with the ink colour. 
+
+
+      <h3>Art Recommendations</h3>
+      <p>A simple, bold logo or a maximum of one or two short lines of copy are recommended. Art should not contain line screens. </p>
+      <p>Art will be sized to the maximum imprint area. Height determines width and width determines height of imprint size. 
+      Contact Customer Service for art requirements for two-colour imprints.</p>
+
+      <p>Balls are packed in 50-count & 100-count boxes depending on the size of the order. Contact Customer Service for details. </p>
+
+      <h3>Production Time</h3>
+      <p>Allow 2-3 weeks after receipt of order and approved artwork.</p>
+
+      <h3>Overruns/Underruns</h3> 
+      <p>All AdMax Mini Sport Ball orders are subject to a 5% overrun/underrun and will be invoiced accordingly.</p>
+    </div>
+  </div>
+</template>

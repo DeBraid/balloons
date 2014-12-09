@@ -1,0 +1,141 @@
+<template name="tablecovers">
+
+    <div class="container">
+        
+        {{> tableheader }}
+        {{> nonfitted}}
+        {{> stretch}}
+
+
+    </div>
+
+    
+    <div class="row">
+        {{> tablecoversextra}}
+    </div>
+
+
+</template>
+ 
+<template name="tableheader">
+  <div class="row">
+    <h1>Table Covers</h1>
+  </div>
+
+  <div class="row">
+    <div id="primary-image" class="col-lg-3 col-md-3 col-sm-12">
+      <img class="img-responsive" src="table-covers.png" alt="">
+    </div>
+    <div class="col-lg-7 col-md-6 col-sm-12">
+      <h4>Provide maximum coverage with our high-quality, 100% polyester poplin 4-sided table covers.</h4>
+      <a class="btn btn-success" href="table_cover_templates.pdf">Download Table Cover Artwork Template</a>
+    </div>
+
+    
+  </div>
+
+</template> 
+
+
+<template name="nonfitted">
+   <div class="row">
+        <h3>Non-Fitted Table Covers</h3>
+        
+        <div class="row">
+            {{> filterdropdown }}
+        </div>
+        <div class="row">
+            {{> reactiveTable collection=nonfittedtablecovers settings=settings}}
+            
+        </div>
+    
+    
+    </div>
+</template>
+
+
+<!-- ************************************** -->
+<template name="stretch">
+
+    <div class="row">
+        <h3>Stretch Table Covers</h3>
+        
+        {{> reactiveTable collection=stretchtablecovers settings=settings}}
+        
+        
+        <p>* Plain stock colours: White, Black, Red or Blue</p> 
+    </div>
+
+
+
+</template>
+
+<template name="tablecoversextra">
+    <div class="container">
+        <section id="charges">
+            <h4>Charges</h4>
+            <ul>
+                <li>Fitted Table Covers also available. <strong>Must mention Fitted Table Cover on purchase order.</strong>
+                </li>
+                <li><strong>Set-Up Charge:</strong> $50.00 only one SET UP CHARGE PER TABLE COVER regardless of number of imprint areas (with same imprint).</li>
+                <li><strong>Top Imprint:</strong> Add $15.00 and includes the entire quantity with same imprint.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h4>Product Material:</h4>
+            <ul>
+                <li>300 Polyester Denier</li>
+                <li>Water, Fire & Stain Resistant- Machine Washable</li>
+                <li><strong>ALL TABLE COVERS FIT 30” DEEP TABLES.</strong> 24” deep table covers also available, Contact Customer Service.</li>
+            </ul>
+        </section>
+
+
+        <h3>Imprint Area:</h3> 
+
+        <section>
+            <div class="col-sm-6">
+                <h4>6ft. Non-Fitted Table Cover Full Colour Dye Sublimation Imprint Area</h4>
+                <ul>
+                    <li>Front/Back Imprint Area: 21”H x 60”W</li>
+                    <li>Side Imprint Area: 21”H x 24”W</li>
+                </ul>
+            </div>
+            <div class="col-sm-6">
+                <h4>6ft. Non-Fitted Table Cover Full Colour/ Full Bleed Imprint Area</h4>
+                <ul>
+                    <li>Front/Back Imprint Area: 29”H x 72”W</li>
+                    <li>Side Imprint Area: 29”H x 30”W</li>
+                    <li>All Over Imprint Area: 88”H x 130”W</li>
+                </ul>
+            </div>
+        </section>
+
+        <section>
+        
+            <div class="col-sm-6">
+                <h4>8ft. Non-Fitted Table Cover Full Colour Dye Sublimation Imprint Area</h4>
+                <ul>
+                    <li>Front/Back Imprint Area: 21”H x 72”W</li>
+                    <li>Side Imprint Area: 21”H x 24”W</li>
+                </ul>
+            </div>
+             <div class="col-sm-6">
+                <h4>8ft. Non-Fitted Table Cover Full Colour/ Full Bleed Imprint Area</h4>
+                <ul>
+                    <li>Front/Back Imprint Area: 29”H x 96”W</li>
+                    <li>Side Imprint Area: 29”H x 30”W</li>
+                    <li>All Over Imprint Area: 88”H x 154”W</li>
+                </ul>
+            </div>   
+             
+        </section>
+
+
+        <section>
+            <p><strong>Shipping</strong> F.O.B: Miami Florida. Duty and Brokerage may apply</p>
+            <p>Approx. 3-4 business weeks from confirmed order and sketch approval</p>
+        </section>
+    </div>
+</template>

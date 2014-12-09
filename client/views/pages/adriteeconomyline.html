@@ -1,0 +1,55 @@
+<template name="adriteeconomyline">
+  <div class="container">
+
+    <div class="row">
+      {{> adriteheader }}
+    </div>
+
+    <div class="row">
+      {{> yield region='filterdropdown'}}
+    </div>      
+    <div class="row">
+      {{> reactiveTable collection=adriteeconomyline settings=settings}}
+    </div>
+    <div class="row">
+      {{> yield region='charges'}}
+    </div>
+
+    <div class="row">
+      {{> rush}}
+    </div>
+    
+  </div>
+  
+</template>
+
+<template name="adriteheader">
+  <div class="row">
+    <h1>AdRite™ Balloons – Economy Line</h1>
+  </div>
+
+  <div class="row">
+    <div id="primary-image" class="col-lg-3 col-md-3 col-sm-12">
+      <img class="img-responsive" src="adrite.png" alt="">
+    </div>
+    <div class="col-lg-7 col-md-6 col-sm-12">
+      <h4>AdRite balloons are ideal for special, price-sensitive promotions demanding a low-cost, printed balloon.  They are made of 100% natural latex and are available in two sizes – 9" and 11".  AdRite balloons are available in the most popular balloon colours featuring the same IMPRESS II® print as Qualatex® latex balloons.</h4>
+
+      <h5>The prices below include balloons with one-colour/one-side imprint Impress II® print; add any additional charges.</h5>
+    </div>
+    
+    <div class="col-lg-2 col-md-3 col-sm-4 pull-right">
+      {{> biodeg}}
+
+        <img class="img-responsive small-homepage-logos" src="adrite-logo.png" alt="adriteeconomyline-logo">
+  
+    </div>
+    
+  </div>
+
+</template> 
+
+
+
+
+

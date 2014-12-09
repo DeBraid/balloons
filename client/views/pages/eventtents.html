@@ -1,0 +1,40 @@
+<template name="eventtents">
+  <div class="container">
+    <div class="row">
+        {{> eventtentheader }}
+
+    </div>
+  </div>
+  
+  <div class="row">
+      {{> yield region='filterdropdown' }}
+  </div>
+  <div class="row">
+      {{> reactiveTable collection=eventtents settings=settings }}
+      <h4><strong>Set-Up Charge:</strong> $51.00 only one SET UP CHARGE PER TENT regardless of number of imprint areas and includes entire quantity with same imprint.</h4>
+  </div>
+
+  <div class="row">
+    {{> eventtentwalls }}
+  </div>
+  
+
+</template>
+
+
+<template name="eventtentheader">
+  <div class="row">
+    <h1>Durable Event Tents</h1>
+  </div>
+
+  <div class="row">
+    <div id="primary-image" class="col-lg-3 col-md-3 col-sm-12">
+      <img class="img-responsive" src="event-tent.png" alt="">
+    </div>
+    <div class="col-lg-7 col-md-6 col-sm-12">
+      <h4>Prices below includes a 10ft. x 10ft. tent frame with 600 Denier storage bag, polyester canopy, 4 metal ground stakes, 4 small canvas draw string, sand weight bags. (Sand not included)</h4>
+    </div>
+    
+  </div>
+
+</template> 

@@ -1,0 +1,28 @@
+<template name="filterdropdown">
+
+    <div class="filter-button-container">
+        
+        {{> palimg }}
+
+        <div class="btn-group pull-right">
+            <button type="button" id="main-select-button" class="btn btn-warning btn-lg dropdown-toggle pull-right" data-toggle="dropdown">
+                Select Type <span class="caret"></span>
+            </button>
+            <ul class="dropdown-menu" role="menu">
+
+                
+                  {{#each tags}}
+                    <li><a id="{{ tag }}" class="tags" href="#">{{ tag }}</a></li>
+                  {{/each }} 
+                
+                <li class="divider"></li>
+                <li><a href="pioneerline2014catalogue.pdf">Full PDF Catalogue</a>
+                </li>
+                <li><a href="{{pathFor 'homepage'}}">Home</a>
+                </li>
+            </ul>
+        </div>
+
+    </div>
+</template>
+
