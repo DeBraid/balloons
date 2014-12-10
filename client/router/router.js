@@ -83,21 +83,30 @@ Router.map(function() {
     path: '/roundballoons',
     template: 'roundballoons',
     yieldTemplates: {
-      'charges': {to: 'charges'},
+      // 'charges': {to: 'charges'},
       'filterdropdown': {to: 'filterdropdown'}
-    }, 
-    waitOn: function () {
-      return [Meteor.subscribe('roundballoons'),
-              Meteor.subscribe('charges'),
-              Meteor.subscribe('qualatexpals'),
-              Meteor.subscribe('tags')];
     },
+    subscriptions: function() {
+      // returning a subscription handle 
+      // or an array of subscription handles
+      // adds them to the wait list.
+      return Meteor.subscribe('roundballoons');
+    },
+    // waitOn: function () {
+      // return Meteor.subscribe('roundballoons');
+
+      // [,
+      //         Meteor.subscribe('charges'),
+      //         Meteor.subscribe('qualatexpals'),
+      //         Meteor.subscribe('tags')];
+    // },
     data: function () {
       return {
-        roundballoons: Roundballoons.find(),
-        charges: Charges.find(), 
-        tags: Tags.find(),
-        pals: Qualatexpals.find()
+        roundballoons: Roundballoons.find()
+        // ,
+        // charges: Charges.find(), 
+        // tags: Tags.find(),
+        // pals: Qualatexpals.find()
       }
     }
   });

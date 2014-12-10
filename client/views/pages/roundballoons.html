@@ -2,9 +2,17 @@
   <div class="container">
     
     <div class="row">
-      {{> roundheader}}  
+      {{> roundheader}} 
+
+      {{#each roundballoons }} 
+      <p>{{[250]}}</p>
+      <p>{{[500]}}</p>
+      <p>{{[100]0}}</p>
+      
+      {{/each}} 
     </div>
-    <div class="row">
+
+    <!-- <div class="row">
       {{> yield region='filterdropdown' }}
     </div>
     <div class="row">
@@ -16,7 +24,8 @@
     </div>
     
     {{> rush}}
-  </div>
+    -->
+  </div> 
 
 </template>
 

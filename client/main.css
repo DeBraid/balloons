@@ -648,3 +648,6 @@ header
 .filter-button-container {
   margin: 0.5em 0 0.5em 0;
 }
+.spinner {
+  width: 50%;
+}
