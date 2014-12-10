@@ -8,4 +8,5 @@ mizzao:bootstrap-3
 iron:router
 underscore
 sacha:spin
+aslagle:reactive-table
 
