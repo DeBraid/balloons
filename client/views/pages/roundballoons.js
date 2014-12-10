@@ -1,5 +1,20 @@
-Template.roundballoons.settings = function () {
-    return {
+// Template.myTemplate.helpers({
+//     settings: function () {
+//         return {
+//             collection: collection,
+//             rowsPerPage: 10,
+//             showFilter: true,
+//             fields: ['name', 'location', 'year']
+//         };
+//     }
+// });
+// You can continue to pass some settings as named arguments while grouping the others into the settings object:
+
+
+
+Template.roundballoons.helpers({
+    settings: function () {
+            return {
         rowsPerPage: 25,
         showFilter: true,
         showNavigation: 'never',
@@ -17,31 +32,32 @@ Template.roundballoons.settings = function () {
                     return Spacebars.SafeString(html);
                 },
                 sort: 'ascending'
-            }, {
-                key: '250',
-                label: '250'
-            }, {
-                key: '500',
-                label: '500'
-            }, {
-                key: '1000',
-                label: '1000'
-            }, {
-                key: '2500',
-                label: '2500'
-            }, {
-                key: '5000',
-                label: '5000'
-            }, {
-                key: '10000',
-                label: '10000'
-            }, {
-                key: '25000',
-                label: '25000'
-            }
-        ]
-    };
-};
+                }, {
+                    key: '250',
+                    label: '250'
+                }, {
+                    key: '500',
+                    label: '500'
+                }, {
+                    key: '1000',
+                    label: '1000'
+                }, {
+                    key: '2500',
+                    label: '2500'
+                }, {
+                    key: '5000',
+                    label: '5000'
+                }, {
+                    key: '10000',
+                    label: '10000'
+                }, {
+                    key: '25000',
+                    label: '25000'
+                }
+            ]
+        };
+    }
+});
 
 
 // Template.roundballoons.rendered = function (evt,tmpl) {
