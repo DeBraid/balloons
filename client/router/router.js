@@ -83,14 +83,17 @@ Router.map(function() {
     path: '/roundballoons',
     template: 'roundballoons',
     yieldTemplates: {
-      // 'charges': {to: 'charges'},
+      'charges': {to: 'charges'},
       'filterdropdown': {to: 'filterdropdown'}
     },
     subscriptions: function() {
       // returning a subscription handle 
       // or an array of subscription handles
       // adds them to the wait list.
-      return Meteor.subscribe('roundballoons');
+      return [
+        Meteor.subscribe('roundballoons'),
+        Meteor.subscribe('charges')
+      ]
     },
     // waitOn: function () {
       // return Meteor.subscribe('roundballoons');
@@ -102,9 +105,8 @@ Router.map(function() {
     // },
     data: function () {
       return {
-        roundballoons: Roundballoons.find()
-        // ,
-        // charges: Charges.find(), 
+        roundballoons: Roundballoons.find(),
+        charges: Charges.find()
         // tags: Tags.find(),
         // pals: Qualatexpals.find()
       }

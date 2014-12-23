@@ -1,17 +1,3 @@
-// Template.myTemplate.helpers({
-//     settings: function () {
-//         return {
-//             collection: collection,
-//             rowsPerPage: 10,
-//             showFilter: true,
-//             fields: ['name', 'location', 'year']
-//         };
-//     }
-// });
-// You can continue to pass some settings as named arguments while grouping the others into the settings object:
-
-
-
 Template.roundballoons.helpers({
     settings: function () {
             return {
@@ -50,9 +36,6 @@ Template.roundballoons.helpers({
                 }, {
                     key: '10000',
                     label: '10000'
-                }, {
-                    key: '25000',
-                    label: '25000'
                 }
             ]
         };

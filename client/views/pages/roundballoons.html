@@ -9,8 +9,10 @@
       {{> yield region='filterdropdown' }}
     </div>
     <div class="row">
-      {{> reactiveTable collection=roundballoons settings=settings fields=fields}}
+      
+      {{> reactiveTable collection=roundballoons settings=settings}}
       {{> yield region='charges'}}
+
     </div>
     <div class="row">
       {{> colourassortment}}
