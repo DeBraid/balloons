@@ -651,3 +651,7 @@ header
 .spinner {
   width: 50%;
 }
+
+.pal-image {
+  max-width: 15em;
+}

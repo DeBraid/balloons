@@ -1,0 +1,30 @@
+<template name="adritepals">
+  <h1>adrite pals: go!</h1>
+  <h3>Basic</h3>
+
+  {{#each basicpals }}
+    <div class="col-sm-3">
+      <img class="pal-image" src="{{ src }}" alt="">
+    </div>
+  {{/each}}
+  <h3>crystal</h3>
+  {{#each crystalpals }}
+    <div class="col-sm-3">
+      <img class="pal-image" src="{{ src }}" alt="">
+    </div>
+  {{/each}}
+  <h3>fun</h3>
+  {{#each funpals }}
+    <div class="col-sm-3">
+      <img class="pal-image" src="{{ src }}" alt="">
+    </div>
+  {{/each}}
+
+  <h3>metallic</h3>
+  {{#each metallicpals }}
+    <div class="col-sm-3">
+      <img class="pal-image" src="{{ src }}" alt="">
+    </div>
+  {{/each}}
+
+</template>

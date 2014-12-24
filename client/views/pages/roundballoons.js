@@ -11,16 +11,20 @@ Template.roundballoons.helpers({
                     var sortString = ("0000" + parseInt(str, 10)).slice(-4),
                         unit = 'inch',
                         size = str.split(unit),
-                        myString = "" + size[0] + " " + unit + " " + size[1] + "";
+                        myString = "" + size[0] + " " + unit + " " + size[1] + "",
+                        french = obj["Product Description_fr"];
+                        // console.log(typeof(french));
+                        console.log(sortString);
                     
-                    var html = "<p sortString=" + sortString + ">" + myString + "</p>" + 
-                                "<p>" + obj["Product Description_fr"] + "</p>";
+
+                    var html = // "<p sortString=" + french + ">" + myString + "</p>" + 
+                                "<p>" + french + "</p>";
                     return Spacebars.SafeString(html);
-                }
+                },
+                sortable: false
                 }, {
                     key: '250',
-                    label: '250',
-                    sort: 'ascending'
+                    label: '250'
                 }, {
                     key: '500',
                     label: '500'
@@ -41,12 +45,3 @@ Template.roundballoons.helpers({
         };
     }
 });
-
-
-// Template.roundballoons.rendered = function (evt,tmpl) {
-//     var desc = $('td.Product').innerText;
-//     console.log('desc: ', desc);
-//     var foo  = desc.replace(/^0+/, '');
-//     console.log('foo: ', foo);
-
-// };

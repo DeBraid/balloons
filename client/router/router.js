@@ -211,22 +211,23 @@ Router.map(function() {
     template: 'adriteeconomyline',
     yieldTemplates: {
       'charges': {to: 'charges'},
+      'adritepals': {to: 'pals'},
       'filterdropdown': {to: 'filterdropdown'}
     }, 
-    waitOn: function () {
-      return [Meteor.subscribe('adriteeconomyline'),
-              Meteor.subscribe('charges'),
-              Meteor.subscribe('adritepals'),
-              Meteor.subscribe('adritetags')];
-    },
-    data: function () {
-      return {
-        adriteeconomyline: Adriteeconomyline.find(),
-        tags: Adritetags.find(),
-        pals: Adritepals.find(),
-        charges: Charges.find()
-      }
-    }
+    // waitOn: function () {
+    //   return [Meteor.subscribe('adriteeconomyline'),
+    //           Meteor.subscribe('charges'),
+    //           Meteor.subscribe('adritepals'),
+    //           Meteor.subscribe('adritetags')];
+    // },
+    // data: function () {
+    //   return {
+    //     adriteeconomyline: Adriteeconomyline.find(),
+    //     tags: Adritetags.find(),
+    //     pals: Adritepals.find(),
+    //     charges: Charges.find()
+    //   }
+    // }
   });
 
   this.route('cloudbuster', {
