@@ -23,10 +23,10 @@ Template.accord.events({
 Template.accord.helpers({
   adritePalettes: function () {
     return [
-      { title : "Basic Colours - Couleurs de base", src : 'adrite/basic/basic-colours-all.png' , myTemplate : "basic" , data : "basicpals"  },
-      { title : "Crystal Colours - Couleurs cristallisees", src : 'adrite/crystal/crystal-colours-all.png' , myTemplate : "crystal" , data : "crystalpals" },
-      { title : "Fun Colours - Couleurs amusantes", src : 'adrite/fun/fun-colours-all.png' , myTemplate : "fun" , data : "funpals" },
-      { title : "Metallic Colours - Couleurs metallisees", src : 'adrite/metallic/metallic-colours-all.png' , myTemplate : "metallic" , data : "metallicpals" }
+      { title : "Basic Colours - Couleurs de base", src : 'adrite/basic/basic-colours-all.png' , myTemplate : "adritebasic" , data : "basicpals"  },
+      { title : "Crystal Colours - Couleurs cristallisees", src : 'adrite/crystal/crystal-colours-all.png' , myTemplate : "adritecrystal" , data : "crystalpals" },
+      { title : "Fun Colours - Couleurs amusantes", src : 'adrite/fun/fun-colours-all.png' , myTemplate : "adritefun" , data : "funpals" },
+      { title : "Metallic Colours - Couleurs metallisees", src : 'adrite/metallic/metallic-colours-all.png' , myTemplate : "adritemetallic" , data : "metallicpals" }
     ]
   },
   basicpals: function () {
@@ -80,7 +80,7 @@ Template.accord.helpers({
   }
 });
 
-Template.basic.helpers({
+Template.adritebasic.helpers({
   pals: function () {
     return [
       { id : 'basic' , klass : 'pal-image indiv' , src : 'adrite/basic/Blue.png' },
@@ -95,7 +95,7 @@ Template.basic.helpers({
   }
 });
 
-Template.crystal.helpers({
+Template.adritecrystal.helpers({
   pals: function () {
     return [
       { id : 'crystal' , klass : 'pal-image indiv' , src : 'adrite/crystal/Black.png' },
@@ -112,7 +112,7 @@ Template.crystal.helpers({
   }
 });
 
-Template.fun.helpers({
+Template.adritefun.helpers({
   pals: function () {
     return [
       { id: 'fun' , klass : 'pal-image indiv' , src : 'adrite/fun/Butterscotch.png' },
@@ -125,7 +125,7 @@ Template.fun.helpers({
   }
 });  
 
-Template.metallic.helpers({
+Template.adritemetallic.helpers({
   pals: function () {
    return [
       { id : 'metallic' , klass : 'pal-image indiv' , src : 'adrite/metallic/Blue.png' },

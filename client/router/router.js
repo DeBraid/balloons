@@ -269,9 +269,10 @@ Router.map(function() {
     template: 'outdoorballoons',
     yieldTemplates: {
       'outdoorcharges': {to: 'charges'},
+      'outdoorpals': {to: 'pals'},
       'filterdropdown': {to: 'filterdropdown'}
     }, 
-    waitOn: function () {
+    subscriptions: function () {
       return [
         Meteor.subscribe('outdoorballoons'),
         Meteor.subscribe('charges')

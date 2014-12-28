@@ -3,31 +3,30 @@
   {{> accord }}
 </template>
 
-<template name="basic">
+<template name="outdoorpals">
+  <h1>Outdoor Colours</h1>
+
+</template>
+
+<template name="adritebasic">
   {{#each pals }}
     {{> palImages}}
   {{/each}}
 </template>
 
-<template name="pals">
-  {{#each data }}
-    {{> palImages}}
-  {{/each}}
-</template>
-
-<template name="crystal">
+<template name="adritecrystal">
   {{#each pals }}
     {{> palImages}}
   {{/each}}
 </template>
 
-<template name="fun">
+<template name="adritefun">
   {{#each pals }}
     {{> palImages}}
   {{/each}}
 </template>
 
-<template name="metallic">
+<template name="adritemetallic">
   {{#each pals }}
     {{> palImages}}
   {{/each}}
@@ -46,7 +45,9 @@
       <img id="pal-headers" class="img-responsive" src="{{ src }}" alt="">
       {{#if shown }}
         <a class="btn btn-danger" id="hideMyElement">Show Me Less</a>
+        
         {{> Template.dynamic template=myTemplate }}
+        
       {{/if}}
     </div>
   </div>

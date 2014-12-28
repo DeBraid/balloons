@@ -12,12 +12,13 @@ Template.adriteeconomyline.helpers({
               size = str.split(unit),
               myString = "" + size[0] + " " + unit + " " + size[1] + "",
               french = obj["Product Description_fr"];
+              console.log(french);
 
           var html = "<p sortString=" + french + ">" + myString + "</p>" + 
                       "<p>" + french + "</p>";
           return Spacebars.SafeString(html);
         },
-        sort: 'ascending'
+        sort: 'desc'
       }, {
         key: '1000',
         label: '1000'
