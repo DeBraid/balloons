@@ -1,5 +1,6 @@
 <template name="adritepals">
   <h1>Adrite Colours</h1>
+  {{> pills basicpals}}
   {{> accord }}
 </template>
 
@@ -28,6 +29,13 @@
 
 <template name="adritemetallic">
   {{#each pals }}
+    {{> palImages}}
+  {{/each}}
+</template>
+
+<template name="pills">
+<h2>pills</h2>
+  {{#each this }}
     {{> palImages}}
   {{/each}}
 </template>

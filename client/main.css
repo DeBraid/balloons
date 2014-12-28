@@ -652,8 +652,12 @@ header
   width: 50%;
 }
 
+#pal-headers {
+  cursor: pointer;
+}
 .pal-image {
   max-width: 15em;
+  cursor: pointer;
 }
 .pal-image .all {
 max-width: 25em;

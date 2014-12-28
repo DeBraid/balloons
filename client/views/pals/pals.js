@@ -28,7 +28,10 @@ Template.accord.helpers({
       { title : "Fun Colours - Couleurs amusantes", src : 'adrite/fun/fun-colours-all.png' , myTemplate : "adritefun" , data : "funpals" },
       { title : "Metallic Colours - Couleurs metallisees", src : 'adrite/metallic/metallic-colours-all.png' , myTemplate : "adritemetallic" , data : "metallicpals" }
     ]
-  },
+  }
+});
+
+Template.adritepals.helpers({
   basicpals: function () {
     return [
       { id : 'basic' , klass : 'pal-image indiv' , src : 'adrite/basic/Blue.png' },
