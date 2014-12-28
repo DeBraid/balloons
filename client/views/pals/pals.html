@@ -1,30 +1,58 @@
 <template name="adritepals">
-  <h1>adrite pals: go!</h1>
-  <h3>Basic</h3>
+  <h1>Adrite Pals</h1>
+  {{> accord }}
+</template>
 
-  {{#each basicpals }}
-    <div class="col-sm-3">
-      <img class="pal-image" src="{{ src }}" alt="">
-    </div>
+<template name="basic">
+  {{#each pals }}
+    {{> palImages}}
   {{/each}}
-  <h3>crystal</h3>
-  {{#each crystalpals }}
-    <div class="col-sm-3">
-      <img class="pal-image" src="{{ src }}" alt="">
-    </div>
-  {{/each}}
-  <h3>fun</h3>
-  {{#each funpals }}
-    <div class="col-sm-3">
-      <img class="pal-image" src="{{ src }}" alt="">
-    </div>
-  {{/each}}
+</template>
 
-  <h3>metallic</h3>
-  {{#each metallicpals }}
-    <div class="col-sm-3">
-      <img class="pal-image" src="{{ src }}" alt="">
-    </div>
+<template name="crystal">
+  {{#each pals }}
+    {{> palImages}}
   {{/each}}
+</template>
 
+<template name="fun">
+  {{#each pals }}
+    {{> palImages}}
+  {{/each}}
+</template>
+
+<template name="metallic">
+  {{#each pals }}
+    {{> palImages}}
+  {{/each}}
+</template>
+
+<template name="palImages">
+    <div class="col-sm-2">
+      <img id="{{ id }}" class="{{ klass }}" src="{{ src }}" alt="">
+    </div>
+</template>    
+
+
+<template name="accord">
+  <!-- <div class="accordion" id="accordion2">
+    {{#each adritePalettes }}
+    <div class="accordion-group">
+      <div class="accordion-heading">
+        <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseOne">
+          <h3 class="pal-headers">{{ title }}</h3>
+        </a>
+      </div>
+      <div id="collapseOne" class="accordion-body palCollapse in">
+        <div class="accordion-inner">
+          {{> Template.dynamic template=myTemplate}}
+        </div>
+      </div>
+    </div>
+    {{/each}}
+  </div> -->
+    {{#each adritePalettes}}
+      <h3 class="pal-headers">{{ title }}</h3>
+      {{> Template.dynamic template=myTemplate}}
+    {{/each}}
 </template>

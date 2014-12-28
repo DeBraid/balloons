@@ -14,3 +14,14 @@ Meteor.Spinner.options = {
     className: 'spinner', // The CSS class to assign to the spinner
     zIndex: 2e9 // The z-index (defaults to 2000000000)
 };
+
+
+// UI.registerHelper('hasPalDropdown', function () {
+
+//     var route = Router.current();
+//     var routeName = route.route.name.toString();
+//     var noPals = ['tablecovers','popupbanners','eventtents', 'promoflags'];
+
+//     return !_.contains(noPals, routeName);
+
+// });

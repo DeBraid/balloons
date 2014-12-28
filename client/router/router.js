@@ -214,6 +214,14 @@ Router.map(function() {
       'adritepals': {to: 'pals'},
       'filterdropdown': {to: 'filterdropdown'}
     }, 
+    subscriptions: function () {
+      return [Meteor.subscribe('charges')]
+    },
+    data: function () {
+      return {
+        charges: Charges.find()
+      }
+    }
     // waitOn: function () {
     //   return [Meteor.subscribe('adriteeconomyline'),
     //           Meteor.subscribe('charges'),

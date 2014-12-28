@@ -655,3 +655,7 @@ header
 .pal-image {
   max-width: 15em;
 }
+.pal-image .all {
+max-width: 25em;
+
+}
