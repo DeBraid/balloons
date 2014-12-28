@@ -13,11 +13,8 @@ Template.roundballoons.helpers({
                         size = str.split(unit),
                         myString = "" + size[0] + " " + unit + " " + size[1] + "",
                         french = obj["Product Description_fr"];
-                        // console.log(typeof(french));
-                        console.log(sortString);
-                    
 
-                    var html = // "<p sortString=" + french + ">" + myString + "</p>" + 
+                    var html = "<p sortString=" + french + ">" + myString + "</p>" + 
                                 "<p>" + french + "</p>";
                     return Spacebars.SafeString(html);
                 },

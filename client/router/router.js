@@ -215,11 +215,15 @@ Router.map(function() {
       'filterdropdown': {to: 'filterdropdown'}
     }, 
     subscriptions: function () {
-      return [Meteor.subscribe('charges')]
+      return [
+        Meteor.subscribe('charges'), 
+        Meteor.subscribe('adriteeconomyline')
+      ]
     },
     data: function () {
       return {
-        charges: Charges.find()
+        charges: Charges.find(),
+        adriteeconomyline: Adriteeconomyline.find()
       }
     }
     // waitOn: function () {
@@ -268,16 +272,18 @@ Router.map(function() {
       'filterdropdown': {to: 'filterdropdown'}
     }, 
     waitOn: function () {
-      return [Meteor.subscribe('outdoorballoons'),
-              Meteor.subscribe('outdoorpals'),
-              Meteor.subscribe('charges'),
-              Meteor.subscribe('outdoortags')];
+      return [
+        Meteor.subscribe('outdoorballoons'),
+        Meteor.subscribe('charges')
+      ];
+              // Meteor.subscribe('outdoorpals'),
+              // Meteor.subscribe('outdoortags')];
     },
     data: function () {
       return {
         outdoorballoons: Outdoorballoons.find(),
-        tags: Outdoortags.find(),
-        pals: Outdoorpals.find(),
+        // tags: Outdoortags.find(),
+        // pals: Outdoorpals.find(),
         charges: Charges.find()
       }
     }

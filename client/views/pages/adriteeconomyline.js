@@ -5,14 +5,16 @@ Template.adriteeconomyline.helpers({
       showNavigation: 'never',
       fields: [{
         key: 'Product Description',
-        label: 'Product -- Price Per Balloon 2ABCD',
-        fn: function(str) {
+        label: 'Product -- Price Per Balloon 2ABCD -- Description du produit',
+        fn: function(str, obj) {
           var sortString = ("0000" + parseInt(str, 10)).slice(-4),
-            unit = 'inch',
-            size = str.split(unit),
-            myString = "" + size[0] + " " + unit + " " + size[1] + "";
+              unit = 'inch',
+              size = str.split(unit),
+              myString = "" + size[0] + " " + unit + " " + size[1] + "",
+              french = obj["Product Description_fr"];
 
-          var html = "<span sortString=" + sortString + ">" + myString + "</span>";
+          var html = "<p sortString=" + french + ">" + myString + "</p>" + 
+                      "<p>" + french + "</p>";
           return Spacebars.SafeString(html);
         },
         sort: 'ascending'
@@ -28,9 +30,6 @@ Template.adriteeconomyline.helpers({
       }, {
         key: '10000',
         label: '10000'
-      }, {
-        key: '25000',
-        label: '25000'
       }]
     }
   }
