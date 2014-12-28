@@ -8,9 +8,9 @@ Template.layout.events({
             id = e.target.id;
             
         var baz = document.querySelectorAll('#' + id + ".indiv");
-            console.log("baz", baz);
-            console.log("baz length", baz.length);
-            console.log(Template.instance());
+            // console.log("baz", baz);
+            // console.log("baz length", baz.length);
+            // console.log(Template.instance());
             
 
 

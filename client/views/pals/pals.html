@@ -1,10 +1,16 @@
 <template name="adritepals">
-  <h1>Adrite Pals</h1>
+  <h1>Adrite Colours</h1>
   {{> accord }}
 </template>
 
 <template name="basic">
   {{#each pals }}
+    {{> palImages}}
+  {{/each}}
+</template>
+
+<template name="pals">
+  {{#each data }}
     {{> palImages}}
   {{/each}}
 </template>
@@ -28,23 +34,21 @@
 </template>
 
 <template name="palImages">
-    <div class="col-sm-2">
-      <img id="{{ id }}" class="{{ klass }}" src="{{ src }}" alt="">
-    </div>
+  <div class="col-sm-2">
+    <img id="{{ id }}" class="{{ klass }}" src="{{ src }}" alt="">
+  </div>
 </template>    
 
-
 <template name="accord">
-  
-    {{#each adritePalettes}}
+  {{#each adritePalettes}}
   <div class="row">
-      <div class="col-sm-12">
-        <h3 class="pal-headers">{{ title }}</h3>
-        <img class="img-responsive"   src="{{ src }}" alt="">
-      </div>
-    {{#if shown }}
-      {{> Template.dynamic template=myTemplate}}
-    {{/if}}
+    <div class="col-sm-12">
+      <img id="pal-headers" class="img-responsive" src="{{ src }}" alt="">
+      {{#if shown }}
+        <a class="btn btn-danger" id="hideMyElement">Show Me Less</a>
+        {{> Template.dynamic template=myTemplate }}
+      {{/if}}
+    </div>
   </div>
-    {{/each}}
+  {{/each}}
 </template>
