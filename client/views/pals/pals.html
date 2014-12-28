@@ -35,24 +35,16 @@
 
 
 <template name="accord">
-  <!-- <div class="accordion" id="accordion2">
-    {{#each adritePalettes }}
-    <div class="accordion-group">
-      <div class="accordion-heading">
-        <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseOne">
-          <h3 class="pal-headers">{{ title }}</h3>
-        </a>
-      </div>
-      <div id="collapseOne" class="accordion-body palCollapse in">
-        <div class="accordion-inner">
-          {{> Template.dynamic template=myTemplate}}
-        </div>
-      </div>
-    </div>
-    {{/each}}
-  </div> -->
+  
     {{#each adritePalettes}}
-      <h3 class="pal-headers">{{ title }}</h3>
+  <div class="row">
+      <div class="col-sm-12">
+        <h3 class="pal-headers">{{ title }}</h3>
+        <img class="img-responsive"   src="{{ src }}" alt="">
+      </div>
+    {{#if shown }}
       {{> Template.dynamic template=myTemplate}}
+    {{/if}}
+  </div>
     {{/each}}
 </template>
