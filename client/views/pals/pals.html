@@ -6,11 +6,6 @@
   {{> accord }}
 </template>
 
-<template name="outdoorpals">
-  <h1>Outdoor Colours</h1>
-
-</template>
-
 <template name="adritebasic">
   {{#each pals }}
     {{> palImages}}
@@ -63,11 +58,14 @@
   {{#each outdoorPalettes}}
   <div class="row">
     <div class="col-sm-12">
-      <img id="pal-headers" class="img-responsive" src="{{ src }}" alt="">
       
       {{#if shown }}
+        <h2>{{ title }}</h2>
         <a class="btn btn-danger" id="hideMyElement">Show Me Less</a>
         {{> Template.dynamic template=myTemplate }}
+
+        {{ else }}
+        <img id="pal-headers" class="img-responsive" src="{{ src }}" alt="">
       {{/if}}
 
     </div>
