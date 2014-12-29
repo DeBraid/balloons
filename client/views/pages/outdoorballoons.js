@@ -44,7 +44,6 @@ Template.outdoorballoons.helpers({
 Template.outdoorbasic.helpers({
   pals: function () {
     return [
-      { id : 'basic' , klass : 'pal-image all' , src : 'outdoor/basic/basic-colours-all.png' },
       { id : 'basic' , klass : 'pal-image indiv' , src : 'outdoor/basic/Blue.png' },
       { id : 'basic' , klass : 'pal-image indiv' , src : 'outdoor/basic/Green.png' },
       { id : 'basic' , klass : 'pal-image indiv' , src : 'outdoor/basic/Orange.png' },
@@ -59,7 +58,6 @@ Template.outdoorbasic.helpers({
 Template.outdoorcrystal.helpers({
   pals: function () {
     return [
-      { id : 'crystal' , klass : 'pal-image all' , src : 'outdoor/crystal/crystal-colours-all.png' },
       { id : 'crystal' , klass : 'pal-image indiv' , src : 'outdoor/crystal/black.png' },
       { id : 'crystal' , klass : 'pal-image indiv' , src : 'outdoor/crystal/blue.png' },
       { id : 'crystal' , klass : 'pal-image indiv' , src : 'outdoor/crystal/brown.png' },
@@ -75,7 +73,6 @@ Template.outdoorcrystal.helpers({
 Template.outdoorfun.helpers({
   pals: function () {
     return [
-      { id: 'fun' , klass : 'pal-image all' , src : 'outdoor/fun/fun-colours-all.png' },
       { id: 'fun' , klass : 'pal-image indiv' , src : 'outdoor/fun/dark-pink.png' },
       { id: 'fun' , klass : 'pal-image indiv' , src : 'outdoor/fun/island-blue.png' },
       { id: 'fun' , klass : 'pal-image indiv' , src : 'outdoor/fun/kiwi-lime.png' }
@@ -86,7 +83,6 @@ Template.outdoorfun.helpers({
 Template.outdoormetallic.helpers({
   pals: function () {
    return [
-      { id : 'metallic' , klass : 'pal-image all' , src : 'outdoor/metallic/metallic-colours-all.png' },
       { id : 'metallic' , klass : 'pal-image indiv' , src : 'outdoor/metallic/Gold.png' },
       { id : 'metallic' , klass : 'pal-image indiv' , src : 'outdoor/metallic/Silver.png' }
     ] 
