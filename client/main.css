@@ -538,8 +538,10 @@ header
 }
 
 #modalImage {
-  width: 90%;
-  margin: 0 2em 0 2em;
+  max-height: 600px;
+  vertical-align: center;
+  text-align: center;
+  margin: auto;
 }
 
 .modal-title {
@@ -654,6 +656,7 @@ header
 
 #pal-headers {
   cursor: pointer;
+  max-height: 175px;
 }
 .pal-image {
   max-width: 15em;

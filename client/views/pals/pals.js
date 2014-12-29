@@ -32,9 +32,10 @@ Template.accord.helpers({
   }
 });
 
-Template.adritepals.helpers({
+Template.pills.helpers({
   palType: function  (argument) {
-    return ["basicpals", "crystalpals", "funpals", "metallicpals"]
+    var data = {tmplName: "basicpals", tmplName: "crystalpals", tmplName: "funpals", tmplName: "metallicpals"};
+    return Template['pills'](data);
   },
   basicpals: function () {
     return [

@@ -20,7 +20,7 @@ Template.layout.events({
         var newModal = $('.modal-body > div');
 
         newTitle.text('' + myText + '');
-        newModal.html('<div class="col-lg-12"><img id="modalImage" class="img-responsive" src="'+ 
+        newModal.html('<div class="col-lg-12"><img id="modalImage" class="img-responsive center-block" src="'+ 
                         myImage + 
                         '" /></div>');
         

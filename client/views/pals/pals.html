@@ -77,9 +77,10 @@
 
 <template name="pills">
 <h2>pills</h2>
-  {{#each pals }}
+  {{#each pals}}
     {{> palImages}}
   {{/each}}
+  
 </template>
 
 <template name="palImages">
@@ -90,16 +91,22 @@
 
 <template name="accord">
   {{#each adritePalettes}}
-  <div class="row">
-    <div class="col-sm-12">
-      <img id="pal-headers" class="img-responsive" src="{{ src }}" alt="">
-      
-      {{#if shown }}
-        <a class="btn btn-danger" id="hideMyElement">Show Me Less</a>
-        {{> Template.dynamic template=myTemplate }}
-      {{/if}}
-
+    <div class="row">
+      <div class="col-sm-12">
+        {{#if shown }}
+          <h2>{{ title }}</h2>
+          <a class="btn btn-danger" id="hideMyElement">Show Less</a>
+          {{> Template.dynamic template=myTemplate }}
+            <!-- {{> pills palType }}
+          {{#with data }}
+          {{/with}}
+          {{#with data }}
+            {{ this }}
+          {{/with}} -->
+        {{ else }}
+          <img id="pal-headers" class="img-responsive" src="{{ src }}" alt="">
+        {{/if}}
+      </div>
     </div>
-  </div>
   {{/each}}
 </template>
