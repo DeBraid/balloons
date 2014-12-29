@@ -43,8 +43,8 @@ Template.admaxPalsAll.helpers({
   admaxPalettes: function () {
     return [
       { title : "Basketball Colours - Couleurs de Basketball", src : 'balls/basketballs/basketball-colours.png' , myTemplate : "admaxBasketball" , data : "basicpals"  },
-      { title : "Football Colours - Couleurs de Football", src : 'balls/footballs/solid/football-colours.png' , myTemplate : "admaxFootball" , data : "basicpals"  },
-      { title : "Stock Ink and Stripe Colours - Couleurs d’encre et de rayures", src : 'balls/footballs/striped/stripe-colors.png' , myTemplate : "admaxStock" , data : "basicpals"  },
+      { title : "Footballs Solid Colours - Couleurs de Football", src : 'balls/footballs/solid/football-colours.png' , myTemplate : "admaxFootball" , data : "basicpals"  },
+      { title : "Footballs Stripe Colours - Couleurs d’encre et de rayures", src : 'balls/footballs/striped/stripe-colors.png' , myTemplate : "admaxStriped" , data : "basicpals"  },
       { title : "Play Ball Colours - Couleurs de ballons", src : 'balls/play-balls/playball-colours.png' , myTemplate : "admaxPlay" , data : "crystalpals" },
       { title : "Baseball Colours - Couleurs de Baseball", src : 'balls/baseballs/baseball.png' , myTemplate : "admaxBaseball" , data : "funpals" },
       { title : "Soccer Ball Colours - Couleurs de soccer", src : 'balls/soccer/soccer-ball.png' , myTemplate : "admaxSoccer" , data : "soccerpals" }
@@ -68,35 +68,59 @@ Template.admaxBasketball.helpers({
 Template.admaxFootball.helpers({
     pals: function () {
         return [
-            { id : "footballs", klass : "pal-image indiv", src : ""},
+            { id : "footballs", klass : "pal-image indiv", src : "balls/footballs/solid/black.png"},
+            { id : "footballs", klass : "pal-image indiv", src : "balls/footballs/solid/blue.png"},
+            { id : "footballs", klass : "pal-image indiv", src : "balls/footballs/solid/brown.png"},
+            { id : "footballs", klass : "pal-image indiv", src : "balls/footballs/solid/green.png"},
+            { id : "footballs", klass : "pal-image indiv", src : "balls/footballs/solid/orange.png"},
+            { id : "footballs", klass : "pal-image indiv", src : "balls/footballs/solid/pink.png"},
+            { id : "footballs", klass : "pal-image indiv", src : "balls/footballs/solid/purple.png"},
+            { id : "footballs", klass : "pal-image indiv", src : "balls/footballs/solid/red.png"},
+            { id : "footballs", klass : "pal-image indiv", src : "balls/footballs/solid/white.png"},
+            { id : "footballs", klass : "pal-image indiv", src : "balls/footballs/solid/yellow.png"}
         ]
     }
 });
-Template.admaxStock.helpers({
+
+Template.admaxStriped.helpers({
     pals: function () {
         return [
-            { id : "", klass : "", src : ""},
+            { id : "footballs", klass : "pal-image indiv", src : "balls/footballs/striped/black-stripe.png"},
+            { id : "footballs", klass : "pal-image indiv", src : "balls/footballs/striped/blue-stripe.png"},
+            { id : "footballs", klass : "pal-image indiv", src : "balls/footballs/striped/gold-stripe.png"},
+            { id : "footballs", klass : "pal-image indiv", src : "balls/footballs/striped/green-stripe.png"},
+            { id : "footballs", klass : "pal-image indiv", src : "balls/footballs/striped/maroon-stripe.png"},
+            { id : "footballs", klass : "pal-image indiv", src : "balls/footballs/striped/orange-stripe.png"},
+            { id : "footballs", klass : "pal-image indiv", src : "balls/footballs/striped/purple-stripe.png"},
+            { id : "footballs", klass : "pal-image indiv", src : "balls/footballs/striped/red-stripe.png"},
+            { id : "footballs", klass : "pal-image indiv", src : "balls/footballs/striped/silver-stripe.png"},
+            { id : "footballs", klass : "pal-image indiv", src : "balls/footballs/striped/white-stripe.png"},
+            { id : "footballs", klass : "pal-image indiv", src : "balls/footballs/striped/yellow-stripe.png"}
         ]
     }
 });
+
 Template.admaxPlay.helpers({
     pals: function () {
         return [
-            { id : "", klass : "", src : ""},
+            { id : "playballs", klass : "pal-image indiv", src : "balls/play-balls/blue.png"},
+            { id : "playballs", klass : "pal-image indiv", src : "balls/play-balls/lime-green.png"},
+            { id : "playballs", klass : "pal-image indiv", src : "balls/play-balls/orange.png"},
+            { id : "playballs", klass : "pal-image indiv", src : "balls/play-balls/pink.png"}
         ]
     }
 });
 Template.admaxBaseball.helpers({
     pals: function () {
         return [
-            { id : "", klass : "", src : ""},
+            { id : "baseball", klass : "pal-image indiv", src : "balls/baseballs/baseball.png"},
         ]
     }
 });
 Template.admaxSoccer.helpers({
     pals: function () {
-        return [
-            { id : "", klass : "", src : ""},
+        return [            
+            { id : "soccer", klass : "pal-image indiv", src : "balls/soccer/soccer-ball.png"}
         ]
     }
 });
