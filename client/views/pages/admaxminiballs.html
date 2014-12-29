@@ -4,9 +4,10 @@
       {{> admaxminiballsheader }}
     </div>
     <div class="row">
-      {{> yield region='filterdropdown' }}
+      {{> admaxPalsAll}}
     </div>
     <div class="row">
+      {{> yield region='filterdropdown' }}
       {{> reactiveTable collection=admaxminisportballs settings=settings}}
     </div>
     <div id="charges" class="row">
@@ -130,3 +131,4 @@
     </div>
   </div>
 </template>
+
