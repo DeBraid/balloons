@@ -269,7 +269,7 @@ Router.map(function() {
     template: 'outdoorballoons',
     yieldTemplates: {
       'outdoorcharges': {to: 'charges'},
-      'outdoorpals': {to: 'pals'},
+      'outdoorpalsAll': {to: 'pals'},
       'filterdropdown': {to: 'filterdropdown'}
     }, 
     subscriptions: function () {

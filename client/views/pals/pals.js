@@ -6,11 +6,12 @@ Template.accord.helpers({
   shown: function() {
     return Template.instance().showAll.get();
   }
-});
-
+})
+  
 Template.accord.events({
   'click #pal-headers': function(e, template) {
     e.preventDefault();
+    console.log("clicked pal headerss");
     template.showAll.set(true);
   },
   'click #hideMyElement': function(e, template) {
@@ -32,6 +33,9 @@ Template.accord.helpers({
 });
 
 Template.adritepals.helpers({
+  palType: function  (argument) {
+    return ["basicpals", "crystalpals", "funpals", "metallicpals"]
+  },
   basicpals: function () {
     return [
       { id : 'basic' , klass : 'pal-image indiv' , src : 'adrite/basic/Blue.png' },
