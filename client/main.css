@@ -659,6 +659,7 @@ header
   max-height: 175px;
 }
 .pal-image {
+  float: left;
   max-width: 15em;
   cursor: pointer;
 }

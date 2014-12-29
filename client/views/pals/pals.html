@@ -1,62 +1,65 @@
 <template name="adritepals">
   <h1>Adrite Colours</h1>
-  <!-- {{#each palType }}
-    {{> pills pals="this" }}
-  {{/each}} -->
   {{> adritePalsAll }}
 </template>
 
 <template name="adritebasic">
   {{#each pals }}
-    {{> palImages}}
+    {{> palImage}}
   {{/each}}
 </template>
 
 <template name="adritecrystal">
   {{#each pals }}
-    {{> palImages}}
+    {{> palImage}}
   {{/each}}
 </template>
 
 <template name="adritefun">
   {{#each pals }}
-    {{> palImages}}
+    {{> palImage}}
   {{/each}}
 </template>
 
 <template name="adritemetallic">
   {{#each pals }}
-    {{> palImages}}
+    {{> palImage}}
   {{/each}}
 </template>
 
 <template name="outdoorbasic">
   {{#each pals }}
-    {{> palImages}}
+    {{> palImage}}
   {{/each}}
 </template>
 
 <template name="outdoorcrystal">
   {{#each pals }}
-    {{> palImages}}
+    {{> palImage}}
   {{/each}}
 </template>
 
 <template name="outdoorfun">
   {{#each pals }}
-    {{> palImages}}
+    {{> palImage}}
   {{/each}}
 </template>
 
 <template name="outdoormetallic">
   {{#each pals }}
-    {{> palImages}}
+    {{> palImage}}
   {{/each}}
 </template>
 
 <template name="outdoorpalsAll">
   {{#each outdoorPalettes}}
     {{> palsAll}}
+  {{/each}}
+</template>
+
+<template name="adritePalsAll">
+  {{#each adritePalettes}}
+    {{> palsAll }}
   {{/each}}
 </template>
 
@@ -74,22 +77,8 @@
   </div>
 </template>
 
-<template name="pills">
-<h2>pills</h2>
-  {{#each pals}}
-    {{> palImages}}
-  {{/each}}
-  
-</template>
-
-<template name="palImages">
+<template name="palImage">
   <div class="col-sm-2">
     <img id="{{ id }}" class="{{ klass }}" src="{{ src }}" alt="">
   </div>
 </template>    
-
-<template name="adritePalsAll">
-  {{#each adritePalettes}}
-    {{> palsAll }}
-  {{/each}}
-</template>
