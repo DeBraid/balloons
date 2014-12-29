@@ -1,8 +1,9 @@
-Template.admaxminisportballs.settings = function () {
-    return {
-        showFilter: true,
-        showNavigation: 'never',
-        fields: [{
+Template.admaxminisportballs.helpers({
+    settings: function () {
+        return {
+            showFilter: true,
+            showNavigation: 'never',
+            fields: [{
                   key: 'Product Description',
                   label: 'Product -- Price Per Balloon 2ABCD -- Description du produit',
                     fn: function (str, obj) {
@@ -34,5 +35,6 @@ Template.admaxminisportballs.settings = function () {
                     label: '1000'
                 }
             ]
-    };
-};
+        };
+    }
+});

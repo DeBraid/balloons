@@ -1,14 +1,14 @@
-Template.accord.created = function() {
+Template.palsAll.created = function() {
   this.showAll = new ReactiveVar(false);
 };
 
-Template.accord.helpers({
+Template.palsAll.helpers({
   shown: function() {
     return Template.instance().showAll.get();
   }
 })
   
-Template.accord.events({
+Template.palsAll.events({
   'click #pal-headers': function(e, template) {
     e.preventDefault();
     console.log("clicked pal headerss");
@@ -21,7 +21,30 @@ Template.accord.events({
   }
 });
 
-Template.accord.helpers({
+// Template.accord.created = function() {
+//   this.showAll = new ReactiveVar(false);
+// };
+
+// Template.accord.helpers({
+//   shown: function() {
+//     return Template.instance().showAll.get();
+//   }
+// })
+  
+// Template.accord.events({
+//   'click #pal-headers': function(e, template) {
+//     e.preventDefault();
+//     console.log("clicked pal headerss");
+//     template.showAll.set(true);
+//   },
+//   'click #hideMyElement': function(e, template) {
+//     e.preventDefault();
+//     console.log("#hideMyElement run");
+//     template.showAll.set(false);      
+//   }
+// });
+
+Template.adritePalsAll.helpers({
   adritePalettes: function () {
     return [
       { title : "Basic Colours - Couleurs de base", src : 'adrite/basic/basic-colours-all.png' , myTemplate : "adritebasic" , data : "basicpals"  },
