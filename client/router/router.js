@@ -481,16 +481,17 @@ Router.map(function() {
     yieldTemplates: {
       'filterdropdown': {to: 'filterdropdown'}
     },
-    waitOn: function () {
-      return [Meteor.subscribe('admaxminisportballs'),
-              Meteor.subscribe('admaxtags'),
-              Meteor.subscribe('admaxpals')]
+    subscriptions: function () {
+      return Meteor.subscribe('admaxminisportballs');
+      // return [Meteor.subscribe('admaxminisportballs'),
+      //         Meteor.subscribe('admaxtags'),
+      //         Meteor.subscribe('admaxpals')]
     },
     data: function () {
       return {
         admaxminisportballs: Admaxminisportballs.find(),
-        pals: Admaxpals.find(),
-        tags: Admaxtags.find()
+      //   pals: Admaxpals.find(),
+      //   tags: Admaxtags.find()
       }
     }
   });

@@ -1,3 +1,7 @@
+Meteor.publish('admaxminisportballs', function () {
+  return Admaxminisportballs.find();
+});
+
 Meteor.publish('roundballoons', function () {
   return Roundballoons.find();
 });

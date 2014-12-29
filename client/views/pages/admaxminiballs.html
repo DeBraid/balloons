@@ -1,40 +1,30 @@
-<template name="admaxminisportballs">
-  
+<template name="admaxminisportballs">  
   <div class="container">
-   
     <div class="row">
       {{> admaxminiballsheader }}
     </div>
-    
     <div class="row">
       {{> yield region='filterdropdown' }}
     </div>
-
     <div class="row">
       {{> reactiveTable collection=admaxminisportballs settings=settings}}
     </div>
-
     <div id="charges" class="row">
       {{> admaxminiballscharges}}
     </div>
-
     <div class="row">
       {{> admaxminiballsfooter}}
     </div>
-
     <div class="row">
       {{> admaxinfo }}
     </div>
-
-
   </div>
-  
-  
 </template>
 
 <template name="admaxminiballsheader">
   <div class="row">
-    <h1>AdMax™ Mini Sport Balls and Play Balls</h1>
+    <h1>AdMax™ Mini Sport Balls</h1>
+    <h1>Minis ballons sportifs AdMax™</h1>
   </div>
 
   <div class="row">
@@ -42,7 +32,10 @@
       <img class="img-responsive" src="admaxsport.png" alt="">
     </div>
     <div class="col-lg-7 col-md-6 col-sm-12">
-      <h4>AdMax Mini Sport Balls are made of high-quality, soft, textured, and embossed vinyl.</h4>
+      <h4>AdMax Mini Sport Balls are made of high-quality, soft, textured, and embossed vinyl.</h4>  
+      <h4>Les minis ballons sportif AdMax sont fabriqués à partir de vynile gaufré, doux et de haute qualité.</h4>  
+      <p>Play balls are smooth and non-textured.</p>
+      <p>Les mini ballons jouets sont lisses et non texturés</p>
 
       <p>The prices below include AdMax Mini Sports Balls with one-colour/one-side imprint; add any additional charges.</p>
     </div>
@@ -53,6 +46,8 @@
 
   <div class="col-lg-12">
     <h4>Colour Options</h4>
+    <p>Black, Purple, or Blue ink is recommended. L’encre noire, pourpre ou bleue recommandée.  SOLD AS AN ASSORTMENT OF ALL FOUR COLOURS OR INDIVIDUALLY.</p>
+    <p>L’encre noire, pourpre ou bleue recommandée.  VENDU COMME ASSORTIMENT OU EN COULEURS INDIVIDUELLES.</p>
     <ul>
       <li>Football Colours:  White, Brown, Yellow, Orange, Red, Green, Blue, Purple, Pink, and Black</li>
       <li>Basketball Colours:  White, Yellow, Orange, Red, Green, and Blue</li>
@@ -60,52 +55,78 @@
   </div>
 
   <div class="col-lg-12">
-    <ul>
-      <li>*As with any inflated product, size will vary; stated measurements are approximate. Balls may become deflated over time but can be refreshed through the reinflatable athletic valve.</li>
+    <ul>    
+      <li>As with any inflated product, size will vary; stated measurements are approximate.  Balls may become deflated over time, but can be refreshed through the reinflatable athletic valve.</li>
+      <li>Comme avec tous les produits gonflés, le format des ballons peut varier; les dimensions mentionnées sont approximatives. Les ballons peuvent se dégonflés après un certain temps,  peuvent être rafraichis avec une pompe à air.</li>
       <li>**Minimum 100 balls per style. Minimum 50 balls per colours, No mixing shapes**</li>
-      <li>Note:  Imprint on Football and Basketball will be imprinted on smooth, non-pebbled area of ball.</li>  
-      <li><strong>Plain Mini Sports Balls: Minimum 50 balls per colour/per style: $1.64(A) per ball</strong></li>
     </ul>
+    
+    <h4>Plain Mini Balls </h4>
+    <h4>Minis ballons sans impression</h4>
+    <p>Minimum 50 balls per colour: $1.64(A) per ball.</p>
+    <p>Minimum de 50 ballons par couleur: 1,64$(A) par ballon.</p>
   </div>
   
 </template>
 
 <template name="admaxminiballscharges">
+  <h3>Add additional charges </h3>
+  <h3>Ajoutez tous frais supplémentaires.</h3>
   <ul>
-    <li><strong>Plate Charge:</strong>  $50.00(A) per colour. One time only</li>
-    <li><strong>Additional Colour Charge:</strong>  $.44(A) per colour, per imprint.  2-colour maximum on all Mini Sport Balls.  Minimum 250 balls for additional colour.</li>
-    <li><strong>Second Side Same</strong> Imprint:  $.44(A) per ball.  (Available on Football only.)</li>
-    <li><strong>Second Side Different</strong> Imprint:  $.48(A) per ball (Available on Football only.)</li>
-    <li><strong>Custom Ink Blend</strong>:  $50.00(A) per ink colour.  **Exact PMS colour matches cannot be guaranteed**.</li>
-    <li><strong>Art Charge:</strong> $50.00(A) per hour.</li>
+    <li>Cut: $50.00(A) per logo, one time only</li>
+    <li>Frais de cliché: 50,00$(A) par logo, une fois seulement.</li>
+    <li>Second-Side same print: $0.44(A) per ball (Footballs only) </li>
+    <li>Deuxième côté même impression: 0,44$(A) par ballon. (Footballs seulement)</li>
+    <li>Second-Side different print: $0.48(A) per ball. (Footballs only) </li>
+    <li>Deuxième côté impression différente: 0,48$(A) par ballon. (Footballs seulement)</li>
+    <li>Custom Ink Blend: $50.00(A) per ink colour</li>
+    <li>Mélange d’encre sur demande: 50,00$(A) par couleur d’encre</li>
+    <li>Additional Colour: $0.44(A) per colour, per imprint</li>
+    <li>Couleur additionnelle: 0,44$(A) par couleur, par impression.</li>
+    <li>Art: $50.00(A) per hour</li>
+    <li>Conception graphique: 50,00$(A) de l’heure</li>
   </ul>
 </template>
 
 <template name="admaxinfo">
   <div class="container">
     <div class="row">
-      <h3>Minimum Order</h3> 
+      <p>Largest Mini Football imprint in the industry! Featuring two separate, smooth areas for big, bold imprints! </p>
+      <p>LA PLUS GRANDE impression sur Mini football dans l’industrie! Deux surfaces d’impression lisses pour une impression claire et voyante! </p>
+      <h3>Minimum Order </h3>
+      <h3>Commande Minimum</h3>
       <p>Minimum 100 balls per style. No mixing shapes. Minimum 50 balls per colour.</p>
+      <p>Minimum de 100 ballons par style de ballon. Pas de mélange de styles.  Minimum de 50 ballons par couleur.</p>
       <p>Plain Mini Balls – Minis ballons sans impression</p>
       <p>Minimum 50 balls per colour: $1.64(A) per ball. </p>
+      <p>Minimum de 50 ballons par couleur: 1,64$(A) par ballon.</p>
 
-      <h3>Ink Colours</h3>
+      <h3>Ink Colours - Couleurs d’encre</h3>
       <p>White, Maroon, Green, Blue, Purple, Black, Red, Yellow, Orange, Gold, and Silver. </p>
-      When choosing AdMax ball and ink colour combinations, consider the effect of the ball colour when combined with the ink colour. 
+      <p>Blanc, marron, vert, bleu, pourpre, noir, rouge, jaune, orange, or et argent.</p>
+      <p>When choosing AdMax ball and ink colour combinations, consider the effect of the ball colour when combined with the ink colour.</p>
+      <p>Avant de choisir la combinaison de couleurs, il faut considérer l’effet de la couleur du ballon quand il sera combiné avec la couleur de l’encre.</p>
 
 
       <h3>Art Recommendations</h3>
+      <h3>Conception graphique</h3>
       <p>A simple, bold logo or a maximum of one or two short lines of copy are recommended. Art should not contain line screens. </p>
+      <p>Un logo simple et frappant de 1 ou 2 lignes de copie courtes sont recommandés. Le dessin ne devrait pas contenir de trame lignée.</p>
       <p>Art will be sized to the maximum imprint area. Height determines width and width determines height of imprint size. 
       Contact Customer Service for art requirements for two-colour imprints.</p>
+      <p>Le dessin sera calibré pour la plus grande impression possible. La hauteur détermine la largeur et la largeur détermine la hauteur de l’impression.  Appelez le service à la clientèle pour plus d’information concernant les impressions à 2 couleurs.</p>
 
       <p>Balls are packed in 50-count & 100-count boxes depending on the size of the order. Contact Customer Service for details. </p>
+      <p>Les ballons sont emballés en boîte de 50 et 100 dépendant de la commande. Appelez le service à la clientèle pour plus de détails.</p>
 
       <h3>Production Time</h3>
+      <h3>Temps de production</h3>
       <p>Allow 2-3 weeks after receipt of order and approved artwork.</p>
+      <p>Allouez 2 à 3 semaines après la réception du bon de commande et de la conception graphique approuvée.</p>
 
       <h3>Overruns/Underruns</h3> 
-      <p>All AdMax Mini Sport Ball orders are subject to a 5% overrun/underrun and will be invoiced accordingly.</p>
+      <h3>Surplus et déficits de fabriquation</h3>
+      <p>Toutes les commandes de minis ballons AdMax sont sujettes à un surplus/déficit de fabrication de 5% et seront facturées en conséquence.</p>
     </div>
   </div>
 </template>
