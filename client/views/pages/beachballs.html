@@ -5,6 +5,7 @@
     </div>
 
     <div class="row">
+      {{> beachballPalsAll}}
       {{> reactiveTable collection=beachballs settings=settings }}  
     </div>
   </div>
@@ -47,3 +48,20 @@
   </div>
 
 </template> 
+
+<template name="beachballPalsAll">
+  {{#each beachballPalettes }}
+    {{> palsAll }}
+  {{/each}}
+</template>
+
+<template name="beachballs12">
+  {{#each pals }}
+    {{> palImage}}
+  {{/each}}
+</template>
+<template name="beachballs16">
+{{#each pals }}
+    {{> palImage}}
+  {{/each}}
+</template>

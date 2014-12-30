@@ -513,11 +513,11 @@ Router.map(function() {
     path: '/beachballs',
     template: 'beachballs',
     waitOn: function () {
-      return Meteor.subscribe('beachballs');
+      // return Meteor.subscribe('beachballs');
     },
     data: function () {
       return {
-        beachballs: Beachballs.find()
+        // beachballs: Beachballs.find()
       }
     }
   });

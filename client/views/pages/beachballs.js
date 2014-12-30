@@ -1,4 +1,6 @@
-Template.beachballs.settings = function () {
+Template.beachballs.helpers({
+    settings: function () {
+        // ...
     return {
         showFilter: true,
         showNavigation: 'never',
@@ -30,4 +32,42 @@ Template.beachballs.settings = function () {
                 }
             ]
     };
-};
+    }
+});
+
+
+Template.beachballPalsAll.helpers({
+  beachballPalettes: function() {
+    return [{
+      title: "Beachballs 12 Inch",
+      src: 'balls/beachballs/beachball-12inch.png',
+      myTemplate: "beachballs12"
+    }, {
+      title: "Beachballs 16 Inch",
+      src: 'balls/beachballs/beachball-16inch.png',
+      myTemplate: "beachballs16"
+    }
+    ]
+}
+});
+
+Template.beachballs12.helpers({
+  pals: function() {
+    return [{
+      id: "Beachballs 12 Inch",
+      klass: "beachballs",
+      src: "balls/beachballs/beachball-12inch.png"
+    }
+    ]
+  }
+});
+Template.beachballs16.helpers({
+  pals: function() {
+    return [{
+      id: "Beachballs 16 Inch",
+      klass: "beachballs",
+      src: "balls/beachballs/beachball-16inch.png"
+    }
+    ]
+  }
+});

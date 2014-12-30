@@ -52,7 +52,31 @@
 
 </template> 
 
+<template name="adritepals">
+  <h1>Adrite Colours</h1>
+  {{> adritePalsAll }}
+</template>
 
+<template name="adritebasic">
+  {{#each pals }}
+    {{> palImage}}
+  {{/each}}
+</template>
 
+<template name="adritecrystal">
+  {{#each pals }}
+    {{> palImage}}
+  {{/each}}
+</template>
 
+<template name="adritefun">
+  {{#each pals }}
+    {{> palImage}}
+  {{/each}}
+</template>
 
+<template name="adritemetallic">
+  {{#each pals }}
+    {{> palImage}}
+  {{/each}}
+</template>

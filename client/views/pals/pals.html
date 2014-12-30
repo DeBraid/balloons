@@ -1,32 +1,3 @@
-<template name="adritepals">
-  <h1>Adrite Colours</h1>
-  {{> adritePalsAll }}
-</template>
-
-<template name="adritebasic">
-  {{#each pals }}
-    {{> palImage}}
-  {{/each}}
-</template>
-
-<template name="adritecrystal">
-  {{#each pals }}
-    {{> palImage}}
-  {{/each}}
-</template>
-
-<template name="adritefun">
-  {{#each pals }}
-    {{> palImage}}
-  {{/each}}
-</template>
-
-<template name="adritemetallic">
-  {{#each pals }}
-    {{> palImage}}
-  {{/each}}
-</template>
-
 <template name="outdoorbasic">
   {{#each pals }}
     {{> palImage}}
@@ -101,13 +72,15 @@
 </template>
 
 <template name="palsAll">
-  <div class="row">
-    <div class="col-sm-12">
+  <div class="">
+    <div class="col-sm-6 pull-left">
       {{#if shown }}
         <h2>{{ title }}</h2>
         <a class="btn btn-danger" id="hideMyElement">Show Me Less</a>
         {{> Template.dynamic template=myTemplate }}
+        
         {{ else }}
+        
         <img id="pal-headers" class="img-responsive" src="{{ src }}" alt="">
       {{/if}}
     </div>
@@ -115,7 +88,9 @@
 </template>
 
 <template name="palImage">
+<div class="col-sm-6">
   <div class="col-sm-2">
     <img id="{{ id }}" class="{{ klass }}" src="{{ src }}" alt="">
   </div>
+</div>
 </template>    
