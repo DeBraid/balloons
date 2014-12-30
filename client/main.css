@@ -578,6 +578,9 @@ header
 #primary-image {
   cursor: pointer;
 }
+#primary-image > img {
+  max-height: 300px;
+}
 
 .srcs {
   cursor: pointer;
@@ -662,6 +665,7 @@ header
   float: left;
   max-width: 15em;
   cursor: pointer;
+  padding-right: 100px;
 }
 .pal-image .all {
 max-width: 25em;

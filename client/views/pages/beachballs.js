@@ -54,8 +54,8 @@ Template.beachballPalsAll.helpers({
 Template.beachballs12.helpers({
   pals: function() {
     return [{
-      id: "Beachballs 12 Inch",
-      klass: "beachballs",
+      id: "beachballs",
+      klass: "pal-image indiv",
       src: "balls/beachballs/beachball-12inch.png"
     }
     ]
@@ -64,8 +64,8 @@ Template.beachballs12.helpers({
 Template.beachballs16.helpers({
   pals: function() {
     return [{
-      id: "Beachballs 16 Inch",
-      klass: "beachballs",
+      id: "beachballs",
+      klass: "pal-image indiv",
       src: "balls/beachballs/beachball-16inch.png"
     }
     ]

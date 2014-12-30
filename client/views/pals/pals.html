@@ -72,18 +72,17 @@
 </template>
 
 <template name="palsAll">
-  <div class="">
-    <div class="col-sm-6 pull-left">
-      {{#if shown }}
-        <h2>{{ title }}</h2>
-        <a class="btn btn-danger" id="hideMyElement">Show Me Less</a>
-        {{> Template.dynamic template=myTemplate }}
-        
-        {{ else }}
-        
-        <img id="pal-headers" class="img-responsive" src="{{ src }}" alt="">
-      {{/if}}
-    </div>
+  <div class="col-sm-3 pull-left">
+    {{#if shown }}
+      <h2>{{ title }}</h2>
+      <a class="btn btn-danger" id="hideMyElement">Show Me Less</a>
+      {{> Template.dynamic template=myTemplate }}
+      
+      {{ else }}
+
+      <img id="pal-headers" class="img-responsive" src="{{ src }}" alt="">
+    {{/if}}
+
   </div>
 </template>
 

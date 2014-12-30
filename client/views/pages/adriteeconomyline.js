@@ -40,8 +40,8 @@ Template.adritePalsAll.helpers({
     return [
       { title : "Basic Colours - Couleurs de base", src : 'adrite/basic/basic-colours-all.png' , myTemplate : "adritebasic" , data : "basicpals"  },
       { title : "Crystal Colours - Couleurs cristallisees", src : 'adrite/crystal/crystal-colours-all.png' , myTemplate : "adritecrystal" , data : "crystalpals" },
-      { title : "Fun Colours - Couleurs amusantes", src : 'adrite/fun/fun-colours-all.png' , myTemplate : "adritefun" , data : "funpals" },
-      { title : "Metallic Colours - Couleurs metallisees", src : 'adrite/metallic/metallic-colours-all.png' , myTemplate : "adritemetallic" , data : "metallicpals" }
+      { title : "Metallic Colours - Couleurs metallisees", src : 'adrite/metallic/metallic-colours-all.png' , myTemplate : "adritemetallic" , data : "metallicpals" },
+      { title : "Fun Colours - Couleurs amusantes", src : 'adrite/fun/fun-colours-all.png' , myTemplate : "adritefun" , data : "funpals" }
     ]
   }
 });

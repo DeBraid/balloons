@@ -9,16 +9,8 @@
       {{> reactiveTable collection=beachballs settings=settings }}  
     </div>
   </div>
-  <div id="charges" class="row">
-    
-    <h4>Charges</h4>
-
-    <ul>
-      <li><strong>Cut Charge:</strong>  $50.00(A) per logo, one time only.</li>
-      <li><strong>Custom Ink </strong>Blend:  $50.00(A) per ink colour; custom blends are not inventoried.**Exact PMS matches cannot be guaranteed**  </li>
-      <li><strong>Art Charge:</strong>  $50.00(A) per hour.</li>
-    </ul>
-  </div>
+  {{> beachballColours }}
+  {{> beachballCharges }}
 
   <div class="row">    
 
@@ -35,6 +27,7 @@
 <template name="beachballheader">
   <div class="row">
     <h1>Beach Balls</h1> 
+    <h1>Ballons de plage</h1> 
   </div>
 
   <div class="row">
@@ -42,7 +35,8 @@
       <img class="img-responsive" src="beachballs.png" alt="">
     </div>
     <div class="col-lg-7 col-md-6 col-sm-12">
-      <h4>Made of high-quality, heavy gauge vinyl.  The prices below include balls with one-colour / one-panel imprint; add additional charges.</h4>
+      <h4>Made of high-quality, heavy-gauge vinyl.</h4>
+      <h4>Fabriqués à partir de vinyle fort de haute qualité.</h4>
     </div>
     
   </div>
@@ -64,4 +58,47 @@
 {{#each pals }}
     {{> palImage}}
   {{/each}}
+</template>
+<template name="beachballCharges">
+  <div id="charges" class="row">
+    <h4>Add additional charges </h4>
+    <h4>Ajoutez tous frais supplémentaires.</h4>
+
+    <ul>
+      <li><strong>Cut Charge:</strong>  $50.00(A) per logo, one time only.</li>
+      <li><strong>Custom Ink </strong>Blend:  $50.00(A) per ink colour; custom blends are not inventoried.**Exact PMS matches cannot be guaranteed**  </li>
+      <li><strong>Art Charge:</strong>  $50.00(A) per hour.</li>
+    </ul>
+  </div>
+</template>
+
+<template name="beachballColours">
+  
+<h4>Beach Ball Panel Colours </h4>
+<h4>Couleurs de panneaux</h4>
+
+<p>Colours subject to change. </p>
+<p>Couleurs sous réserve de modifications.</p>
+
+<p>Assorted: White, Blue, Yellow, Orange, Red, and Green.</p>
+<p>Assortis: Blanc, bleu, jaune, orange, rouge et vert.</p>
+
+<h4>Ink Colours </h4>
+<h4>Couleurs d’encre</h4>
+
+<p>Black, Process Blue, Dark Blue, Red, Green, and White.</p>
+<p>Noir, bleu cyanure, bleu foncé, rouge, vert et blanc.</p>
+
+<h4>Production Time</h4>
+<h4>Temps de production</h4>
+
+<p>After receipt of order and approved artwork, allow 10-15 working days.</p>
+<p>Allouez 10 à 15 jours ouvrables après la réception du bon de commande et de la conception graphique approuvée</p>
+
+<p>Max. imprint size - Approx. Wt/100 Beach Balls (Does not include wt. of carton)</p>
+
+<p>Format max. d’impression - Poids approx./100 ballons (ne comprend pas le poids de la boîte)</p>
+
+Note: Beach Balls are measured fully inflated from pole to pole along the seam. As with any inflated product, size will vary; stated measurements are approximate.
+À noter: Les ballons de plage sont mesurés après avoir été gonflés et d’un pôle à l’autre en passant par la ligne de collage. Comme tous produits gonflés les formats sont approximatifs et peuvent varier.
 </template>
