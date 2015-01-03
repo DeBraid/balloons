@@ -102,6 +102,9 @@ th.Product.Description {
 td.Product.Description {
   width: 33% !important;
 }
+th.Panels {
+  max-width: 80px; 
+}
 
 td.Product.Description > p {
   margin-bottom: 0;

@@ -1,3 +1,7 @@
+Meteor.publish('popupbanners', function () {
+  return Popupbanners.find();
+});
+
 Meteor.publish('admaxminisportballs', function () {
   return Admaxminisportballs.find();
 });

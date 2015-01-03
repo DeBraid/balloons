@@ -404,14 +404,14 @@ Router.map(function() {
       'filterdropdown': {to: 'filterdropdown'}
     },
     subscriptions: function () {
-      // return [Meteor.subscribe('popupbanners'), 
+      return Meteor.subscribe('popupbanners');
               // Meteor.subscribe('popuptags')];
     },
     data: function () {
-      // return {
-      //   popupbanners: Popupbanners.find(),
+      return {
+        popupbanners: Popupbanners.find()
       //   tags: Popuptags.find()
-      // }
+      }
     }
   });
 
