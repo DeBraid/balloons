@@ -501,11 +501,11 @@ Router.map(function() {
     path: '/adpunchballs',
     template: 'adpunchballs',
     subscriptions: function () {
-      return Meteor.subscribe('adpunchballs');
+      // return Meteor.subscribe('adpunchballs');
     },
     data: function () {
       return {
-        adpunchballs: Adpunchballs.find()
+        // adpunchballs: Adpunchballs.find()
       }
     }
   });

@@ -6,29 +6,19 @@
 
         <div class="row">
             {{> reactiveTable collection=adpunchballs settings=settings }}
-        </div>
-        
-        <div id="charges" class="row">
+        </div>        
+        <div class="row">
           {{> adpunchcharges }}
+          {{> punchColours}}
+          {{> adPunchFooter}}
         </div>
-        <ul>
-            <li><strong>Ball Colours:</strong> White (101), Red (102), Blue (149), Orange (107), Kiwi Lime (158) Yellow (105), Pink (106) and Lilac (121). Choose up to four single colours per 100 AdPunch balls.</li>
-            <li><strong>Ink Colours:</strong> Black, White, Red, Yellow, Royal Blue, Green, Brown, Orange, Pink, Purple, Burgundy, Teal, Gold, and Silver. When choosing AdPunch ball and ink colour combinations, consider the effect of the ball colour when combined with the ink colour.</li>
-            <li><strong>Print Direction:</strong> Each AdPunch ball is printed to be read with the inflation neck down unless otherwise specified.</li>
-            <li><strong>Standard Packaging:</strong> 50 AdPunch balls.</li>
-
-        </ul>
-
-        <h4>Plain AdPunch Balls: Minimum 100 balls: $.86(A) per ball</h4>
-
     </div>
-
 </template>
 
 <template name="adpunchheader">
   <div class="row">
-    <h1>AdPunch™ Balls</h1> 
-    
+    <h1>AdPunch<sup>®</sup> Balls</h1> 
+    <h1>Ballons AdPunch<sup>®</sup></h1>
   </div>
 
   <div class="row">
@@ -36,16 +26,14 @@
       <img class="img-responsive" src="punchballs.png" alt="">
     </div>
     <div class="col-lg-7 col-md-6 col-sm-12">
-      <h4>Made from 100% natural, biodegradable latex.  The prices below include AdPunch balls with one-colour/one-side print; add additional charges.</h4>
+      <h4>Made from 100% natural,biodegradable latex.  The prices below include AdPunch balls with one-colour/one-side print; add additional charges.</h4>
+      <h4>Fabriqués à partir de latex à 100% naturel et biodégradable.</h4>
     </div>
     <div class="col-lg-2 col-md-3 col-sm-12 pull-right">
       {{> biodeg}}
-    </div>
-    
+    </div>    
   </div>
-
-</template> 
-
+</template>
 
 <template name="adpunchcharges">
   <h4>Charges</h4>
@@ -58,3 +46,39 @@
     <li><strong>Art Charge:</strong> $50.00(A) per hour.</li>
   </ul>
 </template>
+
+<template name="punchColours">
+  <h4>Ball Colours– Couleurs de ballons</h4>
+  <p>White (101), Red (102), Blue (149), Orange (107), Kiwi Lime Green (158), Yellow (105), Pink (106), and Lilac (121). Choose up to four single colours per 100 AdPunch balls.</p>
+  <p>Blanc (101), rouge ( 102), bleu (149), orange (107), vert lime kiwi (158), jaune (105), rose (106), et lilas (121). Choisir jusqu’à quatre couleurs par 100 ballons AdPunch.</p>
+
+  <h4>Ink Colours - Couleurs d’encre</h4>
+  <p>Black, White, Red, Yellow, Royal Blue, Green, Brown, Orange, Pink, Purple, Burgundy, Teal, Gold, and Silver. When choosing AdPunch ball and ink colour combinations, consider the effect of the ball colour when combined with the ink colour.</p>
+  <p>Noire, blanche, rouge, jaune, bleue royal, verte, brune, orange, rose, pourpre, bourgogne, sarcelle, or et argent. Avant de choisir la de la couleur du ballon quand il sera combiné avec la couleur de l’encrcombinaison de couleurs, il faut considérer l’effet</p>
+
+  <h4>Plain AdPunch Balls - Ballons sans impression</h4>
+
+  <p>Minimum 100 balls: $0.86(A) each. - Minimum de 100 ballons: 0,86$(A) chaque.</p>
+</template>
+
+<template name="adPunchFooter">
+  <h4>Print Direction - Direction de l’impression</h4>
+  <p>Each AdPunch ball is printed to be read with the inflation neck down unless otherwise specified.</p>
+  <p>À moins d’indication contraire, chaque ballon est imprimé pour que le message soit lu avec le col orienté vers le bas.</p>
+
+  <h4>Standard Packaging - Emballage standard</h4>
+
+  <p>Polybag Count: 50 AdPunch balls. Approx. Polybag Weight: 1.8 lbs.</p>
+  <p>Par sac: 50 Ballons AdPunch. Poids approximatif: 1,8 lbs.</p>
+
+  <h4>Production Time - Temps de production</h4>
+
+  <p>Maximum Art Size - Dessin maximum</p>
+  <p>6" H or 6" W - 6 po H ou 6 po L</p>
+
+  <h4>Use the Qualatex Hand Air Inflator for quick, economical inflation of AdPunch balls.</h4>
+  <p>Qualatex® Hand Air Inflator - $7.24(A) each/chaque (#31095)</p>
+
+  <h4>Utilisez la pompe à air Qualatex pour un gonflage rapide et économique des ballons AdPunch.</h4>
+  <p>Pompe à Air Qualatex - $7.24(A) chaque (#31095)</p>
+</template> 
