@@ -140,23 +140,23 @@ Router.map(function() {
     path: '/quicklinkonecolour',
     template: 'quicklinkonecolour',
     yieldTemplates: {
-      'charges': {to: 'charges'},
+      // 'charges': {to: 'charges'},
       'filterdropdown': {to: 'filterdropdown'}
-    }, 
-    waitOn: function () {
-      return [Meteor.subscribe('quicklinkonecolour'),
-              Meteor.subscribe('charges'),
-              Meteor.subscribe('qlpals'),
-              Meteor.subscribe('qltags')];
-    },
-    data: function () {
-      return {
-        quicklinkonecolour: Quicklinkonecolour.find(),
-        pals: Qlpals.find(),
-        tags: Qltags.find(),
-        charges: Charges.find()
-      }
     }
+    // waitOn: function () {
+    //   return [Meteor.subscribe('quicklinkonecolour'),
+    //           Meteor.subscribe('charges'),
+    //           Meteor.subscribe('qlpals'),
+    //           Meteor.subscribe('qltags')];
+    // },
+    // data: function () {
+    //   return {
+    //     quicklinkonecolour: Quicklinkonecolour.find(),
+    //     pals: Qlpals.find(),
+    //     tags: Qltags.find(),
+    //     charges: Charges.find()
+    //   }
+    // }
   });
 
   this.route('adwave', {
