@@ -347,18 +347,18 @@ Router.map(function() {
       'filterdropdown': {to: 'filterdropdown'}
     }, 
     subscriptions: function () {
-      return [Meteor.subscribe('giantlatexballoons'),
-              Meteor.subscribe('charges'),
-              Meteor.subscribe('gianttags'),
-              Meteor.subscribe('qualatexpals')];
+      // return [Meteor.subscribe('giantlatexballoons'),
+      //         Meteor.subscribe('charges'),
+      //         Meteor.subscribe('gianttags'),
+      //         Meteor.subscribe('qualatexpals')];
     },
     data: function () {
-      return {
-        giantlatexballoons: Giantlatexballoons.find(),
-        pals: Qualatexpals.find(),
-        tags: Gianttags.find(),
-        charges: Charges.find()
-      }
+      // return {
+      //   giantlatexballoons: Giantlatexballoons.find(),
+      //   pals: Qualatexpals.find(),
+      //   tags: Gianttags.find(),
+      //   charges: Charges.find()
+      // }
     }
   });
 

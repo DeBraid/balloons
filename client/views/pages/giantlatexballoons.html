@@ -1,34 +1,26 @@
 <template name="giantlatexballoons">
-  
   <div class="container">
     <div class="row">
       {{> giantlatexheader}}
     </div>
-
     <div class="row">
       {{> yield region='filterdropdown' }}
     </div>
-
     <div class="row">
       {{> reactiveTable collection=giantlatexballoons settings=settings}}
     </div>
-    <div id="charges" class="row">
+    <div class="row">
+      {{> giantColours}}
       {{> giantlatexcharges}}
     </div>
-
-    <div class="row">
-      <p><strong>*SuperAgate Rainbow Colours include:</strong>  Blue Rainbow (L6A), Green Rainbow (L6B), Red Orange Rainbow (L6C), Yellow Orange Rainbow (L6D), and Pink Violet Rainbow (L6E)</p>
-    </div>
-    
   </div>
-  
 </template>
 
 <template name="giantlatexheader">
   <div class="row">
     <h1>Giant Latex Balloons</h1>
+    <h1>Ballons de latex géants</h1>
   </div>
-
   <div class="row">
     <div id="primary-image" class="col-lg-3 col-md-3 col-sm-12">
       <img class="img-responsive" src="giant-latex.png" alt="">
@@ -40,16 +32,11 @@
       {{> biodeg}}
       {{> qualatexLogo}}
     </div>
-    
   </div>
-
 </template> 
 
-
 <template name="giantlatexcharges">
-
   <h5>The prices above include balloons with one-colour/one-side imprint; add additional charges.</h5>
-
   <ul>
     <li>Cut Charge:  $50.00(A) per logo, one time only</li>
     <li>Machine Set up charge:  $22.00(A) per order</li>
@@ -62,4 +49,9 @@
     <li>Art Charge:  $50.00(A) per hour.</li>
   </ul>
 
+</template>
+
+<template name="giantColours">
+  <p><strong>*SuperAgate Rainbow Colours include:</strong>  Blue Rainbow (L6A), Green Rainbow (L6B), Red Orange Rainbow (L6C), Yellow Orange Rainbow (L6D), and Pink Violet Rainbow (L6E)</p>
+  <p><strong>*Les couleurs SuperAgate arc-en-ciel comprennent:</strong>  Arc-en-ciel bleu (L6A),  Arc-en-ciel vert (L6B), Arc-en-ciel rouge orange (L6C), Arc-en-ciel jaune orange (L6D), Arc-en-ciel rose violet (L6E)</p>
 </template>
