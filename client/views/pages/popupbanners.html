@@ -1,54 +1,158 @@
 <template name="popupbanners">
-
-    <div class="container">
-
-        <div class="row">
-            {{> popupheader }}
-
-        </div>
-        <div class="row">
-            {{> filterdropdown }}
-        </div>
-        <div class="row">
-            {{> reactiveTable collection=popupbanners settings=settings}}
-        </div>
-        <aside>For different imprint on second side or third panel: Add $40.00(C) per unit.</aside>
-
+  <div class="container">
+    <div class="row">
+      {{> popupheader }}
     </div>
-
-    <div class="container">
-        <div class="row">
-            {{> popupextra}}
-        </div>
+    <div class="row">
+      {{> filterdropdown }}
     </div>
+    <div class="row">
+      {{> reactiveTable collection=popupbanners settings=settings}}
+    </div>
+    <aside>For different imprint on second side or third panel: Add $40.00(C) per unit.</aside>
+  </div>
+  <div class="container">
+    <div class="row">
+      {{> popupextra}} {{> popupFooter}} {{> shipping }}
+    </div>
+  </div>
 
 </template>
 
 <template name="popupheader">
 
   <div class="row">
-    <h1>Pop-Up Banners</h1>
+    <h1>Pop–Up Banners</h1>
+    <h1>Bannières–surprise</h1>
   </div>
 
   <div class="row">
     <div id="primary-image" class="col-lg-3 col-md-3 col-sm-12">
       <img class="img-responsive" src="popup-banners.png" alt="">
     </div>
-   
+
     <div class="col-lg-7 col-md-6 col-sm-12">
-        <h4>Displaying your message has never been so quick and easy. The uniquely designed Pop-up Banners are a quality low cost alternative to traditional banners and signs, and will bring a modern look to any campaign. They are quick and easy to use and come with their own carrying case.</h4>
-        <h5>The Price below include same imprint on all banner panels, spring metal frame, ground stake and carrying case.  Full Colour dye-sublimation print</h5>
+      <h4>Displaying your message has never been so quick and easy. The uniquely designed Pop-up Banners are a quality low cost alternative to traditional banners and signs, and will bring a modern look to any campaign.  They are quick and easy to use and come with their own carrying case.</h4>
+      <h4>Afficher votre message n’a jamais été aussi facile et rapide. Les bannières-surprise sont une solution économique et différente à comparé aux bannières et aux affiches traditionnelles et apporteront un aspect moderne à n’importe quelle campagne. Elles sont rapides et facile à utiliser et viennent avec leur propre étui.</h4>
+      <p>Indoor and outdoor use, set up and fold down in seconds, no tools necessary.</p>
+      <p>Monte et descend rapidement, aucun outil nécessaire, usage à l’intérieur et à l’extérieur.</p>
     </div>
   </div>
 
-</template> 
+</template>
 
 
 <template name="popupextra">
-    
-    <div class="row">
-        {{> flagpdfdownload }}
-    </div>
-    
-    <img class="img-responsive" src="popup-info-pg23.png" alt="Info for Pop Up Banners">
+  <div class="row">
+    {{> flagpdfdownload }}
+  </div>
+
+  <h5>The Price below include same imprint on all banner panels, spring metal frame, ground stake and carrying case.  Full Colour dye-sublimation print</h5>
+  <h5>Les prix ci-dessus comprennent la même impression sur tous les panneaux de la bannière-surprise, la monture à ressort de métal, les pieux de base et l’étui.
+    </h5>
+  <p>For different imprint on second side or third panel: Add $40.00(C) per unit.</p>
+  <p>Pour une impression différente sur le deuxième côté ou le troisième panneau: ajoutez 40,00$(C) par unité</p>
+
 </template>
+
+
+<template name="popupFooter">
+
+  <h4>Accessories - Accessoires</h4>
+
+  <p>Canvas Drawstring Weights - Poids de canevas à cordonnet (# 50332 )</p>
+
+  <p>$14.85(C) set of 4/ensemble de 4</p>
+
+  <h4>Product Material - Matériaux de fabrication</h4>
+
+  <h5>Banner Fabric - Tissu</h5>
+  <p>Polyester (water and fire resistant and uv-protected)</p>
+  <p>Polyester (résistant à l’eau et au feu et protègé des rayons uv)</p>
+
+  <h5>Carrying Case - Étui</h5>
+  <p>400 denier nylon</p>
+
+  <h5>Ground Stakes - Pieux de base</h5>
+  <p>Powder coated steel</p>
+  <p>Acier à revêtement par pulvérisation</p>
+
+</template>
+
+<template name="shipping">
+  <h4>Shipping - Expédition</h4>
+  <p>F.O.B: Miami Florida. Duty and Brokerage may apply</p>
+  <p>F.O.B: Miami, Floride. Frais de franchise douanière et frais de courtage peuvent s’appliquer.</p>
+</template>
+<!-- 
+
+Vertical Pop–up Banners
+Bannières–surprise verticales
+
+4ft x 2.5 ft Small Vertical Pop-up 2-Panel Banner (#44733)
+Petite bannière verticale de 4 pi. x 2.5 pi. à 2 panneaux (#44733
+
+5.5 ft x 3 ft Medium Vertical Pop-up 2-Panel Banner (#44766)
+Moyenne bannière verticale de 5.5 pi. x 3 pi. à 2 panneaux (#44766)
+
+6.5ft x 4 ft Large Vertical Pop-up 2-Panel Banner (#44767)
+Grande bannière verticale de 6.5 pi. x 4 pi. à 2 panneaux (#44767
+
+Horizontal Pop–up Banners
+Bannières–surprise horizont
+
+4ft x 2 ft Small Horizontal Pop-up 2-Panel Banner (#44718)
+Petite bannière horizontale de 4 pi. x 2 pi. à 2 panneaux (#44718)
+
+6 ft x 3 ft Medium Horizontal Pop-up 2-Panel Banner (#44723)
+Moyenne bannière horizontale de 6 pi. x 3 pi. à 2 panneaux (#44723
+
+8 ft x 3 ft Large Horizontal Pop-up 2-Panel Banner (#44732)
+Grande bannière horizontale de 8 pi. x 3 pi. à 2 panneaux (#44732)
+
+Triangle Pop–up Banners
+Bannières–surprise Triangulaires
+
+4 ft x 4 ft Triangle Pop-up 2-Panel Banner (#44839)
+Bannière triangulaire de 4 pi. x 4 pi. à 2 panneaux (#44839)
+
+ -->
+
+
+<!-- 
+Circle Pop–up Banners
+Bannières–surprise circulaires
+
+
+3.5 ft Small Circle Pop-up 2-Panel Banner (#44832)
+Petite bannière circulaire de 3.5 pi. à 2 panneaux (#44832)
+
+5 ft Large Circle Pop-up 2-Panel Banner (#44834)
+Grande bannière circulaire de 5 pi. à 2 panneaux (#44834)
+
+Tower Pop–up Banners
+Bannières–surprise en tour
+
+Production Time
+Temps de production
+
+After receipt of order and approved artwork, allow approximately 3-4 weeks.
+Après la réception de la commande et de la conception graphique approuvée, allouez 3 à 4 semaines.
+
+Connecting Straps (to provide stability)
+Sangles de couplage (pour stabiliser)
+
+Connecting Banner
+Bannière de connection
+
+Grommet to use with the Ground Stakes
+Oeillet pour utilisation avec les pieux de base
+
+Ground Stakes
+Pieux de base
+
+Collapsed Banner
+Bannière repliée
+
+Carrying Case
+Étui  -->

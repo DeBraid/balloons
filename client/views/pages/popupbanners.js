@@ -1,4 +1,5 @@
-Template.popupbanners.settings = function () {
+Template.popupbanners.helpers({
+    settings: function () {
     return {
         showFilter: true,
         showNavigation: 'never',
@@ -34,5 +35,6 @@ Template.popupbanners.settings = function () {
                     label: '25 to 49' 
                 }
             ]
-    };
-};
+        }
+    }
+});

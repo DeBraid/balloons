@@ -1,4 +1,5 @@
-Template.adpunchballs.settings = function () {
+Template.adpunchballs.helpers({
+    settings: function () {
     return {
         showFilter: true,
         showNavigation: 'never',
@@ -29,5 +30,7 @@ Template.adpunchballs.settings = function () {
                     label: '1000'
                 }
             ]
-    };
-};
+    }
+}
+    
+}); 
