@@ -1,4 +1,5 @@
-Template.adwrap.settings = function () {
+Template.adwrap.helpers({
+    settings: function () {
     return {
         showFilter: true,
         showNavigation: 'never',
@@ -28,10 +29,8 @@ Template.adwrap.settings = function () {
                 }, {
                     key: '10000',
                     label: '10000'
-                }, {
-                    key: '25000',
-                    label: '25000'
                 }
             ]
-    };
-};
+        }
+    }
+});

@@ -190,18 +190,18 @@ Router.map(function() {
       'charges': {to: 'charges'},
       'filterdropdown': {to: 'filterdropdown'}
     }, 
-    waitOn: function () {
-      return [Meteor.subscribe('adwrap'),
-              Meteor.subscribe('charges'),
-              Meteor.subscribe('adwpals'),
-              Meteor.subscribe('qltags')];
+    subscriptions: function () {
+      return Meteor.subscribe('charges')
+    //   return [Meteor.subscribe('adwrap'),
+    //           Meteor.subscribe('adwpals'),
+    //           Meteor.subscribe('qltags')];
     },
     data: function () {
       return {
-        adwrap: Adwrap.find(),
-        tags: Qltags.find(),
-        pals: Adwpals.find(),
         charges: Charges.find()
+    //     adwrap: Adwrap.find(),
+    //     tags: Qltags.find(),
+    //     pals: Adwpals.find(),
       }
     }
   });
