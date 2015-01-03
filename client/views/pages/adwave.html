@@ -1,30 +1,21 @@
-<template name="adwave">
-    
+<template name="adwave">    
   <div class="container">
-
     <div class="row">
       {{> adwaveheader }}
     </div>
-    
     <div class="row">
       {{> yield region="filterdropdown" }}  
     </div>
     <div class="row">
       {{> reactiveTable collection=adwave settings=settings}}  
     </div>
-    <div id="charges" class="row">
-      {{> adwavecharges }}
-    </div>
-
     <div class="row">
-      {{> adwavecolours}}
-      {{> adwaveinfo}}
+      {{> yield region="charges" }}  
+      {{> adwaveColours }}
+      {{> adwaveinfo }}
     </div>
-
   </div>
-
 </template>
-
 
 <template name="adwaveheader">
   <div class="row">
@@ -49,52 +40,23 @@
 
 </template> 
 
-<template name="adwavecolours">
-  <h4>AdWave balloons are available only in selected colours:</h4>  
-
-  <p><strong>Standard Colours:</strong> Pink (L26), Pale Blue (L27),White (L28), Dark Blue (L21), Green (L22), Red (L23), Yellow (L24), and Orange (L25)</p>
-
-  <p><strong>Fashion Colours:</strong>  Wintergreen (L32), Goldenrod (L34), Rose (L36), Spring Lilac (L37), Gray (L39),
-  Lime Green (L89), Onyx Black (L41), Purple Violet (L3H), Robin’s Egg Blue (L3G), Blush (L3B),
-  Mocha Brown (L3E), Chocolate Brown (L3F), Tropical Teal (L33)*, Wildberry (L3L)*, Periwinkle (L90)*</p>
-
-  <p><strong>Jewel Colours:</strong> Quartz Purple (L44), Sapphire Blue (L51), Emerald Green (L52), Ruby Red (L53), 
-  Citrine Yellow (L54), Mandarin Orange (L55), Diamond Clear (L58) and Jewel Magenta (L5C)*
-  *These colours available in 2" x 60" only.</p>
-
-  <p><strong>Art Information:</strong>  Maximum art size for the 2” x 60” is: 1”H x 10” W  Maximum art size for the 3” x 50” is: 1 ½”H x 10”W</p>
-
-</template>
-
-
 <template name="adwaveinfo">
   <p><strong>AdWave balloons are for air inflation only, but inflation by mouth can be very difficult.</strong>  Nitrogen tanks are recommended for quick and easy inflation of AdWave balloons.  Contact your local welding supply shop for nitrogen tank rental.</p>
-
 </template>
-
-<template name="adwavecharges">
-  <h4>The prices below include balloons with one-colour Impress II® print; add additional charges.</h4>
-  <ul>
-    <li><strong>Cut Charge:</strong>  $50.00(A) per logo, one time only.</li>
-    <li><strong>Machine Set up charge:</strong>  $22.00(A) per order</li>
-    <li><strong>Custom Ink Blend:</strong>  $20.00(A) per ink colour; custom blends are not inventoried. *Exact PMS colour matches cannot be guaranteed* </li>
-    <li><strong>Art Charge:</strong>  $50.00(A) per hour.</li>
-  </ul>
-</template>
-
-<!-- 
 
 <template name="adwaveColours">
   <h4>AdWave balloons are available only in selected colours − Les ballons Adwave sont disponibles seulement dans certaines couleurs:</h4>
   <h4>Les ballons Adwave sont disponibles seulement dans certaines couleurs:</h4>
+
+  <ul>
+    <li>Standard Colours – Pink (L26), Pale Blue (L27), White (L28), Dark Blue (L21), Green (L22), Red (L23), Yellow (L24), and Orange (L25).</li>
+    <li>Couleurs standards: Rose pâle (L26), Bleu pâle (L27), Blanc (L28), Bleu foncé (L21), Vert (L22), Rouge (L23), Jaune (L24), Orange (L25).</li>
+    <li>Fashion Colours : Wintergreen  (L32), Goldenrod (L34), Rose (L36), Spring Lilac (L37), Gray (L39), Lime Green, Onyx Black (L41), Purple Violet (L3H), and Robin’s Egg Blue (L3G), Blush (L3B), Mocha Brown (L3E), Chocolate Brown (L3F), Tropical Teal (L33)*, Wild Berry (L3L)*, Periwinkle (L90)*</li>
+    <li>Couleurs de mode: Vert menthe (L32), Bistre (L34), Rose foncé (L36), Lilas (L37), Gris (L39), Vert lime, Noir onyx (L41), Pourpre Violet (L3H), Bleu oeuf de merle (L3G), Rose Fard (L3B), Brun moka (L3E), Brun chocolat (L3F), Sarcelle (L33)*, Baies sauvages (L3L)*, Bleu pervenche (L90)*</li>
+    <li>Jewel Colours : Ruby Red (L53), Mandarin Orange (L55), Quartz Purple, (L44), Sapphire Blue (L51), Emerald Green (L52), Citrine Yellow (L54), Diamond Clear (L58), Jewel Magenta (L5C)*</li>
+    <li>Couleurs pierres précieuses: Rouge rubis (L53), Orange mandarine (L55), Pourpre quartz (L44), Bleu Saphir (L51), Vert émeraude (L52), Jaune citron (L54), Diamant clair (L58), Magenta bijou (L5C)*</li>
+  </ul>
+
+  <p>* These colours available in 2" x 60" only. </p>
+  <p>* Ces couleurs sont disponibles en format de 2 po. x 60 po. seulement.</p>
 </template>
-
-Standard Colours – Pink (L26), Pale Blue (L27), White (L28), Dark Blue (L21), Green (L22), Red (L23), Yellow (L24), and Orange (L25).
-Couleurs standards: Rose pâle (L26), Bleu pâle (L27), Blanc (L28), Bleu foncé (L21), Vert (L22), Rouge (L23), Jaune (L24), Orange (L25).
-Fashion Colours : Wintergreen  (L32), Goldenrod (L34), Rose (L36), Spring Lilac (L37), Gray (L39), Lime Green, Onyx Black (L41), Purple Violet (L3H), and Robin’s Egg Blue (L3G), Blush (L3B), Mocha Brown (L3E), Chocolate Brown (L3F), Tropical Teal (L33)*, Wild Berry (L3L)*, Periwinkle (L90)*
-Couleurs de mode: Vert menthe (L32), Bistre (L34), Rose foncé (L36), Lilas (L37), Gris (L39), Vert lime, Noir onyx (L41), Pourpre Violet (L3H), Bleu oeuf de merle (L3G), Rose Fard (L3B), Brun moka (L3E), Brun chocolat (L3F), Sarcelle (L33)*, Baies sauvages (L3L)*, Bleu pervenche (L90)*
-Jewel Colours : Ruby Red (L53), Mandarin Orange (L55), Quartz Purple, (L44), Sapphire Blue (L51), Emerald Green (L52), Citrine Yellow (L54), Diamond Clear (L58), Jewel Magenta (L5C)*
-Couleurs pierres précieuses: Rouge rubis (L53), Orange mandarine (L55), Pourpre quartz (L44), Bleu Saphir (L51), Vert émeraude (L52), Jaune citron (L54), Diamant clair (L58), Magenta bijou (L5C)*
-
-* These colours available in 2" x 60" only. 
-* Ces couleurs sont disponibles en format de 2 po. x 60 po. seulement. -->

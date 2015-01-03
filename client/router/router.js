@@ -64,7 +64,7 @@ Router.map(function() {
   this.route('geninfo', {
     path: '/geninfo',
     template: 'geninfo',
-    waitOn: function () {
+    subscriptions: function () {
       return Meteor.subscribe('geninfo');
     },
     data: function () {
@@ -95,7 +95,7 @@ Router.map(function() {
         Meteor.subscribe('charges')
       ]
     },
-    // waitOn: function () {
+    // subscriptions: function () {
       // return Meteor.subscribe('roundballoons');
 
       // [,
@@ -120,7 +120,7 @@ Router.map(function() {
       'charges': {to: 'charges'},
       'filterdropdown': {to: 'filterdropdown'},
     }, 
-    waitOn: function () {
+    subscriptions: function () {
       return [Meteor.subscribe('heartballoons'),
               Meteor.subscribe('hearttags'),
               Meteor.subscribe('adwpals'),
@@ -143,7 +143,7 @@ Router.map(function() {
       // 'charges': {to: 'charges'},
       'filterdropdown': {to: 'filterdropdown'}
     }
-    // waitOn: function () {
+    // subscriptions: function () {
     //   return [Meteor.subscribe('quicklinkonecolour'),
     //           Meteor.subscribe('charges'),
     //           Meteor.subscribe('qlpals'),
@@ -166,17 +166,18 @@ Router.map(function() {
       'charges': {to: 'charges'},
       'filterdropdown': {to: 'filterdropdown'}
     }, 
-    waitOn: function () {
-      return [Meteor.subscribe('adwave'),
-              Meteor.subscribe('adwpals'),
-              Meteor.subscribe('charges'),
-              Meteor.subscribe('adwavetags')];
+    subscriptions: function () {
+      return Meteor.subscribe('charges');
+      // return [Meteor.subscribe('adwave'),
+      //         Meteor.subscribe('adwpals'),
+      //         Meteor.subscribe('charges'),
+      //         Meteor.subscribe('adwavetags')];
     },
     data: function () {
       return {
-        adwave: Adwave.find(),
-        tags: Adwavetags.find(),
-        pals: Adwpals.find(),
+        // adwave: Adwave.find(),
+        // tags: Adwavetags.find(),
+        // pals: Adwpals.find(),
         charges: Charges.find()
       }
     }
@@ -226,7 +227,7 @@ Router.map(function() {
         adriteeconomyline: Adriteeconomyline.find()
       }
     }
-    // waitOn: function () {
+    // subscriptions: function () {
     //   return [Meteor.subscribe('adriteeconomyline'),
     //           Meteor.subscribe('charges'),
     //           Meteor.subscribe('adritepals'),
@@ -248,7 +249,7 @@ Router.map(function() {
     yieldTemplates: {
       'filterdropdown': {to: 'filterdropdown'} 
     }, 
-    waitOn: function () {
+    subscriptions: function () {
       return [Meteor.subscribe('cloudbuster'),
               Meteor.subscribe('cloudbusterkits'),
               Meteor.subscribe('cloudpals'),
@@ -297,7 +298,7 @@ Router.map(function() {
       'smallmicrofoilcharges': {to: 'charges'},
       'filterdropdown': {to: 'filterdropdown'}
     }, 
-    waitOn: function () {
+    subscriptions: function () {
       return [Meteor.subscribe('microfoilvalved1820'),
               Meteor.subscribe('microfoilvalved36'),
               Meteor.subscribe('microfoiltags'),
@@ -322,7 +323,7 @@ Router.map(function() {
       'charges': {to: 'charges'},
       'filterdropdown': {to: 'filterdropdown'}
     }, 
-    waitOn: function () {
+    subscriptions: function () {
       return [Meteor.subscribe('largequantmicrofoil'),
               Meteor.subscribe('charges'),
               Meteor.subscribe('largequanttags'),
@@ -345,7 +346,7 @@ Router.map(function() {
       'charges': {to: 'charges'},
       'filterdropdown': {to: 'filterdropdown'}
     }, 
-    waitOn: function () {
+    subscriptions: function () {
       return [Meteor.subscribe('giantlatexballoons'),
               Meteor.subscribe('charges'),
               Meteor.subscribe('gianttags'),
@@ -365,7 +366,7 @@ Router.map(function() {
   this.route('charges', {
     path: '/charges',
     template: 'charges',
-    waitOn: function () {
+    subscriptions: function () {
       return Meteor.subscribe('charges');
     },
     data: function () {
@@ -382,7 +383,7 @@ Router.map(function() {
     yieldTemplates: {
       'filterdropdown': {to: 'filterdropdown'}
     },
-    waitOn: function () {
+    subscriptions: function () {
       return [Meteor.subscribe('eventtents'),
               Meteor.subscribe('eventtentwalls'),
               Meteor.subscribe('eventtags')]
@@ -402,7 +403,7 @@ Router.map(function() {
     yieldTemplates: {
       'filterdropdown': {to: 'filterdropdown'}
     },
-    waitOn: function () {
+    subscriptions: function () {
       return [Meteor.subscribe('popupbanners'), 
               Meteor.subscribe('popuptags')];
     },
@@ -417,7 +418,7 @@ Router.map(function() {
   this.route('tablecovers', {
     path: '/tablecovers',
     template: 'tablecovers',
-    waitOn: function () {
+    subscriptions: function () {
       return [Meteor.subscribe('nonfittedtablecovers'),
               Meteor.subscribe('stretchtablecovers'),
               Meteor.subscribe('tablecovertags')]
@@ -437,7 +438,7 @@ Router.map(function() {
     yieldTemplates: {
       'filterdropdown': {to: 'filterdropdown'}
     },
-    waitOn: function () {
+    subscriptions: function () {
       return [Meteor.subscribe('promoflags'),
               Meteor.subscribe('flagtags'),
               Meteor.subscribe('econflags')];
@@ -457,7 +458,7 @@ Router.map(function() {
     yieldTemplates: {
       'filterdropdown': {to: 'filterdropdown'}
     },
-    waitOn: function () {
+    subscriptions: function () {
       return [Meteor.subscribe('twocolourballoons'),
               Meteor.subscribe('threecolourplus'),
               Meteor.subscribe('multitags'),
@@ -499,7 +500,7 @@ Router.map(function() {
   this.route('adpunchballs', {
     path: '/adpunchballs',
     template: 'adpunchballs',
-    waitOn: function () {
+    subscriptions: function () {
       return Meteor.subscribe('adpunchballs');
     },
     data: function () {
@@ -512,7 +513,7 @@ Router.map(function() {
   this.route('beachballs', {
     path: '/beachballs',
     template: 'beachballs',
-    waitOn: function () {
+    subscriptions: function () {
       // return Meteor.subscribe('beachballs');
     },
     data: function () {
