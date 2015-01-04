@@ -99,4 +99,3 @@ Template.outdoorpalsAll.helpers({
     ]
   }
 });
-

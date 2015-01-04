@@ -1,3 +1,9 @@
+<template name="adpunchpals">
+  {{#each pals }}
+    {{> palImage}}
+  {{/each}}
+</template>
+
 <template name="outdoorbasic">
   {{#each pals }}
     {{> palImage}}
@@ -24,6 +30,11 @@
 
 <template name="outdoorpalsAll">
   {{#each outdoorPalettes}}
+    {{> palsAll}}
+  {{/each}}
+</template>
+<template name="adpunchpalsAll">
+  {{#each adpunchPalettes}}
     {{> palsAll}}
   {{/each}}
 </template>

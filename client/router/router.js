@@ -500,6 +500,9 @@ Router.map(function() {
   this.route('adpunchballs', {
     path: '/adpunchballs',
     template: 'adpunchballs',
+    yieldTemplates: {
+      adpunchpalsAll: { to: 'pals' }
+    },
     subscriptions: function () {
       // return Meteor.subscribe('adpunchballs');
     },
