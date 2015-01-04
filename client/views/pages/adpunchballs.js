@@ -1,8 +1,7 @@
-// adpunch-colours-all.png
 Template.adpunchpalsAll.helpers({
   adpunchPalettes: function () {
     return [
-      { title : "AdPunch Palettes All", src : 'adpunch/adpunch-colours-all.png' , myTemplate : "adpunchpals"  }
+      { title : "AdPunch® Ball Colours - Couleurs de ballons AdPunch®", src : 'adpunch/adpunch-colours-all.png' , myTemplate : "adpunchpals"  }
     ]
   }
 });
@@ -54,9 +53,8 @@ Template.adpunchballs.helpers({
                     label: '1000'
                 }
             ]
+        }
     }
-}
-    
 }); 
 
 
