@@ -8,14 +8,15 @@
     </div>
 
     <div class="row">
-      {{> yield region="filterdropdown" }}
+      {{> yield region='pals'}}
     </div>    
     <div class="row">
+      {{> yield region="filterdropdown" }}
       {{> reactiveTable collection=heartballoons settings=settings}}
-      {{> yield region='charges'}}
     </div>
     
     <div class="row">
+      {{> yield region='charges'}}
       {{> heartcolours }}      
     </div>
     {{> rush }}

@@ -1,3 +1,9 @@
+<template name="heartpals">
+  {{#each pals }}
+    {{> palImage}}
+  {{/each}}
+</template>
+
 <template name="adpunchpals">
   {{#each pals }}
     {{> palImage}}
@@ -28,6 +34,27 @@
   {{/each}}
 </template>
 
+<template name="heartpalsThree">
+  {{#each pals }}
+    {{> palImage}}
+  {{/each}}
+</template>
+<template name="heartpalsEleven">
+  {{#each pals }}
+    {{> palImage}}
+  {{/each}}
+</template>
+<template name="heartpalsFifteen">
+  {{#each pals }}
+    {{> palImage}}
+  {{/each}}
+</template>
+<template name="heartpalsAll">
+  {{#each heartPalettes}}
+    {{> palsAll}}
+  {{/each}}
+</template>
+
 <template name="outdoorpalsAll">
   {{#each outdoorPalettes}}
     {{> palsAll}}
@@ -38,13 +65,11 @@
     {{> palsAll}}
   {{/each}}
 </template>
-
 <template name="adritePalsAll">
   {{#each adritePalettes}}
     {{> palsAll }}
   {{/each}}
 </template>
-
 <template name="admaxPalsAll">
   {{#each admaxPalettes}}
     {{> palsAll }}
@@ -100,7 +125,7 @@
 <template name="palImage">
 <div class="col-sm-6">
   <div class="col-sm-2">
-    <img id="{{ id }}" class="{{ klass }}" src="{{ src }}" alt="">
+    <img id="{{ id }}" class="pal-image indiv" src="{{ src }}" alt="">
   </div>
 </div>
 </template>    

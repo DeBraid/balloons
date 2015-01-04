@@ -118,21 +118,22 @@ Router.map(function() {
     template: 'heartballoons',
     yieldTemplates: {
       'charges': {to: 'charges'},
+      'heartpalsAll': {to: 'pals'},
       'filterdropdown': {to: 'filterdropdown'},
     }, 
     subscriptions: function () {
-      return [Meteor.subscribe('heartballoons'),
-              Meteor.subscribe('hearttags'),
-              Meteor.subscribe('adwpals'),
-              Meteor.subscribe('charges')];
+      // return [Meteor.subscribe('heartballoons'),
+      //         Meteor.subscribe('hearttags'),
+      //         Meteor.subscribe('adwpals'),
+      //         Meteor.subscribe('charges')];
     },
     data: function () {
-      return {
-        heartballoons: Heartballoons.find(),
-        tags: Hearttags.find(),
-        pals: Adwpals.find(),
-        charges: Charges.find()
-      }
+      // return {
+      //   heartballoons: Heartballoons.find(),
+      //   tags: Hearttags.find(),
+      //   pals: Adwpals.find(),
+      //   charges: Charges.find()
+      // }
     }
   });
 
