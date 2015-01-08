@@ -2,15 +2,15 @@ Template.palsContainer.created = function() {
   this.showAll = new ReactiveVar(false);
 };
 
-// Template.palsContainer.helpers({
-//   shown: function() {
-//     return Template.instance().showAll.get();
-//   }
-// })
+Template.palsContainer.helpers({
+  shown: function() {
+    return Template.instance().showAll.get();
+  }
+})
 
-UI.registerHelper('shown', function () {
-  return Template.instance().showAll.get();
-});
+// UI.registerHelper('shown', function () {
+//   return Template.instance().showAll.get();
+// });
 
 Template.palsContainer.events({
   'click #showMore': function(e, template) {

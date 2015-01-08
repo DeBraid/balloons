@@ -1,3 +1,9 @@
+<template name="allPals">  
+  {{#each pals }}
+    {{> palsContainer }}      
+  {{/each}}
+</template>
+
 <template name="palsContainer">
   {{#if shown }}
     {{> palShow }}
@@ -7,7 +13,7 @@
 </template>
 
 <template name="palPreview">
-    <a class="btn btn-success" id="showMore">Show Me More</a>
+    <a class="btn btn-success" id="showMore">Show All {{ title }}</a>
   <div class="row">
     <img id="pal-headers" class="img-responsive" src="{{ src }}" alt="">
   </div>
@@ -30,134 +36,4 @@
 </template>
 
 <!-- ************ OLD STUFF BELOW ***************** -->
-
-
-<template name="palsAll">
-  <div class="col-sm-3 pull-left">
-    {{#if shown }}
-      <h2>foo - {{ ../title }}</h2>
-      <a class="btn btn-danger" id="hideMyElement">Show Me Less</a>
-      <!-- {{> Template.dynamic template=myTemplate }} -->
-      {{#each ../setup}}
-      <h2>{{ src }}  {{ id }}</h2>
-      {{/each }}
-
-      
-      {{ else }}
-
-      <img id="pal-headers" class="img-responsive" src="{{ ../src }}" alt="">
-    {{/if}}
-
-  </div>
-</template>
-
-<template name="heartpals">
-  {{#each pals }}
-    {{> palImage}}
-  {{/each}}
-</template>
-
-<template name="adpunchpals">
-  {{#each pals }}
-    {{> palImage}}
-  {{/each}}
-</template>
-
-<template name="outdoorbasic">
-  {{#each pals }}
-    {{> palImage}}
-  {{/each}}
-</template>
-
-<template name="outdoorcrystal">
-  {{#each pals }}
-    {{> palImage}}
-  {{/each}}
-</template>
-
-<template name="outdoorfun">
-  {{#each pals }}
-    {{> palImage}}
-  {{/each}}
-</template>
-
-<template name="outdoormetallic">
-  {{#each pals }}
-    {{> palImage}}
-  {{/each}}
-</template>
-
-<template name="heartpalsThree">
-      {{> baz ../pals }}
-    
-  
-  {{#each pals }}
-  <div class="col-sm-2">
-    <img id="{{ id }}" class="pal-image indiv" src="{{ src }}" alt="">
-  </div>
-  {{/each}}
-</template>
- 
-<template name="heartpalsEleven">
-    {{> palImageNew}}
-  <!-- {{#each pals }}
-  {{/each}} -->
-</template>
-<template name="heartpalsFifteen">
-    {{> palImageNew}}
-  <!-- {{#each pals }}
-  {{/each}} -->
-</template>
-<template name="heartpalsAll">
-  {{#each heartPalettes}}
-    {{> palsAll}}
-  {{/each}}
-</template>
-
-<template name="adpunchpalsAll">
-  {{#each adpunchPalettes}}
-    {{> palsAll}}
-  {{/each}}
-</template>
-<template name="adritePalsAll">
-  {{#each adritePalettes}}
-    {{> palsAll }}
-  {{/each}}
-</template>
-<template name="admaxPalsAll">
-  {{#each admaxPalettes}}
-    {{> palsAll }}
-  {{/each}}
-</template>
-
-<template name="admaxBasketball">
-  {{#each pals }}
-    {{> palImage}}
-  {{/each}}
-</template>
-<template name="admaxFootball">
-  {{#each pals }}
-    {{> palImage}}
-  {{/each}}
-</template>
-<template name="admaxStriped">
-  {{#each pals }}
-    {{> palImage}}
-  {{/each}}
-</template>
-<template name="admaxPlay">
-  {{#each pals }}
-    {{> palImage}}
-  {{/each}}
-</template>
-<template name="admaxBaseball">
-  {{#each pals }}
-    {{> palImage}}
-  {{/each}}
-</template>
-<template name="admaxSoccer">
-  {{#each pals }}
-    {{> palImage}}
-  {{/each}}
-</template>
 

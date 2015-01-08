@@ -271,7 +271,7 @@ Router.map(function() {
     template: 'outdoorballoons',
     yieldTemplates: {
       'outdoorcharges': {to: 'charges'},
-      'outdoorpalsAll': {to: 'pals' },
+      'allPals': {to: 'pals' },
       'filterdropdown': {to: 'filterdropdown'}
     }, 
     subscriptions: function () {
@@ -280,17 +280,14 @@ Router.map(function() {
         Meteor.subscribe('charges'),
         Meteor.subscribe('outdoorbasicpals'),
         Meteor.subscribe('outdoorpals')
-
-      ];
-              // Meteor.subscribe('outdoorpals'),
-              // Meteor.subscribe('outdoortags')];
+      ]
     },
     data: function () {
       return {
         outdoorballoons: Outdoorballoons.find(),
         // tags: Outdoortags.find(),
-        // pals: Outdoorpals.find(),
-        pals: Outdoorbasicpals.find(),
+        pals: Outdoorpals.find(),
+        // pals: Outdoorbasicpals.find(),
         charges: Charges.find()
       }
     }
