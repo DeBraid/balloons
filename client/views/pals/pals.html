@@ -1,6 +1,8 @@
 <template name="allPals">  
   {{#each pals }}
-    {{> palsContainer }}      
+    <div class="col-sm-6">
+      {{> palsContainer }}      
+    </div>
   {{/each}}
 </template>
 
@@ -13,10 +15,8 @@
 </template>
 
 <template name="palPreview">
-    <a class="btn btn-success" id="showMore">Show All {{ title }}</a>
-  <div class="row">
     <img id="pal-headers" class="img-responsive" src="{{ src }}" alt="">
-  </div>
+    <a class="btn btn-success" id="showMore">Show All {{ title }}</a>
 </template>
 
 <template name="palShow">
@@ -30,10 +30,7 @@
 </template>
 
 <template name="images">
-  <div class="col-sm-1 pull-left">
+  <div class="col-sm-2 pull-left">
     <img id="{{ id }}" class="pal-image indiv" src="{{ src }}" alt="">
   </div>
 </template>
-
-<!-- ************ OLD STUFF BELOW ***************** -->
-

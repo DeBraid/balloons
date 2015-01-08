@@ -278,16 +278,13 @@ Router.map(function() {
       return [
         Meteor.subscribe('outdoorballoons'),
         Meteor.subscribe('charges'),
-        Meteor.subscribe('outdoorbasicpals'),
         Meteor.subscribe('outdoorpals')
       ]
     },
     data: function () {
       return {
         outdoorballoons: Outdoorballoons.find(),
-        // tags: Outdoortags.find(),
         pals: Outdoorpals.find(),
-        // pals: Outdoorbasicpals.find(),
         charges: Charges.find()
       }
     }
