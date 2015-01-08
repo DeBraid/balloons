@@ -1,3 +1,11 @@
+Meteor.publish('outdoorpals', function () {
+  return Outdoorpals.find();
+});
+
+Meteor.publish('outdoorbasicpals', function () {
+  return Outdoorbasicpals.find();
+});
+
 Meteor.publish('popupbanners', function () {
   return Popupbanners.find();
 });

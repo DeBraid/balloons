@@ -38,11 +38,8 @@ Template.outdoorballoons.helpers({
                     }
                 ]
         };        
-    }
-}); 
-
-Template.outdoorbasic.helpers({
-  pals: function () {
+    },
+  outdoorbasic: function () {
     return [
       { id : 'basic' , klass : 'pal-image indiv' , src : 'outdoor/basic/Blue.png' },
       { id : 'basic' , klass : 'pal-image indiv' , src : 'outdoor/basic/Green.png' },
@@ -52,11 +49,8 @@ Template.outdoorbasic.helpers({
       { id : 'basic' , klass : 'pal-image indiv' , src : 'outdoor/basic/White.png' },
       { id : 'basic' , klass : 'pal-image indiv' , src : 'outdoor/basic/Yellow.png' }
     ]
-  }
-});
-
-Template.outdoorcrystal.helpers({
-  pals: function () {
+  },
+  outdoorcrystal: function () {
     return [
       { id : 'crystal' , klass : 'pal-image indiv' , src : 'outdoor/crystal/black.png' },
       { id : 'crystal' , klass : 'pal-image indiv' , src : 'outdoor/crystal/blue.png' },
@@ -67,21 +61,15 @@ Template.outdoorcrystal.helpers({
       { id : 'crystal' , klass : 'pal-image indiv' , src : 'outdoor/crystal/red.png' },
       { id : 'crystal' , klass : 'pal-image indiv' , src : 'outdoor/crystal/yellow.png' }
     ]
-  }
-});
-
-Template.outdoorfun.helpers({
-  pals: function () {
+  },
+  outdoorfun: function () {
     return [
       { id: 'fun' , klass : 'pal-image indiv' , src : 'outdoor/fun/dark-pink.png' },
       { id: 'fun' , klass : 'pal-image indiv' , src : 'outdoor/fun/island-blue.png' },
       { id: 'fun' , klass : 'pal-image indiv' , src : 'outdoor/fun/kiwi-lime.png' }
     ]
-  }
-});  
-
-Template.outdoormetallic.helpers({
-  pals: function () {
+  },
+  outdoormetallic: function () {
    return [
       { id : 'metallic' , klass : 'pal-image indiv' , src : 'outdoor/metallic/Gold.png' },
       { id : 'metallic' , klass : 'pal-image indiv' , src : 'outdoor/metallic/Silver.png' }
@@ -91,11 +79,44 @@ Template.outdoormetallic.helpers({
 
 Template.outdoorpalsAll.helpers({
   outdoorPalettes: function () {
-    return [
-      { title : "Basic Colours - Couleurs de base", src : 'outdoor/basic/basic-colours-all.png' , myTemplate : "outdoorbasic" , data : "basicpals"  },
-      { title : "Crystal Colours - Couleurs cristallisees", src : 'outdoor/crystal/crystal-colours-all.png' , myTemplate : "outdoorcrystal" , data : "crystalpals" },
-      { title : "Fun Colours - Couleurs amusantes", src : 'outdoor/fun/fun-colours-all.png' , myTemplate : "outdoorfun" , data : "funpals" },
-      { title : "Metallic Colours - Couleurs metallisees", src : 'outdoor/metallic/metallic-colours-all.png' , myTemplate : "outdoormetallic" , data : "metallicpals" }
-    ]
+    return { 
+      setup: [
+        { title : "Basic Colours - Couleurs de base", src : 'outdoor/basic/basic-colours-all.png' , myTemplate : "outdoorbasic" , data : "basicpals"  },
+        { title : "Crystal Colours - Couleurs cristallisees", src : 'outdoor/crystal/crystal-colours-all.png' , myTemplate : "outdoorcrystal" , data : "crystalpals" },
+        { title : "Fun Colours - Couleurs amusantes", src : 'outdoor/fun/fun-colours-all.png' , myTemplate : "outdoorfun" , data : "funpals" },
+        { title : "Metallic Colours - Couleurs metallisees", src : 'outdoor/metallic/metallic-colours-all.png' , myTemplate : "outdoormetallic" , data : "metallicpals" }
+      ],
+      pals: [
+          [
+      { id : 'basic' , klass : 'pal-image indiv' , src : 'outdoor/basic/Blue.png' },
+      { id : 'basic' , klass : 'pal-image indiv' , src : 'outdoor/basic/Green.png' },
+      { id : 'basic' , klass : 'pal-image indiv' , src : 'outdoor/basic/Orange.png' },
+      { id : 'basic' , klass : 'pal-image indiv' , src : 'outdoor/basic/Pink.png' },
+      { id : 'basic' , klass : 'pal-image indiv' , src : 'outdoor/basic/Red.png' },
+      { id : 'basic' , klass : 'pal-image indiv' , src : 'outdoor/basic/White.png' },
+      { id : 'basic' , klass : 'pal-image indiv' , src : 'outdoor/basic/Yellow.png' }
+    ],
+   [
+      { id : 'crystal' , klass : 'pal-image indiv' , src : 'outdoor/crystal/black.png' },
+      { id : 'crystal' , klass : 'pal-image indiv' , src : 'outdoor/crystal/blue.png' },
+      { id : 'crystal' , klass : 'pal-image indiv' , src : 'outdoor/crystal/brown.png' },
+      { id : 'crystal' , klass : 'pal-image indiv' , src : 'outdoor/crystal/burgundy.png' },
+      { id : 'crystal' , klass : 'pal-image indiv' , src : 'outdoor/crystal/green.png' },
+      { id : 'crystal' , klass : 'pal-image indiv' , src : 'outdoor/crystal/purple.png' },
+      { id : 'crystal' , klass : 'pal-image indiv' , src : 'outdoor/crystal/red.png' },
+      { id : 'crystal' , klass : 'pal-image indiv' , src : 'outdoor/crystal/yellow.png' }
+    ],
+   [
+      { id: 'fun' , klass : 'pal-image indiv' , src : 'outdoor/fun/dark-pink.png' },
+      { id: 'fun' , klass : 'pal-image indiv' , src : 'outdoor/fun/island-blue.png' },
+      { id: 'fun' , klass : 'pal-image indiv' , src : 'outdoor/fun/kiwi-lime.png' }
+    ],
+   [
+      { id : 'metallic' , klass : 'pal-image indiv' , src : 'outdoor/metallic/Gold.png' },
+      { id : 'metallic' , klass : 'pal-image indiv' , src : 'outdoor/metallic/Silver.png' }
+    ] 
+
+      ]
+    }
   }
 });

@@ -117,7 +117,7 @@ Router.map(function() {
     path: '/heartballoons',
     template: 'heartballoons',
     yieldTemplates: {
-      'charges': {to: 'charges'},
+      // 'charges': {to: 'charges'},
       'heartpalsAll': {to: 'pals'},
       'filterdropdown': {to: 'filterdropdown'},
     }, 
@@ -271,13 +271,16 @@ Router.map(function() {
     template: 'outdoorballoons',
     yieldTemplates: {
       'outdoorcharges': {to: 'charges'},
-      'outdoorpalsAll': {to: 'pals'},
+      'outdoorpalsAll': {to: 'pals' },
       'filterdropdown': {to: 'filterdropdown'}
     }, 
     subscriptions: function () {
       return [
         Meteor.subscribe('outdoorballoons'),
-        Meteor.subscribe('charges')
+        Meteor.subscribe('charges'),
+        Meteor.subscribe('outdoorbasicpals'),
+        Meteor.subscribe('outdoorpals')
+
       ];
               // Meteor.subscribe('outdoorpals'),
               // Meteor.subscribe('outdoortags')];
@@ -287,6 +290,7 @@ Router.map(function() {
         outdoorballoons: Outdoorballoons.find(),
         // tags: Outdoortags.find(),
         // pals: Outdoorpals.find(),
+        pals: Outdoorbasicpals.find(),
         charges: Charges.find()
       }
     }

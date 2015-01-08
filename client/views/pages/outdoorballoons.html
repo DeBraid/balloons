@@ -51,3 +51,14 @@
     <li><strong>Art Charge:</strong> $50.00(A)  per hour.</li>
   </ul>
 </template>
+
+<template name="outdoorpalsAll">
+  <h1>outdoor all</h1>
+  {{#each outdoorPalettes.setup }}
+    {{ this.myTemplate }}    
+    {{#each ../pals }}
+      {{> palsAll }}
+    {{/each}}
+  {{/each}}
+
+</template>
