@@ -53,27 +53,8 @@
 </template>
 
 <template name="outdoorpalsAll">
-  {{#each outdoorPalettes.setup }}
-     
-    {{#if shown }}
-      <h2>shown true</h2>
-      {{#each pals }}
-        {{> images }}
-      {{/each}}
-
-      {{ else }}
-
-      <h4>{{ title }}</h4>
-      <img id="pal-headers" class="img-responsive" src="{{ src }}" alt=""> 
-
-    {{/if}}
+  {{#each outdoorPalettes }}
+      {{> palsContainer }}      
   {{/each}}
-
 </template>
 
-<template name="images">
-  <div class="col-sm-3 pull-left">
-    <img id="{{ id }}" class="pal-image indiv" src="{{ src }}" alt="">
-    <a class="btn btn-danger" id="hideMyElement">Show Me Less</a>
-  </div>
-</template>

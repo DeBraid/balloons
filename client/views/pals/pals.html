@@ -1,3 +1,37 @@
+<template name="palsContainer">
+  {{#if shown }}
+    {{> palShow }}
+  {{ else }}
+    {{> palPreview }}
+  {{/if}}
+</template>
+
+<template name="palPreview">
+    <a class="btn btn-success" id="showMore">Show Me More</a>
+  <div class="row">
+    <img id="pal-headers" class="img-responsive" src="{{ src }}" alt="">
+  </div>
+</template>
+
+<template name="palShow">
+  <p>{{ title }}</p>
+  <a class="btn btn-danger" id="showLess">Less</a>
+  <div class="row">
+    {{#each pals }}
+      {{> images }}
+    {{/each}}    
+  </div>
+</template>
+
+<template name="images">
+  <div class="col-sm-1 pull-left">
+    <img id="{{ id }}" class="pal-image indiv" src="{{ src }}" alt="">
+  </div>
+</template>
+
+<!-- ************ OLD STUFF BELOW ***************** -->
+
+
 <template name="palsAll">
   <div class="col-sm-3 pull-left">
     {{#if shown }}
@@ -16,22 +50,6 @@
 
   </div>
 </template>
-
-<template name="images">
-    <div class="col-sm-2">
-      <img id="{{ id }}" class="pal-image indiv" src="{{ src }}" alt="">
-    </div>
-</template>    
-
-<template name="palImageNew">
-  <div class="col-sm-6">
-    {{#each pals }}
-      <div class="col-sm-2">
-        <img id="{{ id }}" class="pal-image indiv" src="{{ src }}" alt="">
-      </div>
-    {{/each}}
-  </div>
-</template>    
 
 <template name="heartpals">
   {{#each pals }}
@@ -73,11 +91,11 @@
       {{> baz ../pals }}
     
   
-  <!-- {{#each pals }}
+  {{#each pals }}
   <div class="col-sm-2">
     <img id="{{ id }}" class="pal-image indiv" src="{{ src }}" alt="">
   </div>
-  {{/each}} -->
+  {{/each}}
 </template>
  
 <template name="heartpalsEleven">
