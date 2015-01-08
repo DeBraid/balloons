@@ -1,29 +1,26 @@
 <template name="palsAll">
   <div class="col-sm-3 pull-left">
     {{#if shown }}
-      <h2>{{ title }}</h2>
+      <h2>foo - {{ ../title }}</h2>
       <a class="btn btn-danger" id="hideMyElement">Show Me Less</a>
       <!-- {{> Template.dynamic template=myTemplate }} -->
-      {{#each ../pals}}
-      <h2>{{ src }} -- {{ id }}</h2>
+      {{#each ../setup}}
+      <h2>{{ src }}  {{ id }}</h2>
       {{/each }}
+
       
       {{ else }}
 
-      <img id="pal-headers" class="img-responsive" src="{{ src }}" alt="">
+      <img id="pal-headers" class="img-responsive" src="{{ ../src }}" alt="">
     {{/if}}
 
   </div>
 </template>
 
-<template name="palImage">
-  <div class="col-sm-6">
+<template name="images">
     <div class="col-sm-2">
-      <img id="{{ ../../id }}" class="pal-image indiv" src="{{ ../../src }}" alt="">
+      <img id="{{ id }}" class="pal-image indiv" src="{{ src }}" alt="">
     </div>
-  <!-- {{#each pals }}
-  {{/each}} -->
-  </div>
 </template>    
 
 <template name="palImageNew">

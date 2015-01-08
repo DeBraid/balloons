@@ -1,14 +1,18 @@
-Template.palsAll.created = function() {
+Template.outdoorpalsAll.created = function() {
   this.showAll = new ReactiveVar(false);
 };
 
-Template.palsAll.helpers({
+Template.outdoorpalsAll.helpers({
   shown: function() {
     return Template.instance().showAll.get();
   }
 })
-  
-Template.palsAll.events({
+
+// UI.registerHelper('shown', function () {
+//   return Template.instance().showAll.get();
+// });
+
+Template.outdoorpalsAll.events({
   'click #pal-headers': function(e, template) {
     e.preventDefault();
     console.log("clicked pal headerss");

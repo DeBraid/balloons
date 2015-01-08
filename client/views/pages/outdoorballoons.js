@@ -81,13 +81,23 @@ Template.outdoorpalsAll.helpers({
   outdoorPalettes: function () {
     return { 
       setup: [
-        { title : "Basic Colours - Couleurs de base", src : 'outdoor/basic/basic-colours-all.png' , myTemplate : "outdoorbasic" , data : "basicpals"  },
+        { title : "Basic Colours - Couleurs de base", src : 'outdoor/basic/basic-colours-all.png' , myTemplate : "outdoorbasic" , data : "basicpals", 
+          pals: [
+            { id : 'basic' , klass : 'pal-image indiv' , src : 'outdoor/basic/Blue.png' },
+            { id : 'basic' , klass : 'pal-image indiv' , src : 'outdoor/basic/Green.png' },
+            { id : 'basic' , klass : 'pal-image indiv' , src : 'outdoor/basic/Orange.png' },
+            { id : 'basic' , klass : 'pal-image indiv' , src : 'outdoor/basic/Pink.png' },
+            { id : 'basic' , klass : 'pal-image indiv' , src : 'outdoor/basic/Red.png' },
+            { id : 'basic' , klass : 'pal-image indiv' , src : 'outdoor/basic/White.png' },
+            { id : 'basic' , klass : 'pal-image indiv' , src : 'outdoor/basic/Yellow.png' }
+          ]  
+  },
         { title : "Crystal Colours - Couleurs cristallisees", src : 'outdoor/crystal/crystal-colours-all.png' , myTemplate : "outdoorcrystal" , data : "crystalpals" },
         { title : "Fun Colours - Couleurs amusantes", src : 'outdoor/fun/fun-colours-all.png' , myTemplate : "outdoorfun" , data : "funpals" },
         { title : "Metallic Colours - Couleurs metallisees", src : 'outdoor/metallic/metallic-colours-all.png' , myTemplate : "outdoormetallic" , data : "metallicpals" }
       ],
       pals: [
-          [
+    [
       { id : 'basic' , klass : 'pal-image indiv' , src : 'outdoor/basic/Blue.png' },
       { id : 'basic' , klass : 'pal-image indiv' , src : 'outdoor/basic/Green.png' },
       { id : 'basic' , klass : 'pal-image indiv' , src : 'outdoor/basic/Orange.png' },
@@ -115,8 +125,7 @@ Template.outdoorpalsAll.helpers({
       { id : 'metallic' , klass : 'pal-image indiv' , src : 'outdoor/metallic/Gold.png' },
       { id : 'metallic' , klass : 'pal-image indiv' , src : 'outdoor/metallic/Silver.png' }
     ] 
-
-      ]
+    ]
     }
   }
 });
