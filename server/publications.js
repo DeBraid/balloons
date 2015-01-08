@@ -1,3 +1,7 @@
+Meteor.publish('adritepals', function () {
+  return Adritepals.find();
+});
+
 Meteor.publish('outdoorpals', function () {
   return Outdoorpals.find();
 });

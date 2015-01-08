@@ -213,32 +213,32 @@ Router.map(function() {
     template: 'adriteeconomyline',
     yieldTemplates: {
       'charges': {to: 'charges'},
-      'adritepals': {to: 'pals'},
+      'allPals': {to: 'pals'},
       'filterdropdown': {to: 'filterdropdown'}
     }, 
     subscriptions: function () {
       return [
         Meteor.subscribe('charges'), 
+        Meteor.subscribe('adritepals'),
         Meteor.subscribe('adriteeconomyline')
       ]
     },
     data: function () {
       return {
         charges: Charges.find(),
+        pals: Adritepals.find(),        
         adriteeconomyline: Adriteeconomyline.find()
       }
     }
     // subscriptions: function () {
     //   return [Meteor.subscribe('adriteeconomyline'),
     //           Meteor.subscribe('charges'),
-    //           Meteor.subscribe('adritepals'),
     //           Meteor.subscribe('adritetags')];
     // },
     // data: function () {
     //   return {
     //     adriteeconomyline: Adriteeconomyline.find(),
     //     tags: Adritetags.find(),
-    //     pals: Adritepals.find(),
     //     charges: Charges.find()
     //   }
     // }
