@@ -249,19 +249,21 @@ Router.map(function() {
     path: '/cloudbuster',
     template: 'cloudbuster',
     yieldTemplates: {
+      'allPals': {to: 'pals'}, 
       'filterdropdown': {to: 'filterdropdown'} 
     }, 
     subscriptions: function () {
-      return [Meteor.subscribe('cloudbuster'),
-              Meteor.subscribe('cloudbusterkits'),
-              Meteor.subscribe('cloudpals'),
-              Meteor.subscribe('cloudbustertags')];
+      return Meteor.subscribe('cloudpals');
+
+              // Meteor.subscribe('cloudbusterkits'),
+              // Meteor.subscribe('cloudbuster'),
+              // Meteor.subscribe('cloudbustertags')];
     },
     data: function () {
       return {
-        cloudbuster: Cloudbuster.find(),
-        cloudbusterkits: Cloudbusterkits.find(),
-        tags: Cloudbustertags.find(),
+        // cloudbuster: Cloudbuster.find(),
+        // cloudbusterkits: Cloudbusterkits.find(),
+        // tags: Cloudbustertags.find(),
         pals: Cloudpals.find()
       }
     }

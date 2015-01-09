@@ -10,8 +10,8 @@ Meteor.publish('outdoorpals', function () {
   return Outdoorpals.find();
 });
 
-Meteor.publish('outdoorbasicpals', function () {
-  return Outdoorbasicpals.find();
+Meteor.publish('cloudpals', function () {
+  return Cloudpals.find();
 });
 
 Meteor.publish('popupbanners', function () {
