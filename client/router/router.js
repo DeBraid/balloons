@@ -131,22 +131,23 @@ Router.map(function() {
     template: 'quicklinkonecolour',
     yieldTemplates: {
       // 'charges': {to: 'charges'},
+      'allPals': {to: 'pals'},
       'filterdropdown': {to: 'filterdropdown'}
-    }
-    // subscriptions: function () {
+    },
+    subscriptions: function () {
+      return Meteor.subscribe('qlpals');
     //   return [Meteor.subscribe('quicklinkonecolour'),
     //           Meteor.subscribe('charges'),
-    //           Meteor.subscribe('qlpals'),
     //           Meteor.subscribe('qltags')];
-    // },
-    // data: function () {
-    //   return {
+    },
+     data: function () {
+      return {
     //     quicklinkonecolour: Quicklinkonecolour.find(),
-    //     pals: Qlpals.find(),
+        pals: Qlpals.find()
     //     tags: Qltags.find(),
     //     charges: Charges.find()
-    //   }
-    // }
+      }
+    }
   });
 
   this.route('adwave', {

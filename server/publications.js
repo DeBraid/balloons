@@ -1,3 +1,7 @@
+Meteor.publish('qlpals', function () {
+  return Qlpals.find();
+});
+
 Meteor.publish('microfoilpals', function () {
   return Microfoilpals.find();
 });
