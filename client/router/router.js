@@ -286,22 +286,23 @@ Router.map(function() {
     template: 'microfoilvalved1820',
     yieldTemplates: {
       'smallmicrofoilcharges': {to: 'charges'},
+      'allPals': {to: 'pals'},
       'filterdropdown': {to: 'filterdropdown'}
     }, 
     subscriptions: function () {
-      return [Meteor.subscribe('microfoilvalved1820'),
-              Meteor.subscribe('microfoilvalved36'),
-              Meteor.subscribe('microfoiltags'),
-              Meteor.subscribe('microfoilpals'),
-              Meteor.subscribe('charges')];
+      return Meteor.subscribe('microfoilpals');
+      // return [Meteor.subscribe('microfoilvalved1820'),
+      //         Meteor.subscribe('microfoilvalved36'),
+      //         Meteor.subscribe('microfoiltags'),
+      //         Meteor.subscribe('charges')];
     },
     data: function () {
       return {
-        microfoilvalved1820: Microfoilvalved1820.find(),
-        microfoilvalved36: Microfoilvalved36.find(),
-        pals: Microfoilpals.find(),
-        tags: Microfoiltags.find(),
-        charges: Charges.find()
+        pals: Microfoilpals.find()
+        // microfoilvalved1820: Microfoilvalved1820.find(),
+        // microfoilvalved36: Microfoilvalved36.find(),
+        // tags: Microfoiltags.find(),
+        // charges: Charges.find()
       }
     }
   });
