@@ -72,6 +72,7 @@ Router.map(function() {
     template: 'roundballoons',
     yieldTemplates: {
       'charges': {to: 'charges'},
+      'allPals': {to: 'pals'},
       'filterdropdown': {to: 'filterdropdown'}
     },
     subscriptions: function() {
@@ -79,6 +80,7 @@ Router.map(function() {
       // or an array of subscription handles
       // adds them to the wait list.
       return [
+        Meteor.subscribe('roundpals'),
         Meteor.subscribe('roundballoons'),
         Meteor.subscribe('charges')
       ]
@@ -93,8 +95,10 @@ Router.map(function() {
     // },
     data: function () {
       return {
-        roundballoons: Roundballoons.find(),
-        charges: Charges.find()
+        pals: Roundpals.find()
+
+        // roundballoons: Roundballoons.find(),
+        // charges: Charges.find()
         // tags: Tags.find(),
         // pals: Qualatexpals.find()
       }

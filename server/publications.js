@@ -1,3 +1,6 @@
+Meteor.publish('roundpals', function () {
+  return Roundpals.find();
+});
 Meteor.publish('qlpals', function () {
   return Qlpals.find();
 });
