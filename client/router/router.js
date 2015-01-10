@@ -1,13 +1,3 @@
-/* ---------------------------------------------------- +/
-
-## Client Router ##
-
-Client-side Router.
-
-/+ ---------------------------------------------------- */
-
-// Config
-
 Router.configure({
   layoutTemplate: 'layout',
   loadingTemplate: 'loading',
@@ -61,6 +51,7 @@ Router.map(function() {
       path: '/'
   });
 
+
   this.route('geninfo', {
     path: '/geninfo',
     template: 'geninfo',
@@ -75,7 +66,7 @@ Router.map(function() {
   });
 
   this.route('contact');
-  this.route('login');
+  this.route('categories');
   this.route('signup');
   this.route('forgot');
 
@@ -528,9 +519,6 @@ Router.map(function() {
     }
   });
 
-  this.route('categories', {
-    path: '/categories',
-    template: 'categories'
-  });
+  
 
 });
