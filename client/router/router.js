@@ -50,6 +50,8 @@ Router.map(function() {
   this.route('homepage', {
       path: '/'
   });
+  this.route('contact');
+  this.route('categories');
 
 
   this.route('geninfo', {
@@ -64,11 +66,6 @@ Router.map(function() {
       }
     }
   });
-
-  this.route('contact');
-  this.route('categories');
-  this.route('signup');
-  this.route('forgot');
 
   this.route('roundballoons', {
     path: '/roundballoons',
@@ -337,21 +334,25 @@ Router.map(function() {
     template: 'giantlatexballoons',
     yieldTemplates: {
       'charges': {to: 'charges'},
+      'allPals': {to: 'pals'},
       'filterdropdown': {to: 'filterdropdown'}
     }, 
     subscriptions: function () {
-      // return [Meteor.subscribe('giantlatexballoons'),
+      return Meteor.subscribe('giantpals')
+
+      // return Meteor.subscribe('giantlatexballoons'),
       //         Meteor.subscribe('charges'),
       //         Meteor.subscribe('gianttags'),
       //         Meteor.subscribe('qualatexpals')];
     },
     data: function () {
-      // return {
+      return {
+        pals: Giantpals.find()
       //   giantlatexballoons: Giantlatexballoons.find(),
-      //   pals: Qualatexpals.find(),
+        // pals: Qualatexpals.find(),
       //   tags: Gianttags.find(),
       //   charges: Charges.find()
-      // }
+      }
     }
   });
 

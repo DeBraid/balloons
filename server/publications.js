@@ -1,3 +1,7 @@
+Meteor.publish('giantpals', function () {
+  return Giantpals.find();
+});
+
 Meteor.publish('heartpals', function () {
   return Heartpals.find();
 });
