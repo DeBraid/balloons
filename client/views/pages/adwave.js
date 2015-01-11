@@ -5,8 +5,18 @@ settings: function () {
         showFilter: true,
         fields: [{
                 key: 'Product Description',
-                label: 'Product -- Price Per Balloon 2ABCD',
-                sort: 'ascending'
+                label: 'Product -- Price Per Balloon 2ABCD -- Description du produit',
+                fn: function (str, obj) {
+                    var sortString = ("0000" + parseInt(str, 10)).slice(-4),
+                        unit = 'inch',
+                        size = str.split(unit),
+                        myString = "" + size[0] + "",
+                        french = obj["Product Description_fr"];
+
+                    var html = "<p sortString=" + french + ">" + myString + "</p>" + 
+                                "<p>" + french + "</p>";
+                    return Spacebars.SafeString(html);
+                }
             }, {
                 key: '1000',
                 label: '1000'
@@ -27,3 +37,4 @@ settings: function () {
     }
   }
 });
+

@@ -1,3 +1,7 @@
+Meteor.publish('adwave', function () {
+  return Adwave.find();
+});
+
 Meteor.publish('adwrap', function () {
   return Adwrap.find();
 });

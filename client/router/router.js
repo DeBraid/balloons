@@ -156,18 +156,21 @@ Router.map(function() {
       'filterdropdown': {to: 'filterdropdown'}
     }, 
     subscriptions: function () {
-      return Meteor.subscribe('charges');
-      // return [Meteor.subscribe('adwave'),
+      return [
+        Meteor.subscribe('charges'), 
+        Meteor.subscribe('adwave')
+      ];
+      // return [,
       //         Meteor.subscribe('adwpals'),
       //         Meteor.subscribe('charges'),
       //         Meteor.subscribe('adwavetags')];
     },
     data: function () {
       return {
-        // adwave: Adwave.find(),
+        adwave: Adwave.find(),
+        charges: Charges.find()
         // tags: Adwavetags.find(),
         // pals: Adwpals.find(),
-        charges: Charges.find()
       }
     }
   });
