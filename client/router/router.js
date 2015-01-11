@@ -76,23 +76,15 @@ Router.map(function() {
       'filterdropdown': {to: 'filterdropdown'}
     },
     subscriptions: function() {
-      // returning a subscription handle 
-      // or an array of subscription handles
-      // adds them to the wait list.
       return [
         Meteor.subscribe('roundpals'),
         Meteor.subscribe('roundballoons'),
         Meteor.subscribe('charges')
       ]
     },
-    // subscriptions: function () {
-      // return Meteor.subscribe('roundballoons');
-
-      // [,
-      //         Meteor.subscribe('charges'),
-      //         Meteor.subscribe('qualatexpals'),
-      //         Meteor.subscribe('tags')];
-    // },
+    // Meteor.subscribe('charges'),
+    // Meteor.subscribe('qualatexpals'),
+    // Meteor.subscribe('tags')];
     data: function () {
       return {
         roundballoons: Roundballoons.find(),
@@ -108,23 +100,26 @@ Router.map(function() {
     path: '/heartballoons',
     template: 'heartballoons',
     yieldTemplates: {
-      // 'charges': {to: 'charges'},
+      'charges': {to: 'charges'},
       'allPals': {to: 'pals'},
       'filterdropdown': {to: 'filterdropdown'},
     }, 
     subscriptions: function () {
-      return Meteor.subscribe('heartpals')
-      // return [Meteor.subscribe('heartballoons'),
+      return [
+        Meteor.subscribe('heartpals'),
+        Meteor.subscribe('heartballoons'),
+        Meteor.subscribe('charges')
+      ];
       //         Meteor.subscribe('hearttags'),
       //         Meteor.subscribe('adwpals'),
-      //         Meteor.subscribe('charges')];
+              
     },
     data: function () {
       return {
-        pals: Heartpals.find()
-      //   heartballoons: Heartballoons.find(),
+        pals: Heartpals.find(),
+        heartballoons: Heartballoons.find(),
+        charges: Charges.find()
       //   tags: Hearttags.find(),
-      //   charges: Charges.find()
       }
     }
   });

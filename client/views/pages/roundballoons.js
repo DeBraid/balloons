@@ -21,7 +21,8 @@ Template.roundballoons.helpers({
                 sortable: false
                 }, {
                     key: '250',
-                    label: '250'
+                    label: '250',
+                    sort: 'ascending'
                 }, {
                     key: '500',
                     label: '500'

@@ -16,11 +16,11 @@ Template.heartballoons.helpers({
           var html = "<p sortString=" + sortString + ">" + myString + "</p>" +
             "<p>" + obj["Product Description_fr"] + "</p>";
           return Spacebars.SafeString(html);
-        },
-        sort: 'ascending'
+        }
       }, {
         key: '250',
-        label: '250'
+        label: '250',
+        sort: 'ascending'
       }, {
         key: '500',
         label: '500'

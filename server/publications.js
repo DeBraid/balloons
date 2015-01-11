@@ -1,3 +1,7 @@
+Meteor.publish('heartballoons', function () {
+  return Heartballoons.find();
+});
+
 Meteor.publish('roundpals', function () {
   return Roundpals.find();
 });
