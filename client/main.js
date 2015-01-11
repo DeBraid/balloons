@@ -25,3 +25,5 @@ Meteor.Spinner.options = {
 //     return !_.contains(noPals, routeName);
 
 // });
+
+

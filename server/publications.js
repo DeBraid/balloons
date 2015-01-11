@@ -1,3 +1,7 @@
+Meteor.publish('adwrap', function () {
+  return Adwrap.find();
+});
+
 Meteor.publish('heartballoons', function () {
   return Heartballoons.find();
 });

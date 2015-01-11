@@ -181,15 +181,18 @@ Router.map(function() {
       'filterdropdown': {to: 'filterdropdown'}
     }, 
     subscriptions: function () {
-      return Meteor.subscribe('charges')
-    //   return [Meteor.subscribe('adwrap'),
+      return [
+        Meteor.subscribe('charges'),
+        Meteor.subscribe('adwrap')
+      ];
+    //   return [,
     //           Meteor.subscribe('adwpals'),
     //           Meteor.subscribe('qltags')];
     },
     data: function () {
       return {
+        adwrap: Adwrap.find(),
         charges: Charges.find()
-    //     adwrap: Adwrap.find(),
     //     tags: Qltags.find(),
     //     pals: Adwpals.find(),
       }
