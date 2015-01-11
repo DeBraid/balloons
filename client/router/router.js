@@ -95,10 +95,9 @@ Router.map(function() {
     // },
     data: function () {
       return {
-        pals: Roundpals.find()
-
-        // roundballoons: Roundballoons.find(),
-        // charges: Charges.find()
+        roundballoons: Roundballoons.find(),
+        pals: Roundpals.find(),
+        charges: Charges.find()
         // tags: Tags.find(),
         // pals: Qualatexpals.find()
       }
