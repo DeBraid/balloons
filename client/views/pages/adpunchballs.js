@@ -1,25 +1,25 @@
-Template.adpunchpalsAll.helpers({
-  adpunchPalettes: function () {
-    return [
-      { title : "AdPunch® Ball Colours - Couleurs de ballons AdPunch®", src : 'adpunch/adpunch-colours-all.png' , myTemplate : "adpunchpals"  }
-    ]
-  }
-});
+// Template.adpunchpalsAll.helpers({
+//   adpunchPalettes: function () {
+//     return [
+//       { title : "AdPunch® Ball Colours - Couleurs de ballons AdPunch®", src : 'adpunch/adpunch-colours-all.png' , myTemplate : "adpunchpals"  }
+//     ]
+//   }
+// });
 
-Template.adpunchpals.helpers({
-  pals: function () {
-    return [
-      { id : 'adpunch' , klass : 'pal-image indiv' , src : 'adpunch/Blue.png' },
-      { id : 'adpunch' , klass : 'pal-image indiv' , src : 'adpunch/Lilac.png' },
-      { id : 'adpunch' , klass : 'pal-image indiv' , src : 'adpunch/Orange.png' },
-      { id : 'adpunch' , klass : 'pal-image indiv' , src : 'adpunch/Pink.png' },
-      { id : 'adpunch' , klass : 'pal-image indiv' , src : 'adpunch/Red.png' },
-      { id : 'adpunch' , klass : 'pal-image indiv' , src : 'adpunch/White.png' },
-      { id : 'adpunch' , klass : 'pal-image indiv' , src : 'adpunch/Yellow.png' },
-      { id : 'adpunch' , klass : 'pal-image indiv' , src : 'adpunch/kiwi.png' }
-    ]
-  }
-});
+// Template.adpunchpals.helpers({
+//   pals: function () {
+//     return [
+//       { id : 'adpunch' , klass : 'pal-image indiv' , src : 'adpunch/Blue.png' },
+//       { id : 'adpunch' , klass : 'pal-image indiv' , src : 'adpunch/Lilac.png' },
+//       { id : 'adpunch' , klass : 'pal-image indiv' , src : 'adpunch/Orange.png' },
+//       { id : 'adpunch' , klass : 'pal-image indiv' , src : 'adpunch/Pink.png' },
+//       { id : 'adpunch' , klass : 'pal-image indiv' , src : 'adpunch/Red.png' },
+//       { id : 'adpunch' , klass : 'pal-image indiv' , src : 'adpunch/White.png' },
+//       { id : 'adpunch' , klass : 'pal-image indiv' , src : 'adpunch/Yellow.png' },
+//       { id : 'adpunch' , klass : 'pal-image indiv' , src : 'adpunch/kiwi.png' }
+//     ]
+//   }
+// });
 
 Template.adpunchballs.helpers({
     settings: function () {

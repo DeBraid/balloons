@@ -1,3 +1,15 @@
+Meteor.publish('admaxpals', function () {
+  return Admaxpals.find();
+});
+
+Meteor.publish('threecolourplus', function () {
+  return Threecolourplus.find();
+});
+
+Meteor.publish('twocolourballoons', function () {
+  return Twocolourballoons.find();
+});
+
 Meteor.publish('adwave', function () {
   return Adwave.find();
 });

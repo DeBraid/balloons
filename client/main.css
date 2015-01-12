@@ -578,9 +578,7 @@ header
   max-width: 80%;
 }
 
-#primary-image {
-  cursor: pointer;
-}
+
 #primary-image > img {
   max-height: 300px;
 }

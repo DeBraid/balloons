@@ -19,7 +19,8 @@ settings: function () {
                 }
             }, {
                 key: '1000',
-                label: '1000'
+                label: '1000',
+                sort: 'ascending'
             }, {
                 key: '2500',
                 label: '2500'
