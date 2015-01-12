@@ -1,3 +1,7 @@
+Meteor.publish('adpunchpals', function () {
+  return Adpunchpals.find();
+});
+
 Meteor.publish('admaxpals', function () {
   return Admaxpals.find();
 });
