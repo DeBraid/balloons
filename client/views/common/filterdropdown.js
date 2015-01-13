@@ -1,7 +1,8 @@
 // if button is clicked insert text into filter box
 Template.filterdropdown.events({
-    'click .tags': function (e,t) {
+    'click': function (e,t) {
         e.preventDefault();
+        console.log(e.target.id);
         
         var selection = e.target.id,
         inp = $('.reactive-table-input');
