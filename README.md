@@ -8,14 +8,14 @@ Transform the paper-based product catalogue into digital version.  Uses [Meteor]
 
 
 ### TO DO JAN 13
-()Products by Market -- products.php (see dot com)
-()  No colour palette for SuperAgate (multi colour)
-()  Create page for Stock Balloons
-()  French Language Content
-() pouce for inches (_fr)
-() for MENU: add fr on same line (see heading translations provided)
-() written description of colour assortments can be removed
-() change all font to black
+1. Products by Market -- products.php (see dot com)
+2. No colour palette for SuperAgate (multi colour)
+2. Create page for Stock Balloons
+2. French Language Content
+2. pouce for inches (_fr)
+2. for MENU: add fr on same line (see heading translations provided)
+2. written description of colour assortments can be removed
+2. change all font to black
 
 -----------------
 #### Dec 23rd
