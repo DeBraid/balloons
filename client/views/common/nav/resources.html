@@ -3,7 +3,7 @@
   <ul class="dropdown-menu" role="menu">
     <li><a href="{{ pathFor 'geninfo' }}">General Information</a></li>
     {{#each resources }}
-    <li><a href="{{ href }}" target="_blank">{{ title }}</a></li>
+    <li><a href="{{ href }}" target="_blank">{{ title }} - {{ title_fr }}</a></li>
     {{/each }}
   </ul>
 </template>
