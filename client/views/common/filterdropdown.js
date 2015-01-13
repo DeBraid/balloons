@@ -1,14 +1,12 @@
 // if button is clicked insert text into filter box
 Template.filterdropdown.events({
-    'click': function (e,t) {
+    'click [data-action=filterKeyword]': function (e,t) {
         e.preventDefault();
-        console.log(e.target.id);
-        
-        var selection = e.target.id,
+        var firstWordOfselection = e.target.textContent.split(" ")[0],
         inp = $('.reactive-table-input');
         
         // 1.  insert text into filter/search bar
-        inp.val(selection);
+        inp.val(firstWordOfselection);
         
         // 2.  simulate key event and filter table
         inp.trigger('keyup');
