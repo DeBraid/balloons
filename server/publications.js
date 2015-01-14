@@ -1,3 +1,9 @@
+Meteor.publish('largequantmicrofoil', function () {
+  return Largequantmicrofoil.find();
+});
+Meteor.publish('microfoilvalved1820', function () {
+  return Microfoilvalved1820.find();
+});
 Meteor.publish('cloudbusterkits', function () {
   return Cloudbusterkits.find();
 });

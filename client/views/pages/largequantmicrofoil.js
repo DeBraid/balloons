@@ -5,17 +5,18 @@ Template.largequantmicrofoil.settings = function () {
         showNavigation: 'never',
         fields: [{
                   key: 'Product Description',
-                  label: 'Product -- Price per Balloon CDEF',
-                  fn: function (str) {
-                        var sortString = ("0000" + parseInt(str, 10)).slice(-4),
-                            unit = 'inch',
-                            size = str.split(unit),
-                            myString = "" + size[0] + " " + unit + " " + size[1] + "";
-                        
-                        var html = "<span sortString=" + sortString + ">" + myString + "</span>";
-                        return Spacebars.SafeString(html);
-                    },
-                    sort: 'ascending'
+                    label: 'Product -- Price Per Balloon CDEF -- Description du produit',
+                        fn: function (str, obj) {
+                            var sortString = ("0000" + parseInt(str, 10)).slice(-4),
+                                unit = 'inch',
+                                size = str.split(unit),
+                                myString = "" + size[0] + " " + unit + " " + size[1] + "",
+                                french = obj["Product Description_fr"];
+
+                            var html = "<p sortString=" + french + ">" + myString + "</p>" + 
+                                        "<p>" + french + "</p>";
+                            return Spacebars.SafeString(html);
+                        }
                 }, {
                     key: 'Printing',  
                     label: 'Printing'
