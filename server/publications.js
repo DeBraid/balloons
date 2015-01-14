@@ -1,3 +1,10 @@
+Meteor.publish('cloudbusterkits', function () {
+  return Cloudbusterkits.find();
+});
+Meteor.publish('cloudbuster', function () {
+  return Cloudbuster.find();
+});
+
 Meteor.publish('quicklinkonecolour', function () {
   return Quicklinkonecolour.find();
 });

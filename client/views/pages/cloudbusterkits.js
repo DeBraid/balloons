@@ -1,25 +1,29 @@
-Template.cloudbusterkits.settings = function () {
+Template.cloudbusterkits.helpers({
+    settings: function () {
     return {
         showFilter: true,
         showNavigation: 'never',
         fields: [{
                   key: 'Product Description',
-                  label: 'Product -- Price Per Kit ABCD',
-                  fn: function (str) {
+                  label: 'Product -- Price Per Kit ABCD -- Description du produit',
+                    fn: function (str, obj) {
                         var sortString = ("0000" + parseInt(str, 10)).slice(-4),
-                            unit = 'ft',
-                            str1 = str.split(unit),
-                            size = str1,
-                            myString = "" + size[0] + " " + unit + " " + str1[1] + "";
-                        
-                        var html = "<span sortString=" + sortString + ">" + myString + "</span>";
+                            unit = 'inch',
+                            size = str.split(unit),
+                            myString = "" + size[0] + "",
+                            french = obj["Product Description_fr"];
+
+                        var html = "<p sortString=" + french + ">" + myString + "</p>" + 
+                                    "<p>" + french + "</p>";
                         return Spacebars.SafeString(html);
                     },
                     sort: 'ascending'
-                }, {
-                    key: 'Colours',
-                    label: 'Colours'
-                }, {
+                }, 
+                // {
+                //     key: 'Colours',
+                //     label: 'Colours'
+                // }, 
+                {
                     key: '1',
                     label: '1'
                 }, {
@@ -33,5 +37,6 @@ Template.cloudbusterkits.settings = function () {
                     label: '100'
                 }
             ]
-    };
-};
+        }
+    }
+}); 
