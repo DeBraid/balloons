@@ -1,3 +1,11 @@
+Meteor.publish('beachballs', function () {
+  return Beachballs.find();
+});
+
+Meteor.publish('beachpals', function () {
+  return Beachpals.find();
+});
+
 Meteor.publish('largequantmicrofoil', function () {
   return Largequantmicrofoil.find();
 });

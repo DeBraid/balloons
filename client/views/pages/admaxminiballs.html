@@ -5,8 +5,10 @@
     </div>
     <div class="row">
       {{> yield region='pals' }}
-      {{> yield region='filterdropdown' }}
     </div>
+    <div class="row">
+        {{> yield region='filterdropdown' }}
+    </div>    
     <div class="row">
       {{> reactiveTable collection=admaxminisportballs settings=settings}}
     </div>

@@ -6,15 +6,17 @@ Template.beachballs.helpers({
         showNavigation: 'never',
         fields: [{
                   key: 'Product Description',
-                  label: 'Product -- Price Per Ball 2ABC',
-                  fn: function (str) {
-                        var sortString = ("0000" + parseInt(str, 10)).slice(-4),
-                            unit = 'inch',
-                            size = str.split(unit),
-                            myString = "" + size[0] + " " + unit + " " + size[1] + "";
-                        
-                        var html = "<span sortString=" + sortString + ">" + myString + "</span>";
-                        return Spacebars.SafeString(html);
+                  label: 'Product -- Price Per Balloon 2ABC -- Description du produit',
+                        fn: function (str, obj) {
+                            var sortString = ("0000" + parseInt(str, 10)).slice(-4),
+                                unit = 'inch',
+                                size = str.split(unit),
+                                myString = "" + size[0] + " " + unit + " " + size[1] + "",
+                                french = obj["Product Description_fr"];
+
+                            var html = "<p sortString=" + french + ">" + myString + "</p>" + 
+                                        "<p>" + french + "</p>";
+                            return Spacebars.SafeString(html);
                     },
                     sort: 'ascending'
                 }, {
@@ -36,38 +38,35 @@ Template.beachballs.helpers({
 });
 
 
-Template.beachballPalsAll.helpers({
-  beachballPalettes: function() {
-    return [{
-      title: "Beachballs 12 Inch",
-      src: 'balls/beachballs/beachball-12inch.png',
-      myTemplate: "beachballs12"
-    }, {
-      title: "Beachballs 16 Inch",
-      src: 'balls/beachballs/beachball-16inch.png',
-      myTemplate: "beachballs16"
-    }
-    ]
-}
-});
+// Template.beachballPalsAll.helpers({
+//   beachballPalettes: function() {
+//     return [{
+//       title: "Beachballs 12 Inch",
+//       src: 'balls/beachballs/beachball-12inch.png',
+//       myTemplate: "beachballs12",
+//       pals: [{
+//           id: "beachballs",
+//           src: "balls/beachballs/beachball-12inch.png"
+//         }]
+//       }, {
+//       title: "Beachballs 16 Inch",
+//       src: 'balls/beachballs/beachball-16inch.png',
+//       myTemplate: "beachballs16",
+//       pals: [{
+//       id: "beachballs",
+//       src: "balls/beachballs/beachball-16inch.png"
+//     }]
+//     }
+//     ]
+// }
+// });
 
-Template.beachballs12.helpers({
-  pals: function() {
-    return [{
-      id: "beachballs",
-      klass: "pal-image indiv",
-      src: "balls/beachballs/beachball-12inch.png"
-    }
-    ]
-  }
-});
-Template.beachballs16.helpers({
-  pals: function() {
-    return [{
-      id: "beachballs",
-      klass: "pal-image indiv",
-      src: "balls/beachballs/beachball-16inch.png"
-    }
-    ]
-  }
-});
+// Template.beachballs12.helpers({
+  
+//   }
+// });
+// Template.beachballs16.helpers({
+//   pals: function() {
+//     return 
+//   }
+// });
