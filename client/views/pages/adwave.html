@@ -4,6 +4,7 @@
       {{> adwaveheader }}
     </div>
     <div class="row">
+      {{> yield region="pals" }}  
       {{> yield region="filterdropdown" }}  
     </div>
     <div class="row">
@@ -11,7 +12,7 @@
     </div>
     <div class="row">
       {{> yield region="charges" }}  
-      {{> adwaveColours }}
+      <!-- {{> adwaveColours }} -->
       {{> adwaveinfo }}
     </div>
   </div>

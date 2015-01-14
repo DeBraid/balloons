@@ -10,7 +10,7 @@ Template.popupbanners.helpers({
                         var sortString = ("0000" + parseInt(str, 10)).slice(-4),
                             unit = 'inch',
                             size = str.split(unit),
-                            myString = "" + size[0] + " " + unit + " " + size[1] + "",
+                            myString = "" + size[0] + " " + unit + "",
                             french = obj["Product Description_fr"];
 
                         var html = "<p sortString=" + french + ">" + myString + "</p>" + 

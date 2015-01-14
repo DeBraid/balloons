@@ -11,10 +11,12 @@ Transform the paper-based product catalogue into digital version.  Uses [Meteor]
 2. French Language Content (pouce for inches (_fr) )
 2. written description of colour assortments can be removed
 2. No colour palette for SuperAgate (multi colour)
-2. Create page for Stock Balloons
+(X)2. Create page for Stock Balloons
+1. need pricing for 3ft hearts 
 2. for MENU: add fr on same line (see heading translations provided)
 2. change all font to black
 1. Products by Market -- products.php (see dot com)
+1. data for event tents and promoflags french content missing 
 
 -----------------
 #### Dec 23rd
