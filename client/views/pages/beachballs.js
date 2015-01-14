@@ -37,36 +37,3 @@ Template.beachballs.helpers({
     }
 });
 
-
-// Template.beachballPalsAll.helpers({
-//   beachballPalettes: function() {
-//     return [{
-//       title: "Beachballs 12 Inch",
-//       src: 'balls/beachballs/beachball-12inch.png',
-//       myTemplate: "beachballs12",
-//       pals: [{
-//           id: "beachballs",
-//           src: "balls/beachballs/beachball-12inch.png"
-//         }]
-//       }, {
-//       title: "Beachballs 16 Inch",
-//       src: 'balls/beachballs/beachball-16inch.png',
-//       myTemplate: "beachballs16",
-//       pals: [{
-//       id: "beachballs",
-//       src: "balls/beachballs/beachball-16inch.png"
-//     }]
-//     }
-//     ]
-// }
-// });
-
-// Template.beachballs12.helpers({
-  
-//   }
-// });
-// Template.beachballs16.helpers({
-//   pals: function() {
-//     return 
-//   }
-// });

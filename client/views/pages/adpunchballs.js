@@ -4,18 +4,19 @@ Template.adpunchballs.helpers({
         showFilter: true,
         showNavigation: 'never',
         fields: [{
-                  key: 'Product Description',            
-                  label: 'Product -- Price Per Ball 4A',
-                  fn: function (str) {
-                        var sortString = ("0000" + parseInt(str, 10)).slice(-4),
-                            unit = 'inch',
-                            size = str.split(unit),
-                            myString = "" + size[0] + " " + unit + " " + size[1] + "";
-                        
-                        var html = "<span sortString=" + sortString + ">" + myString + "</span>";
-                        return Spacebars.SafeString(html);
-                    },
-                    sort: 'ascending'
+                      key: 'Product Description',
+                      label: 'Product -- Price Per Balloon 4A -- Description du produit',
+                        fn: function (str, obj) {
+                            var sortString = ("0000" + parseInt(str, 10)).slice(-4),
+                                unit = 'inch',
+                                size = str.split(unit),
+                                myString = "" + size[0] + " " + unit + " " + size[1] + "",
+                                french = obj["Product Description_fr"];
+
+                            var html = "<p sortString=" + french + ">" + myString + "</p>" + 
+                                        "<p>" + french + "</p>";
+                            return Spacebars.SafeString(html);
+                        }
                 }, {
                     key: '100',
                     label: '100'

@@ -1,3 +1,7 @@
+Meteor.publish('adpunch', function () {
+  return Adpunch.find();
+});
+
 Meteor.publish('beachballs', function () {
   return Beachballs.find();
 });
