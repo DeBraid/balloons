@@ -102,7 +102,9 @@ th.Product.Description {
 td.Product.Description {
   width: 33% !important;
 }
-th.Panels {
+th.Panels, 
+th.Number.of,
+td.Number.of {
   max-width: 80px; 
 }
 

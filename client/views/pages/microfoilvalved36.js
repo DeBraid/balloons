@@ -1,23 +1,25 @@
-Template.microfoilvalved36.settings = function () {
+Template.microfoilvalved36.helpers({
+    settings: function () {    
     return {
         showFilter: true,
         showNavigation: 'never',
         fields: [{
                   key: 'Product Description',
-                  label: 'Product -- Price Per Balloon 4AB',
-                  fn: function (str) {
-                        var sortString = ("0000" + parseInt(str, 10)).slice(-4),
-                            unit = 'inch',
-                            size = str.split(unit),
-                            myString = "" + size[0] + " " + unit + " " + size[1] + "";
-                        
-                        var html = "<span sortString=" + sortString + ">" + myString + "</span>";
-                        return Spacebars.SafeString(html);
-                    },
-                    sort: 'ascending'
+                    label: 'Product -- Price Per Balloon 4AB -- Description du produit',
+                        fn: function (str, obj) {
+                            var sortString = ("0000" + parseInt(str, 10)).slice(-4),
+                                unit = 'inch',
+                                size = str.split(unit),
+                                myString = "" + size[0] + " " + unit + " " + size[1] + "",
+                                french = obj["Product Description_fr"];
+
+                            var html = "<p sortString=" + french + ">" + myString + "</p>" + 
+                                        "<p>" + french + "</p>";
+                            return Spacebars.SafeString(html);
+                        }
                 }, {
                     key: 'Number of Colours', 
-                    label: '# of Ink Colours',
+                    label: '# Ink Colours - couleurs d\'encre',
                     fn: function (str) {
                         return parseInt(str)
                     }
@@ -38,5 +40,6 @@ Template.microfoilvalved36.settings = function () {
                     label: '250'
                 }
             ]
-    };
-};
+        }
+    }
+}); 

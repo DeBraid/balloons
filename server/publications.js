@@ -4,6 +4,9 @@ Meteor.publish('largequantmicrofoil', function () {
 Meteor.publish('microfoilvalved1820', function () {
   return Microfoilvalved1820.find();
 });
+Meteor.publish('microfoilvalved36', function () {
+  return Microfoilvalved36.find();
+});
 Meteor.publish('cloudbusterkits', function () {
   return Cloudbusterkits.find();
 });
