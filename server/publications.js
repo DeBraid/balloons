@@ -1,3 +1,10 @@
+Meteor.publish('quicklinkonecolour', function () {
+  return Quicklinkonecolour.find();
+});
+
+Meteor.publish('giantlatexballoons', function () {
+  return Giantlatexballoons.find();
+});
 Meteor.publish('adwpals', function () {
   return Adwpals.find();
 });

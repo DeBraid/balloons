@@ -5,18 +5,18 @@ Template.giantlatexballoons.helpers({
             showNavigation: 'never',
             fields: [{
                         key: 'Product Description',
-                        label: 'Product -- Price Per Balloon 4ABCD',
-                        fn: function (str) {
+                        label: 'Product -- Price Per Balloon 4ABCD -- Description du produit',
+                        fn: function (str, obj) {
                             var sortString = ("0000" + parseInt(str, 10)).slice(-4),
                                 unit = 'inch',
-                                str1 = str.split(unit),
-                                size = str1,
-                                myString = "" + size[0] + " " + unit + " " + str1[1] + "";
-                            
-                            var html = "<span sortString=" + sortString + ">" + myString + "</span>";
+                                size = str.split(unit),
+                                myString = "" + size[0] + " " + unit + " " + size[1] + "",
+                                french = obj["Product Description_fr"];
+
+                            var html = "<p sortString=" + french + ">" + myString + "</p>" + 
+                                        "<p>" + french + "</p>";
                             return Spacebars.SafeString(html);
-                        },
-                        sort: 'ascending'
+                        }
                     }, {
                         key: '10',
                         label: '10'
