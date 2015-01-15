@@ -177,6 +177,12 @@ td.Product.Description > p {
   letter-spacing: 2px;
 }
 
+@media(min-width:767px){
+  .resourcesMenu {
+    left: -200%;
+  }
+}
+
 /* GENERAL NAV BAR TEXT */
 .navbar-default .navbar-brand,
 #navbar-collapse > ul > li > a {
@@ -193,6 +199,7 @@ td.Product.Description > p {
   background-color: #0072bb;
 }
 
+
 #navbar-collapse > ul:nth-child(n) > li.dropdown.open {
   color: #f99621;
   background-color: #0072bb;
@@ -206,10 +213,6 @@ td.Product.Description > p {
 #colour-palette {
   background-color: #FFF !important;
   max-width: 300px;
-}
-
-@media (max-width: 330px) {
-
 }
 
 @media (max-width: 390px) {
