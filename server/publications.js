@@ -1,3 +1,16 @@
+
+Meteor.publish('multicolourpals', function () {
+  return Multicolourpals.find();
+});
+
+Meteor.publish('stretchtablecovers', function () {
+  return Stretchtablecovers.find();
+});
+
+Meteor.publish('nonfittedtablecovers', function () {
+  return Nonfittedtablecovers.find();
+});
+
 Meteor.publish('adpunch', function () {
   return Adpunch.find();
 });

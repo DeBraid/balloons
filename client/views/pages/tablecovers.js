@@ -1,22 +1,22 @@
 // contains STRETCH TABLE COVERS below
-
 Template.nonfitted.settings = function () {
     return {
         showFilter: true,
         showNavigation: 'never',
         fields: [{
                   key: 'Product Description',
-                  label: 'Product -- Price Per Piece 4C2D',
-                  fn: function (str) {
+                  label: 'Product -- Price Per Balloon 4C2D -- Description du produit',
+                    fn: function (str, obj) {
                         var sortString = ("0000" + parseInt(str, 10)).slice(-4),
-                            unit = 'ft',
+                            unit = 'inch',
                             size = str.split(unit),
-                            myString = "" + size[0] + " " + unit + " " + size[1] + "";
-                        
-                        var html = "<span sortString=" + sortString + ">" + myString + "</span>";
+                            myString = "" + size[0] + "",
+                            french = obj["Product Description_fr"];
+
+                        var html = "<p sortString=" + french + ">" + myString + "</p>" + 
+                                    "<p>" + french + "</p>";
                         return Spacebars.SafeString(html);
-                    },
-                    sort: 'ascending'
+                    }
                 }, {
                     key: 'ItemNum',
                     label: 'Item #',
@@ -49,23 +49,25 @@ Template.nonfitted.settings = function () {
     };
 };
 
-Template.stretch.settings = function () {
+Template.stretch.helpers({
+    settings: function () {
     return {
         showFilter: true,
         showNavigation: 'never',
         fields: [{
                     key: 'Product Description',
-                    label: 'Product -- Price Per Piece 4C2D',
-                    fn: function (str) {
+                  label: 'Product -- Price Per Balloon 4C2D -- Description du produit',
+                    fn: function (str, obj) {
                         var sortString = ("0000" + parseInt(str, 10)).slice(-4),
-                            unit = 'ft',
+                            unit = 'inch',
                             size = str.split(unit),
-                            myString = "" + size[0] + " " + unit + " " + size[1] + "";
-                        
-                        var html = "<span sortString=" + sortString + ">" + myString + "</span>";
+                            myString = "" + size[0] + "",
+                            french = obj["Product Description_fr"];
+
+                        var html = "<p sortString=" + french + ">" + myString + "</p>" + 
+                                    "<p>" + french + "</p>";
                         return Spacebars.SafeString(html);
-                    },
-                    sort: 'ascending'
+                    }
                 }, {
                     key: 'ItemNum',
                     label: 'Item #',
@@ -92,5 +94,6 @@ Template.stretch.settings = function () {
                     label: '100'
                 }
             ]
-    };
-};
+        }
+    }
+}); 

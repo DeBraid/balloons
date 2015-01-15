@@ -1,4 +1,5 @@
-Template.threecolourplustable.settings = function () {
+Template.threecolourplustable.helpers({
+    settings: function () {
     return {
         showFilter: true,
         showNavigation: 'never',
@@ -31,5 +32,6 @@ Template.threecolourplustable.settings = function () {
                     label: '25000'
                 }
             ]
-    };
-};
+        };
+    }
+}); 
