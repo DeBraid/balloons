@@ -21,8 +21,8 @@
     </div>
     <div class="col-lg-7 col-md-6 col-sm-12">
       <h4>Provide maximum coverage with our high-quality, 100% polyester poplin 4-sided table covers. Fitted Table Covers also available at same pricing as below — must mention Fitted Table Cover on purchase order.</h4>
-      <h4>Vous serez bien couvert avec nos nappes faites de polyester popline à 100% et imprimées sur 4 côtés. Les nappes ajustées sont aussi disponibles aux même prix que ci-dessous — Vous devez l’indiquer sur la commande.</h4>
-      <a class="btn btn-success" href="table_cover_templates.pdf">Download Table Cover Artwork Template</a>
+      <h4>Vous serez bien couvert avec nos nappes faites de polyester popline à 100% et imprimées sur 4 côtés.es nappes ajustées sont aussi disponibles aux même prix que ci-dessous — Vous devez l’indiquer sur la commande.</h4>
+      <a class="btn btn-success" href="table_cover_templates.pdf" target="_blank">Download Table Cover Artwork Template</a>
     </div>
   </div>
 </template> 
@@ -39,8 +39,6 @@
         <div class="row">
             {{> reactiveTable collection=nonfittedtablecovers settings=settings}}
         </div>
-    
-    
     </div>
 </template>
 
@@ -59,42 +57,31 @@
 
 <template name="tablecoversextra">
     <div class="container">
-        <section id="charges">
-            <h4>Charges</h4>
-            <ul>
-                <li>Fitted Table Covers also available. <strong>Must mention Fitted Table Cover on purchase order.</strong>
-                </li>
-                <li><strong>Set-Up Charge:</strong> $50.00 only one SET UP CHARGE PER TABLE COVER regardless of number of imprint areas (with same imprint).</li>
-                <li><strong>Top Imprint:</strong> Add $15.00 and includes the entire quantity with same imprint.</li>
-            </ul>
-        </section>
-
-        <section>
-            <h4>Product Material:</h4>
-            <ul>
-                <li>300 Polyester Denier</li>
-                <li>Water, Fire & Stain Resistant- Machine Washable</li>
-                <li><strong>ALL TABLE COVERS FIT 30” DEEP TABLES.</strong> 24” deep table covers also available, Contact Customer Service.</li>
-            </ul>
-        </section>
-
 
         <h3>Imprint Area:</h3> 
 
         <section>
             <div class="col-sm-6">
-                <h4>6ft. Non-Fitted Table Cover Full Colour Dye Sublimation Imprint Area</h4>
+                <h4>6-ft. Non-Fitted Table Cover Full-Colour Dye-Sublimation Imprint Area</h4>
+                <h4>Surface d’impression en couleur par sublimation pour nappe de 6 pi. non ajustée.</h4>
                 <ul>
                     <li>Front/Back Imprint Area: 21”H x 60”W</li>
+                    <li>Surface d’impression pour devant/dos: 21 po.H x 60 po.</li>
                     <li>Side Imprint Area: 21”H x 24”W</li>
+                    <li>Surface d’impression pour côtés: 21 po.H x 24 po.</li>
                 </ul>
+
             </div>
             <div class="col-sm-6">
                 <h4>6ft. Non-Fitted Table Cover Full Colour/ Full Bleed Imprint Area</h4>
+                <h4>Surface d’impression en couleur à fond perdu pour nappe de 6 pi. non ajustée.</h4>
                 <ul>
                     <li>Front/Back Imprint Area: 29”H x 72”W</li>
+                    <li>Surface d’impression pour devant/dos: 29 po.H x 72 po.</li>
                     <li>Side Imprint Area: 29”H x 30”W</li>
+                    <li>Surface d’impression pour côtés: 29 po.H x 30 po.</li>
                     <li>All Over Imprint Area: 88”H x 130”W</li>
+                    <li>Surface d’impression partout: 88 po.H x 130 po.</li>
                 </ul>
             </div>
         </section>
@@ -103,17 +90,24 @@
         
             <div class="col-sm-6">
                 <h4>8ft. Non-Fitted Table Cover Full Colour Dye Sublimation Imprint Area</h4>
+                <h4>Surface d’impression en couleur par sublimation pour nappe de 8 pi. non ajustée.</h4>
                 <ul>
                     <li>Front/Back Imprint Area: 21”H x 72”W</li>
+                    <li>Surface d’impression pour devant/dos: 21 po.H x 72 po.</li>
                     <li>Side Imprint Area: 21”H x 24”W</li>
+                    <li>Surface d’impression pour côtés: 21 po.H x 24 po.</li>
                 </ul>
             </div>
              <div class="col-sm-6">
                 <h4>8ft. Non-Fitted Table Cover Full Colour/ Full Bleed Imprint Area</h4>
+                <h4>Surface d’impression en couleur à fond perdu pour nappe de 6 pi. non ajustée.</h4>
                 <ul>
                     <li>Front/Back Imprint Area: 29”H x 96”W</li>
+                    <li>Surface d’impression pour devant/dos: 29 po.H x 96 po.</li>
                     <li>Side Imprint Area: 29”H x 30”W</li>
+                    <li>Surface d’impression pour côtés: 29 po.H x 30 po.</li>
                     <li>All Over Imprint Area: 88”H x 154”W</li>
+                    <li>Surface d’impression partout: 88 po.H x 154 po.</li>
                 </ul>
             </div>   
              
@@ -121,103 +115,33 @@
 
 
         <section>
-            <p><strong>Shipping</strong> F.O.B: Miami Florida. Duty and Brokerage may apply</p>
-            <p>Approx. 3-4 business weeks from confirmed order and sketch approval</p>
+            {{> tableExtras}}
         </section>
     </div>
 </template>
 
-<template name="tableeExtras">
+<template name="tableExtras">
+    <h4>All table covers fit 30” deep tables . 24” deep table covers also available, contact Customer Service.</h4>
+    <h4>Toutes les nappes font pour les tables de 30 po . de creu x.es nappes de 24 po. de creux sont aussi disponibles, appelez le service à la clientèle.</h4>
+
+    <section>
+
+    <h4>Product Material - Matériel du produit</h4>
+        <ul>
+            <li>300 Polyester Denier - Denier polyester 300</li>
+            <li>Water, Fire & Stain Resistant- Résistant à l’eau, au feu et aux taches.</li>
+            <li>Fitted Table Covers also available. <strong>Must mention Fitted Table Cover on purchase order.</strong></li>
+        </ul>
+    </section>
+
+    <p>Price above include a 4-sided table cover with full-colour dye sublimation print; add any additional charges</p>
+    <p>Prix ci-dessus comprennent une nappe à 4 côtés avec une impression en couleur par sublimation; ajoutez tous frais supplémentaires.</p>
 
 
+    <p>Set-Up(#36996): $50.00(C) Only one SET UP CHARGE PER TABLE COVER regardless of number of imprint areas and includes the entire quantity with same imprint.</p>
+    <p>Frais de montage (#36996): 50,00$(C) Seulement un FRAIS DE MONTAGE PAR NAPPE peu importe le montant de surfaces à imprimer et comprend toute quantité avec la même impression.</p>
 
-<p>Price above include a 4-sided table cover with full-colour dye sublimation print; add any additional charges</p>
-<p>Prix ci-dessus comprennent une nappe à 4 côtés avec une impression en couleur par sublimation; ajoutez tous frais supplémentaires.</p>
-
-<h4>All table covers fit 30” deep tables . 24” deep table covers also available, contact Customer Service.</h4>
-<h4>Toutes les nappes font pour les tables de 30 po . de creu x. Les nappes de 24 po. de creux sont aussi disponibles, appelez le service à la clientèle.</h4>
-
-<p>Set-Up(#36996): $50.00(C) Only one SET UP CHARGE PER TABLE COVER regardless of number of imprint areas and includes the entire quantity with same imprint.</p>
-<p>Frais de montage (#36996): 50,00$(C) Seulement un FRAIS DE MONTAGE PAR NAPPE peu importe le montant de surfaces à imprimer et comprend toute quantité avec la même impression.</p>
-
-<p>Top Print Add: $15.00(C) - Impression sur le dessus ajoutez: 15,00$(C)</p>
-
-<h4>Product Material - Matériel du produit</h4>
-<p>300 Polyester Denier - Denier polyester 300</p>
-<p>Water, Fire & Stain Resistant- Résistant à l’eau, au feu et aux taches.</p>
-
-6-ft. Non-Fitted Table Cover Full-Colour Dye-Sublimation Imprint Area
-Surface d’impression en couleur par sublimation pour nappe de 6 pi. non ajustée.
-
-Front/Back Imprint Area: 21”H x 60”W
-Surface d’impression pour devant/dos: 21 po.H x 60 po. L
-
-Side Imprint Area: 21”H x 24”W
-Surface d’impression pour côtés: 21 po.H x 24 po.L
-
-6-ft. Non-Fitted Table Cover Full-Colour/Full-Bleed Imprint Area
-Surface d’impression en couleur à fond perdu pour nappe de 6 pi. non ajustée.
-
-Front/Back Imprint Area: 29”H x 72”W
-Surface d’impression pour devant/dos: 29 po.H x 72 po. L
-
-Side Imprint Area: 29”H x 30”W
-Surface d’impression pour côtés: 29 po.H x 30 po.L
-
-All Over Imprint Area: 88”H x 130”W
-Surface d’impression partout: 88 po.H x 130 po.L
-
-8-ft. Non-Fitted Table Cover Full-Colour Dye-Sublimation Imprint Area
-Surface d’impression en couleur par sublimation pour nappe de 8 pi. non ajustée.
-
-Front/Back Imprint Area: 21”H x 72”W
-Surface d’impression pour devant/dos: 21 po.H x 72 po. L
-
-Side Imprint Area: 21”H x 24”W
-Surface d’impression pour côtés: 21 po.H x 24 po.L
-
-8-ft. Non-Fitted Table Cover Full-Colour/Full-Bleed Imprint Area
-Surface d’impression en couleur à fond perdu pour nappe de 6 pi. non ajustée.
-
-Front/Back Imprint Area: 29”H x 96”W
-Surface d’impression pour devant/dos: 29 po.H x 96 po. L
-
-Side Imprint Area: 29”H x 30”W
-Surface d’impression pour côtés: 29 po.H x 30 po.L
-
-All Over Imprint Area: 88”H x 154”W
-Surface d’impression partout: 88 po.H x 154 po.L
-
-Non-fitted Table Covers
-Nappes non ajustées
-
-Front Print on Stock Fabric Colours
-Impression sur le devant Couleur de tissus en stock
-
-Full-Colour Full Bleed
-Impression de couleur à fond perdu partout
-
-Fitted Table Covers
-Nappes ajustées
-
-Multi-Panel Print
-Impression sur multiple panneaux
-
-Stretch Table Covers
-Nappes qui s'étirent
-
-Stock Colours
-Couleurs en stock
-
-PMS numbers are for reference only and may vary slightly from actual material colour.
-Les numéros PMS ne doivent être pris qu'à titre indicatif et peuvent varier légèrement de la couleur actuelle du tissu.
-
-Yellow PMS C
-Jaune PMS C
-
-Yellow PMS 7405C
-
-Yellow–Jaune
-PMS 7405C
-    
+    <p>Top Print Add: $15.00(C) - Impression sur le dessus ajoutez: 15,00$(C)</p>
+    <p><strong>Shipping</strong> F.O.B: Miami Florida. Duty and Brokerage may apply</p>
+    <p>Approx. 3-4 business weeks from confirmed order and sketch approval</p>
 </template>
