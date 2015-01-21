@@ -69,7 +69,8 @@ button, .btn {
 h1 {
   font-weight: 900;
   font-size: 4em;
-  color: #252175;
+  margin: 0 1em 0 1em;
+  /*color: #252175;*/
 }
 @media (max-width: 400px) {
   h1 {
@@ -186,7 +187,7 @@ td.Product.Description > p {
 /* GENERAL NAV BAR TEXT */
 .navbar-default .navbar-brand,
 #navbar-collapse > ul > li > a {
-  color: #0072bb; 
+  color: #000; 
 }
 
 .navbar-default .navbar-brand,
