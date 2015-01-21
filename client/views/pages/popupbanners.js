@@ -10,7 +10,7 @@ Template.popupbanners.helpers({
                         var sortString = ("0000" + parseInt(str, 10)).slice(-4),
                             unit = 'inch',
                             size = str.split(unit),
-                            myString = "" + size[0] + " " + unit + "",
+                            myString = "" + size[0] + "",
                             french = obj["Product Description_fr"];
 
                         var html = "<p sortString=" + french + ">" + myString + "</p>" + 
@@ -32,19 +32,34 @@ Template.popupbanners.helpers({
                     }
                 }, {
                     key: '1',
-                    label: '1'
+                    label: '1',
+                    fn : function (value) {
+                        return value.length == undefined ? value.toFixed(2) : value;
+                    }
                 }, {
                     key: '2 to 4',
-                    label: '2 to 4'
+                    label: '2 to 4',
+                    fn : function (value) {
+                        return value.length == undefined ? value.toFixed(2) : value;
+                    }
                 }, {
                     key: '5 to 9',
-                    label: '5 to 9'
+                    label: '5 to 9',
+                    fn : function (value) {
+                        return value.length == undefined ? value.toFixed(2) : value;
+                    }
                 }, {
                     key: '10 to 24',
-                    label: '10 to 24' 
+                    label: '10 to 24' ,
+                    fn : function (value) {
+                        return value.length == undefined ? value.toFixed(2) : value;
+                    }
                 }, {
                     key: '25 to 49',
-                    label: '25 to 49' 
+                    label: '25 to 49' ,
+                    fn : function (value) {
+                        return value.length == undefined ? value.toFixed(2) : value;
+                    }
                 }
             ]
         }

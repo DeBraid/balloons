@@ -22,16 +22,28 @@ Template.largequantmicrofoil.settings = function () {
                     label: 'Printing'
                 }, {
                     key: '2500',
-                    label: '2500'
+                    label: '2500',
+                    fn : function (value) {
+                        return value.length == undefined ? value.toFixed(2) : value;
+                    }
                 }, {
                     key: '5000',
-                    label: '5000'
+                    label: '5000',
+                    fn : function (value) {
+                        return value.length == undefined ? value.toFixed(2) : value;
+                    }
                 },{
                     key: '10000',
-                    label: '10000'
+                    label: '10000',
+                    fn : function (value) {
+                        return value.length == undefined ? value.toFixed(2) : value;
+                    }
                 },{
                     key: '15000',
-                    label: '15000'
+                    label: '15000',
+                    fn : function (value) {
+                        return value.length == undefined ? value.toFixed(2) : value;
+                    }
                 }
             ]
     };

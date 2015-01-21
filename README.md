@@ -9,13 +9,18 @@ Transform the paper-based product catalogue into digital version.  Uses [Meteor]
 
 ### TO DO JAN 13
 2. French Language Content (pouce for inches (_fr) )
-1. add trailing zeros to table
 1. need pricing for 3ft hearts 
 2. for MENU: add fr on same line (see heading translations provided)
 2. change all font to black
 1. Products by Market -- products.php (see dot com)
 1. data / content for event tents and promoflags, gen info, french content missing 
+1. french content for special shapes
+
+
+------------------------
+
 (X)2. written description of colour assortments can be removed
+(x)1. add trailing zeros to table
 (X)2. No colour palette for SuperAgate (multi colour)
 (X)2. Create page for Stock Balloons
 

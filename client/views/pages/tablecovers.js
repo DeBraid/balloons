@@ -28,22 +28,40 @@ Template.nonfitted.settings = function () {
                     label: 'Printing'
                 }, {
                     key: '1',
-                    label: '1'
+                    label: '1',
+                    fn : function (value) {
+                        return value.length == undefined ? value.toFixed(2) : value;
+                    }
                 }, {
                     key: '5',
-                    label: '5'
+                    label: '5',
+                    fn : function (value) {
+                        return value.length == undefined ? value.toFixed(2) : value;
+                    }
                 }, {
                     key: '10',
-                    label: '10' 
+                    label: '10' ,
+                    fn : function (value) {
+                        return value.length == undefined ? value.toFixed(2) : value;
+                    }
                 }, {
                     key: '25',
-                    label: '25'
+                    label: '25',
+                    fn : function (value) {
+                        return value.length == undefined ? value.toFixed(2) : value;
+                    }
                 }, {
                     key: '50',
-                    label: '50'
+                    label: '50',
+                    fn : function (value) {
+                        return value.length == undefined ? value.toFixed(2) : value;
+                    }
                 }, {
                     key: '100',
-                    label: '100'
+                    label: '100',
+                    fn : function (value) {
+                        return value.length == undefined ? value.toFixed(2) : value;
+                    }
                 }
             ]
     };
@@ -76,22 +94,40 @@ Template.stretch.helpers({
                     }
                 }, {
                     key: '1',
-                    label: '1'
+                    label: '1',
+                    fn : function (value) {
+                        return value.length == undefined ? value.toFixed(2) : value;
+                    }
                 }, {
                     key: '5',
-                    label: '5'
+                    label: '5',
+                    fn : function (value) {
+                        return value.length == undefined ? value.toFixed(2) : value;
+                    }
                 }, {
                     key: '10',
-                    label: '10' 
+                    label: '10' ,
+                    fn : function (value) {
+                        return value.length == undefined ? value.toFixed(2) : value;
+                    }
                 }, {
                     key: '25',
-                    label: '25'
+                    label: '25',
+                    fn : function (value) {
+                        return value.length == undefined ? value.toFixed(2) : value;
+                    }
                 }, {
                     key: '50',
-                    label: '50'
+                    label: '50',
+                    fn : function (value) {
+                        return value.length == undefined ? value.toFixed(2) : value;
+                    }
                 }, {
                     key: '100',
-                    label: '100'
+                    label: '100',
+                    fn : function (value) {
+                        return value.length == undefined ? value.toFixed(2) : value;
+                    }
                 }
             ]
         }

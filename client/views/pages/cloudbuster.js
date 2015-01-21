@@ -25,16 +25,28 @@ Template.cloudbuster.helpers({
                     // }, 
                     {
                         key: '1',
-                        label: '1'
+                        label: '1',
+                        fn : function (value) {
+                            return value.toFixed(2)
+                        }
                     }, {
                         key: '10',
-                        label: '10'
+                        label: '10',
+                        fn : function (value) {
+                            return value.toFixed(2)
+                        }
                     }, {
                         key: '50',
-                        label: '50'
+                        label: '50',
+                        fn : function (value) {
+                            return value.toFixed(2)
+                        }
                     }, {
                         key: '100',
-                        label: '100'
+                        label: '100',
+                        fn : function (value) {
+                            return value.toFixed(2)
+                        }
                     }
                 ]
         }

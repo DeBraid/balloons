@@ -22,19 +22,34 @@ Template.outdoorballoons.helpers({
                         label: '1 Side Printing'
                     }, {
                         key: '200',
-                        label: '200'
+                        label: '200',
+                        fn : function (value) {
+                            return value.length == undefined ? value.toFixed(2) : value;
+                        }
                     }, {
                         key: '500',
-                        label: '500'
+                        label: '500',
+                        fn : function (value) {
+                            return value.length == undefined ? value.toFixed(2) : value;
+                        }
                     }, {
                         key: '1000',
-                        label: '1000'
+                        label: '1000',
+                        fn : function (value) {
+                            return value.length == undefined ? value.toFixed(2) : value;
+                        }
                     }, {
                         key: '2500',
-                        label: '2500'
+                        label: '2500',
+                        fn : function (value) {
+                            return value.length == undefined ? value.toFixed(2) : value;
+                        }
                     },{
                         key: '5000',
-                        label: '5000'
+                        label: '5000',
+                        fn : function (value) {
+                            return value.length == undefined ? value.toFixed(2) : value;
+                        }
                     }
                 ]
         };        
