@@ -20,16 +20,28 @@ Template.adwrap.helpers({
                     sort: 'ascending'
                 }, {
                     key: '1000',
-                    label: '1000'
+                    label: '1000',
+                    fn : function (value) {
+                        return value.toFixed(2)
+                    }
                 }, {
                     key: '2500',
-                    label: '2500'
+                    label: '2500',
+                    fn : function (value) {
+                        return value.toFixed(2)
+                    }
                 }, {
                     key: '5000',
-                    label: '5000'
+                    label: '5000',
+                    fn : function (value) {
+                        return value.toFixed(2)
+                    }
                 }, {
                     key: '10000',
-                    label: '10000'
+                    label: '10000',
+                    fn : function (value) {
+                        return value.toFixed(2)
+                    }
                 }
             ]
         }
