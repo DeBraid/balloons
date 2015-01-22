@@ -69,7 +69,7 @@ button, .btn {
 h1 {
   font-weight: 900;
   font-size: 4em;
-  margin: 0 1em 0 1em;
+  margin: 0;
   /*color: #252175;*/
 }
 @media (max-width: 400px) {

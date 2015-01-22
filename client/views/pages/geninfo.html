@@ -1,8 +1,12 @@
 <!-- DISCLAIMER BELOW -->
-
 <template name="geninfo">
+  {{> englishGenInfo }}
+  {{> frenchGenInfo }}  
+</template>
+
+<template name="englishGenInfo">
   <h1>General Information</h1>  
-  <h3>General Ordering Information</h3>
+  <h4>General Ordering Information</h4>
   <ul>
     <li>Catalogue Pricing –Prices, terms, and items are subject to change without notice. If world events force increases, we reserve the right to change our rates without notice. This catalogue is not an offer to sell, and any order may be declined.</li>
     <li>Credit Claims: Claims covering defective merchandise and shipping errors must be submitted in writing and accompanied by sample within 30 days of receipt of order. Returned merchandise must have prior authorization number displayed on return carton.</li>
@@ -16,11 +20,7 @@
   <p>Applications Accepted: Adobe Illustrator® CS4 or below</p>
   <p>File Formats: PDF, AI or EPS (Vector)</p>
 
-
-
-
-
-  <h3>Electronic Files</h3>
+  <h4>Electronic Files</h4>
   <ul>
     <li>Distributor name and purchase order number must appear in the subject line of the e-mail. A hard copy, PDF, JPG or TIFF of the imprint must accompany the purchase order for verification. Files will be opened within 24 hours. The maximum file size we can receive via e-mail is 2 MB. Multiple files and any large vector files should be compressed. Use either STUFFIT or ZIP archives. The files must be line art/vector image in Adobe Illustrator CS4 or lower, as PDF,AI, or EPS files. Quark files are not accepted. Grey scale or colour Bitmap images may be subject to artwork charges.</li>
     <li>Colour Separations - For artwork to be reproduced in more than one colour, provide separate line art/vector image file for each colour. Files must contain separated black art only. Include a hard copy or other diagram indicating the colour breakdown and the name of the individual colour file in a descriptive, self explanatory manner. Customer-supplied artwork should be production-ready and no smaller than 5” x 5” for latex balloons, and 6” x 6” for Microfoil® balloons. Art will be sized to the maximum imprint area of the balloon selected.</li>
@@ -35,7 +35,7 @@
   <p>File Formats: PDF, AI or EPS (Vector)</p>
 
 
-  <h1>Qualatex® Latex ordering Information</h1>
+  <h4>Qualatex® Latex ordering Information</h4>
   <ul>
     <li>When choosing balloon and ink colour combinations, consider the effect of the balloon colour when combined with the ink colour, particularly when printing on an assortment of balloon colours. A change of ink may be required for desired result. Colours can be custom-blended. The Pantone Matching System (PMS) colour numbers are used as a point of reference only. Exact PMS colour matches cannot be guaranteed. Custom ink blends are not inventoried. Latex inks are compared to uncoated PMS ink colours.</li>
     <li>Latex Stock Ink Colours (Uncoated) - Black. White, Red (#199-200),Yellow (#102), Royal Blue (#286-287), Brown (#463-464), Orange (#165-166), Pink (#218-219), Purple (#526),Burgundy(#208-209), Teal (#320), Lime (#368), Green (#341-342), Gold (#872) and Silver (#877).</li>
@@ -43,7 +43,7 @@
   </ul>
 
 
-  <h1>Microfoil® Ordering Information</h1>
+  <h4>Microfoil® Ordering Information</h4>
   <ul>
     <li>Microfoil Screen Print Ink Colours (Coated) - Pantone Ink Colours: Yellow (#109), Orange (#1655), Fire Red (#186), Burgundy (#202), Purple (#2603), Green (#341), Blue (#300), Pantone Rubine Red, Pantone Rodamine Red, and Pantone Reflux Blue. Other ink colours include: Black, White, Silver & Gold.</li>
     <li>Microfoil Flexographic Print Ink Colours (Coated) - A large inventory of standard flexographic inks is offered at no additional charge.</li>
@@ -51,15 +51,51 @@
     <li>For process print, submit art as a layered Adobe Photoshop® file - If flat art is submitted, extra prep charges may apply.</li>
   </ul>
 
- {{> disclaimer }}
+  {{> disclaimer }}
   
+</template>
+
+<template name="frenchGenInfo">
+  <h4>Renseignements utiles pour commande</h4>
+<p>Prix – Les prix, termes et produits peuvent être modifiés sans préavis. Si pour des raisons d’ordre global, nous devons augmenter nos prix, nous nous en réservons le droit sans préavis. Ce catalogue n’est pas une offre de vente et toute commande peut être refusée.</p>
+<p>Demande de crédit – Les demandes de crédit pour toute marchandise défectueuse et toute erreur d’expédition doivent être remises par écrit et munies d’échantillons, dans les 30 jours suivant la réception de la dite marchandise. Tout produit renvoyé doit porter un numéro d’autorisation préalablement obtenu et clairement apposé sur l’emballage.</p>
+<p>Direction d’impression – Chaque ballon est imprimé pour que le message soit lu avec le col orienté vers le bas. Spécifier clairement si l’impression doit être placée différemment.</p>
+<p>Temps de production – Indiquez clairement la date requise sur votre bon de commande. Allouez jusqu’à 2 jours ouvrables de plus pour la préparation de conception graphique. Du temps additionnel sera requis pour l’insertion de valve ProLite® dans les ballons de latex, et n’importe quel emballage spécial. Le montant de temps requis dépendra du montant de ballons commandés.</p>
+<p>Expédition/Emballage – Toutes les commandes sont expédiées par le meilleur moyen à moins d’indication contraire sur la commande. Des expéditions partielles de quantité inférieures au minimum d’une commande normale feront l’objet d’une surcharge, appelez le service à la clientèle pour plus de renseignements. Pour les livraisons directes, des étiquettes-réponses autocollantes doivent être fournies. Toutes les commandes sont expédiées F.O.B Hamilton, Ontario. Le poids total d’expédition comprend l’emballage. Un emballage spécial est disponible sur demande. Pour connaître les prix, communiquez avec le service à la clientèle.</p>
+<p>Surplus et déficit de fabrication – Toutes commandes de ballons de latex, ballons AdPunch™, ballons de plage et petits ballons sportifs sont sujettes à 5% de surplus/déficit de fabrication et seront facturées en conséquences. Toutes commandes de ballons Microfoil® sont sujettes à 10% de surplus/déficit de fabrication et seront facturée en conséquences.</p>
+<p>Changement ou annulation – Tous changements ou annulation d’une commande en production feront l’objet de frais additionnels.</p>
+
+<h4>Fichiers électroniques</h4>
+<p>Le nom du distributeur et le numéro du bon de commande doivent parraître dans la ligne sujet du courriel. Une copie papier, PDF, JPG, ou TIFF de l’impression doit accompagner le bon de commande pour vérification. Les fichiers seront ouvert dans les 24 heures qui suivent. Le courriel le plus gros qu’on peut recevoir est de 2 MB. Un courriel contenant plusieurs fichiers de modèle vectoriel devrait être compressé. Utilisez STUFFIT ou ZIP. Les fichiers doivent être des fichiers Adobe Illustrator CS4 ou inférieur comme dessins au trait/modèle vectoriel PDF, AI ou EPS. Les fichiers Quark ne sont pas acceptés. Les images en mode point à échelle de gris ou de couleur peuvent être sujets à des frais de conception graphique.</p>
+<p>Séparation de couleurs – Pour les conceptions graphiques de plus d’une couleur, fournir des fichiers séparés en mode vectoriel pour chaque couleur. Les fichiers ne doivent comprendre que des conceptions graphiques sans couleurs. Inclure un document imprimé ou un dessin indiquant le plus clairement possible la répartition des couleurs et le nom de chaque couleur. La conception graphique fournie par le client devrait être un original à reproduire pas plus petit que 5 po. x 5 po. pour les ballons de latex et de 6 po. x 6 po. pour les ballons Microfoil®. L’illustration sera calibrée pour la plus grande impression possible sur le ballon choisi.</p>
+<p>Support informatique – les CDs et les DVDs sont acceptés.</p>
+<p>Conception graphique au laser – doit être d’au moins 800 DPI.</p>
+<p>Dessins en noir et blanc – (ex. illustrations et texte) doivent être clairement détaillés, sans plis. Les dessins envoyés par télécopieur ne sont pas considérés comme étant des originaux à reproduire.</p>
+<p>Police de caractères & copie en ligne – Toute police de caractères utilisée dans la conception graphique doit être convertie en mode vectoriel. Aucun caractère ne devrait être moins de 4 points. Les polices sans empattement à caractères gras sont recommandées pour les petits caractères. Toutes lignes ou contours devraient être d’au moins 1 point. Un maximum de 4 à 5 lignes est recommandé pour la copie en ligne. Les abréviations, lettres majuscules et ponctuation seront fait d’après ce qui se trouve sur le bon de commande; alors écrire clairement. Si ce n’est pas spécifié, le style de caractères et la mise en page seront fait de façon à obtenir les meilleurs résultats possibles. Un frais s’applique si on doit changer le texte ou ajouter un logo au texte.</p>
+
+<h4>Logiciel accepté formats de fichier</h4>
+<h4>Adobe Illustrator® CS4 ou inférieur PDF, AI ou EPS (mode vectoriel)</h4>
+
+<p>Les fichiers doivent être Adobe Illustrator CS4 ou inférieur comme dessins au trait en mode vectoriel. Les fichiers Corel Draw ou Freehand doivent être exportés (non copiés et collés) comme fichiers Illustrator, PDF, AI, ou EPS. Les documents Microsoft® Word et les fichiers Quark ne sont pas acceptés.</p>
+
+<h4>Information pour commande de ballons de latex Qualatex®</h4>
+<p>Lors du choix de la couleur d’encre, considérez l’effet de la couleur du ballon une fois imprimé avec une certaine couleur d’encre, surtout dans le cas d’un assortiment de ballons. Un changement de couleur d’encre peut être requis pour obtenir les résultats désirés. Certaines couleurs ne peuvent pas être exactement reproduites car nous n’utilisons pas le nuancier Pantone. Le numéro Pantone ne doit être pris qu’à titre indicatif. Les mélanges d’encre sur demande font l’objet de frais supplémentaires et ne sont pas gardés en stock.</p>
+<p>Couleurs d’encre pour ballons de latex (U) – noir, blanc, rouge, jaune, bleu royal, vert, brun, orange, rose, pourpre, bourgogne, sarcelle, vert lime, or et argent. L’encre noire est recommandée pour les assortiments de couleurs standards. L’encre blanche est recommandée pour les assortiments de couleurs pierres précieuses.</p>
+<h4>Information pour commande de ballons Microfoil®</h4>
+<p>Couleurs d’encre pour ballons Microfoil avec impression sérigraphique (C) – Couleurs Pantone: jaune (#109), orange (#1655), rouge feu (#186), bourgogne(#202), pourpre (#2603), vert (#341), bleu (#300), Pantone rouge rubine, Pantone rouge rodamine et Pantone bleu réflexe. Autres couleur d’encre comprennent noir, blanc, or et argent.</p>
+<p>Couleurs d’encre pour ballons Microfoil avec impression flexographique (C) – Un grand inventaire d’encres flexographiques est offert sans frais supplémentaires.</p>
+<p>Impression flexographique – Pour les impressions multicolores faire parvenir les fichiers comme AI ou EPS à couches multiples. Les couleurs pantones devraient être notées sur le fichier. Pour impression polychrome faire parvenir un fichier Adobe Photoshop® avec les différentes couches; si le dessin est sur une couche seulement des frais supplémentaires peuvent s’appliquer.</p>
 </template>
 
 
 <template name="disclaimer">
    <div id="disclaimer" class="row">
+      <h4>Disclaimer</h4>
      <p><i class="fa fa-warning"></i>Children under 8 years can choke or suffocate on uninflated or broken balloons. Adult supervision required.  Keep uninflated balloons from children. Discard broken balloons at once.</p>
+     <p><i class="fa fa-warning"></i>Les enfants de moins de 8 ans risquent de s’étouffer ou de suffoquer avec des ballons non gonflés. La surveillance d’un adulte est nécesssaire. Jetez les ballons brisés immédiatement.</p>
+
 
      <p><i class="fa fa-warning"></i>Latex balloons are made of natural rubber latex, which may cause allergic reactions.</p>
+     <p><i class="fa fa-warning"></i>Les ballons de latex sont fabriqués à partir de latex naturel qui peut causer des réactions allergiques.</p>
   </div>
 </template>

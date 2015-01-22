@@ -7,7 +7,7 @@ Transform the paper-based product catalogue into digital version.  Uses [Meteor]
 ### TO DO JAN 21
 
 1. Searching on google (address bar?), it should be listed as the pioneerline, not pioneerline2014 or 2015.
-2. Page headings: color: black, margin-top less 
+2. (X) Page headings: color: black, margin-top less 
 3.  Shrink Qualatex image (live demo)
 3. palettes display as dropdown menu -- why?
 4. nav-menu: less margin between li's  
