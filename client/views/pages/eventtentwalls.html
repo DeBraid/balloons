@@ -1,13 +1,24 @@
 <template name="eventtentwalls">
+  
   <h1>Durable Event Tent Walls</h1>
-  <h4>Price below is for one-side print; add additional charges</h4>
+  <h1>Murs pour tente d'événement durables</h1>
+  
+  {{> reactiveTable collection=eventtentwalls settings=settings }}
+  
+  {{> etwOld }}
+  {{> etwNew }}
+
+</template>
+
+
+<template name="etwOld">
+<h4>Price below is for one-side print; add additional charges</h4>
 
   <p>No additional set-up charge for walls when ordered on same purchase order as tent.</p>
   <p>Second-Side imprint on wall panels multiply wall price by two.</p>
 
   <aside>Price per Piece 4C</aside>
 
-  {{> reactiveTable collection=eventtentwalls settings=settings }}
    
   <aside>*Requires hardware</aside>
   <aside>**Hardware Sold Separately</aside>
@@ -37,4 +48,45 @@
     <p><strong>Shipping</strong> F.O.B: Miami Florida. Duty and Brokerage may apply; Approx. 3-4 business weeks from confirmed order and sketch approval</p>
   </section>
 
+  
 </template>
+<template name="etwNew">
+  <p>Price above are for one-side print; add additional charges.</p>
+  <p>Prix ci-dessus une impression sur 1 côté; ajoutez tous frais supplémentaires.</p>
+  <p>No additional set-up charge for walls when ordered on same purchase order as tent.</p>
+  <p>Aucun frais de montage pour murs commandés sur le même bon de commande que la tente.</p>
+  <p>Second–side imprint on wall panels multiply wall price by two.–</p>
+  <p>Pour impression sur le deuxième côté du mur multipliez le prix du mur par deux.</p>
+
+  {{> stockCanopyColours}}
+
+
+
+</template>
+<template name="stockCanopyColours">
+  <h4>Stock Canopy Colours</h4>
+  <h4>Couleur d'auvent en stock</h4>
+
+<ul>
+  <li>Orange PMS 021C - Orange PMS 021C </li>
+  <li>Yellow PMS C - Jaune PMS C </li>
+  <li>Green PMS 355C - Vert PMS 355C </li>
+  <li>Green PMS 375C - Vert PMS 375C </li>
+  <li>Red PMS 185C - Rouge PMS 185C </li>
+  <li>Red PMS 187C - Rouge PMS 187C </li>
+  <li>Red PMS 485C - Rouge PMS 485C </li>
+  <li>Brown PMS 476C - Brun PMS 476C </li>
+  <li>Beige PMS 7500C - Beige PMS 7500C </li>
+  <li>Process Blue PMS C - Bleu cyanure PMS </li>
+  <li>Blue PMS 282C - Bleu PMS 282C </li>
+  <li>Blue PMS 293C - Bleu PMS 293C </li>
+  <li>Blue PMS 300C - Bleu PMS 300C </li>
+  <li>Blue PMS 2955C - Bleu PMS 2955C </li>
+  <li>Purple 2685C - Pourpre PMS 2685C </li>
+  <li>Cool Gray PMS 6C - Gris froid PMS 6C </li>
+  <li>Black C PMS - Noir C PMS </li>
+  <li>White C PMS - Blanc C PMS</li>
+</ul>
+  <p>PMS numbers are for reference only and may vary slightly from actual material colour - Les numéros PMS ne doivent être Stock Canopy Colours – Couleur d'auvent en stock pris qu'à titre indicatif et peuvent varier légèrement de la couleur actuelle du tissu.</p>
+</template>
+<template name="bar"></template>

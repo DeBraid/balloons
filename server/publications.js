@@ -1,4 +1,12 @@
 
+Meteor.publish('eventtentwalls', function () {
+  return Eventtentwalls.find();
+});
+
+Meteor.publish('eventtents', function () {
+  return Eventtents.find();
+});
+
 Meteor.publish('multicolourpals', function () {
   return Multicolourpals.find();
 });
