@@ -9,8 +9,18 @@ Transform the paper-based product catalogue into digital version.  Uses [Meteor]
 1. Searching on google (address bar?), it should be listed as the pioneerline, not pioneerline2014 or 2015.
 2. (X) Page headings: color: black, margin-top less 
 3.  Shrink Qualatex image (live demo)
-3. palettes display as dropdown menu -- why?
-4. nav-menu: less margin between li's  
+3. palettes display as dropdown menu -- why hide these colors?
+4. nav-menu: less margin between li's  -- Dropdown menu should be shrunk (width)
+5.  Resources should link to PDF directly (download PDFs in assets/pdf )
+
+Jan 23rd 
+
+6.  h4's on pages should have zero margin (make them closer together)
+7.  For Pals, when clicking the image, all balloons should show. 
+8.  homepage, add sales service solutions (from 2015 calendar)
+9.  homepage (moar purple).
+10.  resource.
+
 
 
 -----------
