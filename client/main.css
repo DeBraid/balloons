@@ -178,7 +178,7 @@ td.Product.Description > p {
   letter-spacing: 2px;
 }
 
-@media(min-width:767px){
+@media(min-width:1025px){
   .resourcesMenu {
     left: -200%;
   }
@@ -666,6 +666,7 @@ header
 
 #pal-headers {
   max-height: 175px;
+  cursor: pointer;
 }
 .pal-image {
   float: left;

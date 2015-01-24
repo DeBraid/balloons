@@ -11,15 +11,14 @@ Transform the paper-based product catalogue into digital version.  Uses [Meteor]
 3.  Shrink Qualatex image (live demo)
 3. palettes display as dropdown menu -- why hide these colors?
 4. nav-menu: less margin between li's  -- Dropdown menu should be shrunk (width)
-5.  Resources should link to PDF directly (download PDFs in assets/pdf )
 
 Jan 23rd 
 
 6.  h4's on pages should have zero margin (make them closer together)
-7.  For Pals, when clicking the image, all balloons should show. 
+7. (X)  For Pals, when clicking the image, all balloons should show. 
 8.  homepage, add sales service solutions (from 2015 calendar)
 9.  homepage (moar purple).
-10.  resource.
+5. (X)  Resources should link to PDF directly (download PDFs in assets/pdf )
 
 
 
