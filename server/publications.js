@@ -1,4 +1,11 @@
 
+Meteor.publish('econflags', function () {
+  return Econflags.find();
+});
+Meteor.publish('promoflags', function () {
+  return Promoflags.find();
+});
+
 Meteor.publish('eventtentwalls', function () {
   return Eventtentwalls.find();
 });
