@@ -38,7 +38,8 @@ Template.categories.helpers({
         return [
             { title : "<p>AdRite™ Latex Balloons</p>" , path : "adriteeconomyline", src : "adrite.png" },
             { title : "<p>Cloudbuster Balloons</p>" , path : "cloudbuster", src : "cloudbuster.png" },
-            { title : "<p>Outdoor Balloons Print</p>" , path : "outdoorballoons", src : "outdoor.png" }
+            { title : "<p>Outdoor Balloons Print</p>" , path : "outdoorballoons", src : "outdoor.png" },
+            { title : "<p>Stock Balloons</p>" , path : "stockballoons", src : "stock/stock-sale.png" }
             
         ]
     }

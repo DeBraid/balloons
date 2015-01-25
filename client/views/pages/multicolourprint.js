@@ -36,12 +36,6 @@ Template.threecolourplustable.helpers({
                     fn : function (value) {
                         return value.toFixed(2)
                     }
-                }, {
-                    key: '25000',
-                    label: '25000',
-                    fn : function (value) {
-                        return value.toFixed(2)
-                    }
                 }
             ]
         };

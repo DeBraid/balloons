@@ -16,12 +16,12 @@
 
 <template name="palPreview">
     <img id="pal-headers" class="img-responsive" src="{{ src }}" data-action="show">
-    <a class="btn btn-success" data-action="show">Show All {{ title }}</a>
+    <a id="btn-pal-title" class="btn btn-success" data-action="show">Show All {{ title }}</a>
 </template>
 
 <template name="palShow">
   <p>{{ title }}</p>
-  <a class="btn btn-danger" data-action="hide">Less</a>
+  <a id="btn-show-less" class="btn btn-danger" data-action="hide">Less</a>
   <div class="row">
     {{#each pals }}
       {{> images }}

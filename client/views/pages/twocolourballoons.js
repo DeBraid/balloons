@@ -4,7 +4,7 @@ Template.multicolourprint.settings = function () {
             showNavigation: 'never',
             fields: [{
                             key: 'Product Description',
-                            label: 'Product -- Price per Balloon 2ABCD',
+                            label: 'Product -- Price per Balloon 2ABC - Description du produit',
                             fn: function (str, obj) {
                                 var sortString = ("0000" + parseInt(str, 10)).slice(-4),
                                     unit = 'inch',
@@ -38,12 +38,6 @@ Template.multicolourprint.settings = function () {
                         }, {
                             key: '10000',
                             label: '10000',
-                            fn : function (value) {
-                                return value.toFixed(2)
-                            }
-                        }, {
-                            key: '25000',
-                            label: '25000',
                             fn : function (value) {
                                 return value.toFixed(2)
                             }

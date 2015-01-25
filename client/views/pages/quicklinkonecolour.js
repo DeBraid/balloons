@@ -5,7 +5,7 @@ Template.quicklinkonecolour.helpers({
             showNavigation: 'never',
             fields: [{
                       key: 'Product Description',
-                      label: 'Product -- Price Per Balloon 3A -- Description du produit',
+                      label: 'Product -- Price Per Balloon 2A -- Description du produit',
                         fn: function (str, obj) {
                             var sortString = ("0000" + parseInt(str, 10)).slice(-4),
                                 unit = 'inch',
@@ -26,9 +26,6 @@ Template.quicklinkonecolour.helpers({
                     }, {
                         key: '500',
                         label: '500'
-                    }, {
-                        key: '1000',
-                        label: '1000'
                     }
                 ]
         }

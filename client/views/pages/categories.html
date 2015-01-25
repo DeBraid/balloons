@@ -8,14 +8,7 @@
     </div>
 {{/each }}
 
-{{#each adriteMenu }}
-    <div id="grid-image" class="col-lg-3 col-sm-4 col-xs-6">
-        {{{ title }}}
-        <a href="{{ pathFor path }}" class="thumbnail">
-             <img src="{{ src }}" class="img-responsive">
-        </a>
-    </div>
-{{/each }}
+
 
 {{#each microfoilMenu }}
     <div id="grid-image" class="col-lg-3 col-sm-4 col-xs-6">
@@ -36,6 +29,15 @@
 {{/each }}
 
 {{#each ballsMenu }}
+    <div id="grid-image" class="col-lg-3 col-sm-4 col-xs-6">
+        {{{ title }}}
+        <a href="{{ pathFor path }}" class="thumbnail">
+             <img src="{{ src }}" class="img-responsive">
+        </a>
+    </div>
+{{/each }}
+
+{{#each adriteMenu }}
     <div id="grid-image" class="col-lg-3 col-sm-4 col-xs-6">
         {{{ title }}}
         <a href="{{ pathFor path }}" class="thumbnail">
