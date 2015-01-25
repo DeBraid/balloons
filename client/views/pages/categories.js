@@ -15,7 +15,7 @@ Template.categories.helpers({
     ballsMenu: function () {
         return [
             { title : "<p>AdMax™ Mini Sport Balls</p>" , path : "admaxminisportballs", src : "admaxsport.png" },
-            { title : "<p>Beachballs</p>" , path : "beachballs", src : "beachballs.png" },
+            // { title : "<p>Beachballs</p>" , path : "beachballs", src : "beachballs.png" },
             { title : "<p>AdPunch™ Balls</p>" , path : "adpunchballs", src : "punchballs.png" }
         ]
     },

@@ -28,10 +28,13 @@ body {
   margin-bottom: 60px;
   font-family: 'GothamBold';
 }
-#btn-pal-title {
+@media (max-width: 900px) {
+  #btn-pal-title {
     white-space: normal;
     max-width: 250px;
+  }
 }
+
 #btn-show-less {
   width: 10em;
 }

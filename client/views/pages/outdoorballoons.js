@@ -5,7 +5,7 @@ Template.outdoorballoons.helpers({
             showNavigation: 'never',
             fields: [{
                       key: 'Product Description',
-                      label: 'Product -- Price Per Balloon 3ABC -- Description du produit',
+                      label: 'Product -- Price Per Balloon 3AB -- Description du produit',
                         fn: function (str, obj) {
                             var sortString = ("0000" + parseInt(str, 10)).slice(-4),
                                 unit = 'inch',
@@ -41,12 +41,6 @@ Template.outdoorballoons.helpers({
                     }, {
                         key: '2500',
                         label: '2500',
-                        fn : function (value) {
-                            return value.length == undefined ? value.toFixed(2) : value;
-                        }
-                    },{
-                        key: '5000',
-                        label: '5000',
                         fn : function (value) {
                             return value.length == undefined ? value.toFixed(2) : value;
                         }

@@ -5,7 +5,7 @@ settings: function () {
         showFilter: true,
         fields: [{
                 key: 'Product Description',
-                label: 'Product -- Price Per Balloon 2ABCD -- Description du produit',
+                label: 'Product -- Price Per Balloon 2ABC -- Description du produit',
                 fn: function (str, obj) {
                     var sortString = ("0000" + parseInt(str, 10)).slice(-4),
                         unit = 'inch',

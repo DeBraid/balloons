@@ -5,7 +5,7 @@ Template.adpunchballs.helpers({
         showNavigation: 'never',
         fields: [{
                       key: 'Product Description',
-                      label: 'Product -- Price Per Balloon 4A -- Description du produit',
+                      label: 'Product -- Price Per Balloon 3A -- Description du produit',
                         fn: function (str, obj) {
                             var sortString = ("0000" + parseInt(str, 10)).slice(-4),
                                 unit = 'inch',
@@ -32,12 +32,6 @@ Template.adpunchballs.helpers({
                 },{
                     key: '500',
                     label: '500',
-                    fn : function (value) {
-                        return value.length == undefined ? value.toFixed(2) : value;
-                    }
-                },{
-                    key: '1000',
-                    label: '1000',
                     fn : function (value) {
                         return value.length == undefined ? value.toFixed(2) : value;
                     }

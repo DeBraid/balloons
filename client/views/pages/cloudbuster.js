@@ -5,7 +5,7 @@ Template.cloudbuster.helpers({
             showNavigation: 'never',
             fields: [{
                         key: 'Product Description',
-                        label: 'Product -- Price Per Balloon ABCD -- Description du produit',
+                        label: 'Product -- Price Per Balloon ABC -- Description du produit',
                         fn: function (str, obj) {
                             var sortString = ("0000" + parseInt(str, 10)).slice(-4),
                                 unit = 'inch',
@@ -38,12 +38,6 @@ Template.cloudbuster.helpers({
                     }, {
                         key: '50',
                         label: '50',
-                        fn : function (value) {
-                            return value.toFixed(2)
-                        }
-                    }, {
-                        key: '100',
-                        label: '100',
                         fn : function (value) {
                             return value.toFixed(2)
                         }

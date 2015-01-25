@@ -5,7 +5,7 @@ Template.largequantmicrofoil.settings = function () {
         showNavigation: 'never',
         fields: [{
                   key: 'Product Description',
-                    label: 'Product -- Price Per Balloon CDEF -- Description du produit',
+                    label: 'Product -- Price Per Balloon CDE -- Description du produit',
                         fn: function (str, obj) {
                             var sortString = ("0000" + parseInt(str, 10)).slice(-4),
                                 unit = 'inch',
@@ -35,12 +35,6 @@ Template.largequantmicrofoil.settings = function () {
                 },{
                     key: '10000',
                     label: '10000',
-                    fn : function (value) {
-                        return value.length == undefined ? value.toFixed(2) : value;
-                    }
-                },{
-                    key: '15000',
-                    label: '15000',
                     fn : function (value) {
                         return value.length == undefined ? value.toFixed(2) : value;
                     }
