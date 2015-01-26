@@ -10,6 +10,7 @@ Transform the paper-based product catalogue into digital version.  Uses [Meteor]
 2. (X) Page headings: color: black, margin-top less 
 3.  Shrink Qualatex image (live demo)
 4. (X) nav-menu: less margin between li's  -- Dropdown menu should be shrunk (width)
+4. adrite purple image is pxr format
 
 Jan 23rd 
 

@@ -5,7 +5,7 @@ Template.eventtents.helpers({
         showNavigation: 'never',
         fields: [{
                     key: 'Product Description',
-                    label: 'Product -- Price Per Balloon 4C -- Description du produit',
+                    label: 'Product -- Price Per Balloon 3C -- Description du produit',
                     fn: function (str, obj) {
                         var sortString = ("0000" + parseInt(str, 10)).slice(-4),
                             unit = 'inch',
@@ -41,12 +41,6 @@ Template.eventtents.helpers({
                     fn : function (value) {
                         return value.toFixed(2)
                     }
-                }, {
-                    key: '12 to 24',
-                    label: '12 to 24',
-                    fn : function (value) {
-                        return value.toFixed(2)
-                    }
                 }
             ]
         }
@@ -60,7 +54,7 @@ Template.eventtentwalls.helpers({
         showNavigation: 'never',
         fields: [{
                     key: 'Product Description',
-                    label: 'Product -- Price Per Piece 4C',
+                    label: 'Product -- Price Per Piece 3C  -- Description du produit',
                     fn: function (str, obj) {
                         var sortString = ("0000" + parseInt(str, 10)).slice(-4),
                             unit = 'inch',
@@ -93,12 +87,6 @@ Template.eventtentwalls.helpers({
                 }, {
                     key: '6 to 11',
                     label: '6 to 11',
-                    fn : function (value) {
-                        return value.toFixed(2)
-                    }
-                }, {
-                    key: '12 to 24',
-                    label: '12 to 24',
                     fn : function (value) {
                         return value.toFixed(2)
                     }

@@ -5,7 +5,7 @@ Template.nonfitted.settings = function () {
         showNavigation: 'never',
         fields: [{
                   key: 'Product Description',
-                  label: 'Product -- Price Per Balloon 4C2D -- Description du produit',
+                  label: 'Product -- Price Per Balloon 4CD -- Description du produit',
                     fn: function (str, obj) {
                         var sortString = ("0000" + parseInt(str, 10)).slice(-4),
                             unit = 'inch',
@@ -56,12 +56,6 @@ Template.nonfitted.settings = function () {
                     fn : function (value) {
                         return value.length == undefined ? value.toFixed(2) : value;
                     }
-                }, {
-                    key: '100',
-                    label: '100',
-                    fn : function (value) {
-                        return value.length == undefined ? value.toFixed(2) : value;
-                    }
                 }
             ]
     };
@@ -74,7 +68,7 @@ Template.stretch.helpers({
         showNavigation: 'never',
         fields: [{
                     key: 'Product Description',
-                  label: 'Product -- Price Per Balloon 4C2D -- Description du produit',
+                  label: 'Product -- Price Per Balloon 4CD -- Description du produit',
                     fn: function (str, obj) {
                         var sortString = ("0000" + parseInt(str, 10)).slice(-4),
                             unit = 'inch',
@@ -119,12 +113,6 @@ Template.stretch.helpers({
                 }, {
                     key: '50',
                     label: '50',
-                    fn : function (value) {
-                        return value.length == undefined ? value.toFixed(2) : value;
-                    }
-                }, {
-                    key: '100',
-                    label: '100',
                     fn : function (value) {
                         return value.length == undefined ? value.toFixed(2) : value;
                     }

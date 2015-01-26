@@ -7,7 +7,7 @@ Template.promoflagscontent.helpers({
         showNavigation: 'never',
         fields: [{
                     key: 'Product Description',
-                    label: 'Product -- Price Per Piece 5C',
+                    label: 'Product -- Price Per Piece 4C',
                    fn: function (str, obj) {
                         var sortString = ("0000" + parseInt(str, 10)).slice(-4),
                             unit = 'inch',
@@ -63,12 +63,6 @@ Template.promoflagscontent.helpers({
                     fn : function (value) {
                         return value.toFixed(2)
                     }
-                }, {
-                    key: '26 to 99',
-                    label: '26 to 99',
-                    fn : function (value) {
-                        return value.toFixed(2)
-                    }
                 }
             ]
         }
@@ -82,7 +76,7 @@ Template.econflags.helpers({
         showNavigation: 'never',
         fields: [{
                 key: 'Product Description',
-                label: 'Product -- Price Per Piece 4C',
+                label: 'Product -- Price Per Piece 3C - Description du produit',
                 fn: function (str, obj) {
                         var sortString = ("0000" + parseInt(str, 10)).slice(-4),
                             unit = 'inch',
@@ -121,12 +115,6 @@ Template.econflags.helpers({
             }, {
                 key: '11 to 25',
                 label: '11 to 25',
-                fn : function (value) {
-                    return value.toFixed(2)
-                }
-            }, {
-                key: '26 to 99',
-                label: '26 to 99',
                 fn : function (value) {
                     return value.toFixed(2)
                 }

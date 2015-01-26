@@ -5,7 +5,7 @@ Template.admaxminisportballs.helpers({
       showNavigation: 'never',
       fields: [{
         key: 'Product Description',
-        label: 'Product -- Price Per Balloon 2ABCD -- Description du produit',
+        label: 'Product -- Price Per Balloon 2AB -- Description du produit',
         fn: function(str, obj) {
           var sortString = ("0000" + parseInt(str, 10)).slice(-4),
             unit = 'inch',
@@ -23,16 +23,22 @@ Template.admaxminisportballs.helpers({
         sort: 'ascending'
       }, {
         key: '100',
-        label: '100'
+        label: '100',
+        fn : function (value) {
+            return value.length == undefined ? value.toFixed(2) : value;
+        }
       }, {
         key: '250',
-        label: '250'
+        label: '250',
+        fn : function (value) {
+            return value.length == undefined ? value.toFixed(2) : value;
+        }
       }, {
         key: '500',
-        label: '500'
-      }, {
-        key: '1000',
-        label: '1000'
+        label: '500',
+        fn : function (value) {
+            return value.length == undefined ? value.toFixed(2) : value;
+        }
       }]
     };
   }

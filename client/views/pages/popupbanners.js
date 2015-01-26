@@ -5,7 +5,7 @@ Template.popupbanners.helpers({
         showNavigation: 'never',
         fields: [{
                     key: 'Product Description',
-                    label: 'Product -- Price Per Piece 5C -- Description du produit',
+                    label: 'Product -- Price Per Piece 4C -- Description du produit',
                     fn: function (str, obj) {
                         var sortString = ("0000" + parseInt(str, 10)).slice(-4),
                             unit = 'inch',
@@ -51,12 +51,6 @@ Template.popupbanners.helpers({
                 }, {
                     key: '10 to 24',
                     label: '10 to 24' ,
-                    fn : function (value) {
-                        return value.length == undefined ? value.toFixed(2) : value;
-                    }
-                }, {
-                    key: '25 to 49',
-                    label: '25 to 49' ,
                     fn : function (value) {
                         return value.length == undefined ? value.toFixed(2) : value;
                     }
