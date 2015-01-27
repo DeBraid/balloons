@@ -15,14 +15,14 @@ Template.multicolourprint.settings = function () {
                                 var html = "<p sortString=" + sortString + ">" + myString + "</p>" + 
                                     "<p>" + obj["Product Description_fr"] + "</p>";
                                 return Spacebars.SafeString(html);
-                            },
-                            sort: 'ascending'
+                            }
                         }, {
                             key: '1000',
                             label: '1000',
                             fn : function (value) {
                                 return value.toFixed(2)
-                            }
+                            },
+                            sort: 'ascending'
                         }, {
                             key: '2500',
                             label: '2500',

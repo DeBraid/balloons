@@ -19,7 +19,8 @@ Template.largequantmicrofoil.settings = function () {
                         }
                 }, {
                     key: 'Printing',  
-                    label: 'Printing'
+                    label: 'Printing',
+                    sort: 'ascending'
                 }, {
                     key: '2500',
                     label: '2500',

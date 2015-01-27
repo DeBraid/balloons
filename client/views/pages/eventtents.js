@@ -22,7 +22,8 @@ Template.eventtents.helpers({
                     label: 'Print Locations - surfaces',
                     fn: function (str) {
                         return parseInt(str);
-                    }
+                    },
+                    sort: 'ascending'
                 }, {
                     key: '1',
                     label: '1',

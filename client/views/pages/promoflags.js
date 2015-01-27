@@ -44,7 +44,8 @@ Template.promoflagscontent.helpers({
                     label: '1',
                     fn : function (value) {
                         return value.toFixed(2)
-                    }
+                    },
+                    sort: 'ascending'
                 }, {
                     key: '2 to 5',
                     label: '2 to 5',

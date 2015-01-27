@@ -16,8 +16,7 @@ Template.popupbanners.helpers({
                         var html = "<p sortString=" + french + ">" + myString + "</p>" + 
                                     "<p>" + french + "</p>";
                         return Spacebars.SafeString(html);
-                    },
-                    sort: 'desc'
+                    }
                 }, {
                     key: 'Panels', 
                     label: 'Panels - panneaux', 
@@ -29,7 +28,8 @@ Template.popupbanners.helpers({
                     label: 'Item #',
                      fn: function  (value, object) {
                         return parseInt(value);
-                    }
+                    },
+                    sort: 'ascending'
                 }, {
                     key: '1',
                     label: '1',

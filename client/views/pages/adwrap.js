@@ -16,14 +16,14 @@ Template.adwrap.helpers({
                         var html = "<p sortString=" + french + ">" + myString + "</p>" + 
                                     "<p>" + french + "</p>";
                         return Spacebars.SafeString(html);
-                    },
-                    sort: 'ascending'
+                    }
                 }, {
                     key: '1000',
                     label: '1000',
                     fn : function (value) {
                         return value.toFixed(2)
-                    }
+                    },
+                    sort: 'ascending'
                 }, {
                     key: '2500',
                     label: '2500',

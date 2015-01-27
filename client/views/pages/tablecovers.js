@@ -31,7 +31,8 @@ Template.nonfitted.settings = function () {
                     label: '1',
                     fn : function (value) {
                         return value.length == undefined ? value.toFixed(2) : value;
-                    }
+                    },
+                    sort: 'ascending'
                 }, {
                     key: '5',
                     label: '5',
@@ -91,7 +92,8 @@ Template.stretch.helpers({
                     label: '1',
                     fn : function (value) {
                         return value.length == undefined ? value.toFixed(2) : value;
-                    }
+                    },
+                    sort: 'ascending'
                 }, {
                     key: '5',
                     label: '5',

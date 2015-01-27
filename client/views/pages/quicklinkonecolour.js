@@ -22,7 +22,8 @@ Template.quicklinkonecolour.helpers({
                         label: 'Printing - impression'
                     }, {
                         key: '200',
-                        label: '200'
+                        label: '200',
+                        sort: 'ascending'
                     }, {
                         key: '500',
                         label: '500'

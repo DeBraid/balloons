@@ -19,7 +19,8 @@ Template.outdoorballoons.helpers({
                         }
                     }, {
                         key: '1 Side Printing',
-                        label: '1 Side Printing'
+                        label: '1 Side Printing',
+                        sort: 'ascending'
                     }, {
                         key: '200',
                         label: '200',

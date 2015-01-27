@@ -11,7 +11,7 @@ Transform the paper-based product catalogue into digital version.  Uses [Meteor]
 3.  Shrink Qualatex image (live demo)
 4. (X) nav-menu: less margin between li's  -- Dropdown menu should be shrunk (width)
 4. adrite purple image is pxr format
-
+1. need pricing for 3ft hearts 
 Jan 23rd 
 
 6.  h4's on pages should have zero margin (make them closer together)
@@ -27,8 +27,7 @@ Jan 23rd
 
 
 ### TO DO JAN 13
-2. French Language Content (pouce for inches (_fr) )
-1. need pricing for 3ft hearts 
+(X) 2. French Language Content (pouce for inches (_fr) )
 2. for MENU: add fr on same line (see heading translations provided)
 2. change all font to black
 1. Products by Market -- products.php (see dot com)
