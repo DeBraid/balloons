@@ -686,6 +686,8 @@ header
   max-width: 15em;
   cursor: pointer;
   padding-right: 100px;
+  width: auto;
+  height: auto;
 }
 .pal-image .all {
 max-width: 25em;
