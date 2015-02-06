@@ -5,7 +5,7 @@
       {{> microheader }}
       {{> yield region='pals' }}
       <h3>18” and 20” Valved Balloons</h3>
-      <h3>Ballons de 18 po. & 20 po.</h3>
+      <h3>Ballons de 18 po. & 20 po. avec valve</h3>
     </div>
 
     <div class="row">
@@ -17,8 +17,7 @@
 
     <div class="row">
       <h3>36” Valved Balloons</h3>
-      <h3>Ballons de 36 po.</h3>
-
+      <h3>Ballons de 36 po. avec valve</h3>
       {{> microfoilvalved36 }}
     </div>
     
@@ -57,23 +56,34 @@
 <template name="microfooter">
   <h4>Magic Balloon Wands™ Diamond Clear – Diamant clair</h4>
   <ul>
-    <li>(#22860).$0.72(A) per piece - please change price to 31.76(A) per 40ct.</li>
-    <li>(#22860).$0.72(A) per piece - please change price to 31.76(A) sac de 40</li>
+    <li>(#22860) $31.76(A) per 40ct. / sac de 40</li>
+    <li>© Premium Balloon Accessories</li>
   </ul>
-  <p>© Premium Balloon Accessories</p>
-  <h4>Art</h4>
-  <h5>Conception Graphique 
-  A minimum of 1/8" separation between colours is required due to movement during printing. Order acceptance is based on approval of artwork.</h5>
-  <h5>Une sélection chromatique d’au moins 1/8 po. doit exister entre les couleurs due aux conditions d’instabilité durant l’impression.  L’acceptation de la commande est basée sur l’approbation de la conception graphique</h5>
+
+  <h4>Art - Conception Graphique </h4>
+  <p>A minimum of 1/8" separation between colours is required due to movement during printing. Order acceptance is based on approval of artwork.</p>
+  <p>Une sélection chromatique d’au moins 1/8 po. doit exister entre les couleurs due aux conditions d’instabilité durant l’impression.  L’acceptation de la commande est basée sur l’approbation de la conception graphique</p>
   <h5>Note:  Helium-filled Microfoil balloons may not float in altitudes exceeding approximately 3,000 feet.</h5>
+  <h5>Il est possible que les ballons Microfoil remplis d'hélium ne flottent pas à des altitudes supérieures à 3,000 pieds.</h5>
 
 </template> 
 
 <template name="smallmicrofoilcharges">
-  <h4>Charges</h4>
-  <ul>
-    {{#each allCharges }}
-      <li>{{ charges }}  --  {{ chargesFr }}</li>
-    {{/each }}
-  </ul>
+  <div class="col-sm-6">
+    <h4>Charges</h4>
+    <ul>
+      {{#each allCharges }}
+        <li>{{ charges }}</li>
+      {{/each }}
+    </ul>
+  </div>
+
+  <div class="col-sm-6">
+    <h4>Ajoutez tous frais supplémentaires</h4>
+    <ul>
+      {{#each allCharges }}
+        <li>{{ chargesFr }}</li>
+      {{/each }}
+    </ul>
+  </div>
 </template>
