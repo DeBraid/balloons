@@ -22,7 +22,8 @@ Template.giantlatexballoons.helpers({
                         label: '10',
                         fn : function (value) {
                             return value.toFixed(2)
-                        }
+                        },
+                        sort: 1
                     }, {
                         key: '25',
                         label: '25',
