@@ -36,7 +36,7 @@ body {
 }
 
 #btn-show-less {
-  width: 10em;
+  width: 5em;
 }
 #main-layout-container {
   position: relative;
@@ -677,6 +677,9 @@ header
   width: 50%;
 }
 
+.pal-preview-container {
+  min-height: 200px;
+}
 #pal-headers {
   max-height: 175px;
   cursor: pointer;

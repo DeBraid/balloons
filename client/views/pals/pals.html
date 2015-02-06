@@ -1,9 +1,11 @@
 <template name="allPals">  
-  {{#each pals }}
-    <div class="col-sm-6">
-      {{> palsContainer }}      
-    </div>
-  {{/each}}
+  <div class="row">
+    {{#each pals }}
+      <div class="col-sm-6">
+        {{> palsContainer }}      
+      </div>
+    {{/each}}
+  </div>
 </template>
 
 <template name="palsContainer">
@@ -15,13 +17,14 @@
 </template>
 
 <template name="palPreview">
-    <img id="pal-headers" class="img-responsive" src="{{ src }}" data-action="show">
-    <a id="btn-pal-title" class="btn btn-success" data-action="show">Show All {{ title }}</a>
+    <div class="pal-preview-container">
+      <img id="pal-headers" class="img-responsive pull-left" src="{{ src }}" data-action="show">
+    </div>
 </template>
 
 <template name="palShow">
   <p>{{ title }}</p>
-  <a id="btn-show-less" class="btn btn-danger" data-action="hide">Less</a>
+  <a id="btn-show-less" class="btn btn-danger" data-action="hide">X</a>
   <div class="row">
     {{#each pals }}
       {{> images }}
