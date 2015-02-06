@@ -118,10 +118,13 @@ td.Product.Description {
 }
 th.Panels, 
 th.Number.of,
-td.Number.of {
+td.Number.of{
   max-width: 80px; 
 }
 
+td.Printing {
+  max-width: 120px;
+}
 td.Product.Description > p {
   margin-bottom: 0;
 }
@@ -695,4 +698,14 @@ header
 .pal-image .all {
 max-width: 25em;
 
+}
+
+.row{
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.container > .row {
+    margin-left: -15px;
+    margin-right: -15px;
 }
