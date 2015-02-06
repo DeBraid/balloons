@@ -683,6 +683,7 @@ header
 .pal-preview-container {
   min-height: 200px;
 }
+
 #pal-headers {
   max-height: 175px;
   cursor: pointer;
@@ -696,8 +697,16 @@ header
   height: auto;
 }
 .pal-image .all {
-max-width: 25em;
+  max-width: 25em;
+}
 
+@media (max-width: 320px) {
+  .pal-preview-container {
+    min-height: 100px;
+  }
+  .pal-image {
+    padding-right: 0;
+  }
 }
 
 .row{
